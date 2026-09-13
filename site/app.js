@@ -1229,10 +1229,6 @@ const MENU_DISHES = [{
   src: 'images/dishes/pasta_fredda.jpg',
   season: 'estate'
 }, {
-  name: 'Insalata di Pasta',
-  src: 'images/dishes/insalata_di_pasta.jpg',
-  season: 'estate'
-}, {
   name: 'Pasta Italia',
   src: 'images/dishes/pasta_italia.jpg',
   season: 'estate'
@@ -1774,7 +1770,6 @@ const DISH_DESCRIPTIONS = {
   'Pomodori Ripieni': 'Pane, EVO, prezzemolo, aglio, basilico',
   'Insalata Russa': 'Carote, piselli, patate, cetrioli, cren, maionese',
   'Pasta Radicchio & Salsiccia': 'Pasta, Radicchio, Salsiccia, Grana',
-  'Insalata di Pasta': 'Tonno, Pomodoro, Basilico',
   'Pasta Italia': 'Bresaola, Grana, Philadelphia, Rucola, Pasta',
   'Insalata di Riso': 'Riso, verdure, prosciutto cotto, olive, funghi, carciofi, wurstel, giardiniera',
   'Insalata di Farro': 'Farro, verdure, olive, feta, prosciutto',
@@ -1906,7 +1901,6 @@ const DISH_DESCRIPTIONS_VEC = {
   'Pomodori Ripieni': 'Pan, ojo bon, persémolo, ajo, basìlico',
   'Insalata Russa': 'Carote, bisi, patate, cogómbari, cren, maionese',
   'Pasta Radicchio & Salsiccia': 'Pasta, radicio, luganega, Grana',
-  'Insalata di Pasta': 'Ton, pomodoro, basìlico',
   'Pasta Italia': 'Bresaola, Grana, Philadelphia, rucola, pasta',
   'Insalata di Riso': 'Riso, verdure, prosciuto còto, olive, fonghi, articiochi, wurstel, giardiniera',
   'Insalata di Farro': 'Faro, verdure, olive, feta, prosciuto',
@@ -2036,7 +2030,6 @@ const DISH_NAME_VEC = {
   'Verdure Ripiene': 'Verdure Impinìe',
   'Insalata di Riso': 'Insalata de Riso',
   'Insalata di Farro': 'Insalata de Faro',
-  'Insalata di Pasta': 'Insalata de Pasta',
   'Insalata di Mare': 'Insalata de Mar',
   'Insalata di Orzo': 'Insalata de Orzo',
   'Fagioli con Cipolla': "Fasoi co' la Zegola",
@@ -2099,7 +2092,6 @@ const DISH_NAME_EN = {
   'Insalata Russa': 'Russian Salad',
   'Pasta Radicchio & Salsiccia': 'Pasta with Radicchio & Sausage',
   'Pasta Fredda': 'Cold Pasta Salad',
-  'Insalata di Pasta': 'Pasta Salad',
   'Pasta Italia': 'Pasta Italia',
   'Insalata di Riso': 'Rice Salad',
   'Insalata di Farro': 'Farro Salad',
@@ -2233,7 +2225,6 @@ const DISH_DESCRIPTIONS_EN = {
   'Pomodori Ripieni': 'Bread, EVO, parsley, garlic, basil',
   'Insalata Russa': 'Carrots, peas, potatoes, cucumbers, horseradish, mayonnaise',
   'Pasta Radicchio & Salsiccia': 'Pasta, radicchio, sausage, Grana',
-  'Insalata di Pasta': 'Tuna, tomato, basil',
   'Pasta Italia': 'Bresaola, Grana, Philadelphia, arugula, pasta',
   'Insalata di Riso': 'Rice, vegetables, cooked ham, olives, mushrooms, artichokes, wurstel, pickled vegetables',
   'Insalata di Farro': 'Farro, vegetables, olives, feta, ham',
@@ -2358,7 +2349,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Insalata di Riso', 'Insalata di Farro', 'Insalata di Pasta', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
