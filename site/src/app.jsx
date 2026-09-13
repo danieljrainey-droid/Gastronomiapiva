@@ -726,7 +726,7 @@ const MENU_DISHES = [
   { name: 'Vini Assortiti', src: "images/dishes/vini_assortiti.jpg" },
   { name: 'Melanzane "Pizzaiola"', src: 'images/dishes/melanzane_pizzaiola.jpg' },
   { name: 'Verdure Ripiene', src: 'images/dishes/verdure_ripiene.jpg' },
-  { name: 'Faraona Arrosto', src: 'images/dishes/faraona_arrosto.jpg', season: 'inverno' },
+  { name: 'Faraona Arrosto', src: 'images/dishes/faraona_arrosto.jpg' },
   { name: 'Spezzatino di Tacchino', src: 'images/dishes/spezzatino_di_tacchino.jpg' },
   { name: 'Fagioli in "Potacin"', src: 'images/dishes/fagioli_in_potacin.jpg', season: 'inverno' },
   { name: "Pesto d'Agrumi", src: 'images/dishes/pesto_dagrumi.jpg', season: 'estate' },

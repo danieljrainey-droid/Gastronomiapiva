@@ -1397,8 +1397,7 @@ const MENU_DISHES = [{
   src: 'images/dishes/verdure_ripiene.jpg'
 }, {
   name: 'Faraona Arrosto',
-  src: 'images/dishes/faraona_arrosto.jpg',
-  season: 'inverno'
+  src: 'images/dishes/faraona_arrosto.jpg'
 }, {
   name: 'Spezzatino di Tacchino',
   src: 'images/dishes/spezzatino_di_tacchino.jpg'
