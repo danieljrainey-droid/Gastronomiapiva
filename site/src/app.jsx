@@ -664,6 +664,12 @@ function Hero({ onNavigate }) {
 /* ─────────────────── DISH PHOTO POSITIONS ─────────────────── */
 const DISH_POSITIONS = {};
 
+/* Dishes whose photo is a wide layout shot (e.g. several varieties side by side) —
+   'contain' shows the whole image instead of cropping it to fill the circle. */
+const DISH_FIT = {
+  'Polpette di Verdure': 'contain',
+};
+
 /* ─────────────────── MENU SECTION ─────────────────── */
 const MENU_DISHES = [
 
@@ -1911,7 +1917,7 @@ function MenuSection() {
                             style={{
                               width: '100%',
                               height: '100%',
-                              objectFit: 'cover',
+                              objectFit: DISH_FIT[dish.name] || 'cover',
                               objectPosition: DISH_POSITIONS[dish.name] || 'center center',
                               display: 'block',
                               transform: isSel ? 'scale(calc(var(--dish-zoom, 1) * 1.08))' : 'scale(var(--dish-zoom, 1))',

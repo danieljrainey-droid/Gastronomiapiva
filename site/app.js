@@ -1202,6 +1202,9 @@ function Hero({
   }));
 }
 const DISH_POSITIONS = {};
+const DISH_FIT = {
+  'Polpette di Verdure': 'contain'
+};
 const MENU_DISHES = [{
   name: 'Vitello Tonnato',
   src: 'images/dishes/vitello_tonnato.jpg'
@@ -2814,7 +2817,7 @@ function MenuSection() {
         style: {
           width: '100%',
           height: '100%',
-          objectFit: 'cover',
+          objectFit: DISH_FIT[dish.name] || 'cover',
           objectPosition: DISH_POSITIONS[dish.name] || 'center center',
           display: 'block',
           transform: isSel ? 'scale(calc(var(--dish-zoom, 1) * 1.08))' : 'scale(var(--dish-zoom, 1))',
