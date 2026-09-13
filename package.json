@@ -1,0 +1,26 @@
+{
+  "name": "gastronomiapiva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "python3 -m http.server 8000 --directory site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieljrainey-droid/Gastronomiapiva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieljrainey-droid/Gastronomiapiva/issues"
+  },
+  "homepage": "https://github.com/danieljrainey-droid/Gastronomiapiva#readme",
+  "devDependencies": {
+    "@babel/core": "^8.0.5",
+    "@babel/preset-react": "^8.0.1",
+    "playwright": "^1.63.0"
+  }
+}

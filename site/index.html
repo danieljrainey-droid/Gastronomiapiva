@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/jpeg" href="images/brand/logo.jpg?v=2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<meta name="description" content="F.lli Piva — Salumeria, gastronomia ed enoteca a Rovigo dal 1960. In cucina per voi.">
+<title>F.lli Piva — Gastronomia dal 1960</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<style>
+  :root {
+    --color-red: #C8251D; --color-red-dark: #9E1C16; --color-red-subtle: #F9EAEA;
+    --color-espresso: #1A1108; --color-walnut: #3D2B1A; --color-bark: #6B4C33;
+    --color-tan: #C9A97A; --color-linen: #E8DCC8; --color-cream: #F5F0E6;
+    --color-parchment: #FDFAF4; --color-gold: #D4A640;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Lora', Georgia, serif;
+    --shadow-sm: 0 2px 8px rgba(26,17,8,0.10);
+    --shadow-md: 0 4px 16px rgba(26,17,8,0.12);
+    --shadow-lg: 0 8px 32px rgba(26,17,8,0.16);
+    --radius-md: 10px; --radius-lg: 14px;
+    --border-subtle: rgba(26,17,8,0.10); --border-medium: rgba(26,17,8,0.18);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; overflow-anchor: none; }
+  @keyframes music-invite {
+    0%, 100% { box-shadow: 0 4px 16px rgba(26,17,8,0.28), 0 0 0 0 rgba(200,37,29,0.55); }
+    50%      { box-shadow: 0 4px 16px rgba(26,17,8,0.28), 0 0 0 10px rgba(200,37,29,0); }
+  }
+  @keyframes music-invite-pill {
+    0%, 100% { opacity: 1; transform: translateX(0); }
+    50%      { opacity: 0.82; transform: translateX(2px); }
+  }
+  @keyframes dialect-invite {  /* richiamo al dialetto: pulsa come la pastiglia della musica */
+    0%, 100% { opacity: 1; transform: translateY(-50%) translateX(0); }
+    50%      { opacity: 0.82; transform: translateY(-50%) translateX(2px); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    [style*="music-invite"], [style*="dialect-invite"] { animation: none !important; }
+  }
+  @keyframes carnevale-pulse {  /* alone pulsante dei piatti di stagione (Carnevale / Nadal / Pasqua) */
+    0%   { transform: scale(0.94); opacity: 0.9; }
+    70%  { transform: scale(1.14); opacity: 0; }
+    100% { transform: scale(1.14); opacity: 0; }
+  }
+  @keyframes dialect-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes contact-success-pop { 0% { opacity: 0; transform: scale(0.94); } 100% { opacity: 1; transform: scale(1); } }
+  .dialect-marquee-track { display: inline-flex; white-space: nowrap; will-change: transform; animation: dialect-marquee 90s linear infinite; }
+  .dialect-marquee-strip:hover .dialect-marquee-track, .dialect-marquee-strip:active .dialect-marquee-track { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { .dialect-marquee-track { animation: none; } .dialect-marquee-strip { overflow-x: auto; } }
+  body { background: var(--color-cream); font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+
+  .stats-bar { background: var(--color-red); padding: 40px; }
+  .stats-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-around; }
+  .stat { text-align: center; }
+  .stat-num { font-family: var(--font-display); font-size: 42px; font-weight: 700; color: #FDFAF4; line-height: 1; }
+  .stat-label { font-family: var(--font-body); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(253,250,244,0.72); margin-top: 6px; }
+
+  .field { margin-bottom: 20px; }
+  .field label { display: block; font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-bark); margin-bottom: 6px; }
+  .field input, .field textarea, .field select { width: 100%; font-family: var(--font-body); font-size: 14px; color: var(--color-espresso); background: var(--color-parchment); border: 1.5px solid var(--border-medium); border-radius: 10px; padding: 11px 14px; outline: none; transition: border-color 0.2s; resize: vertical; }
+  .field input:focus, .field textarea:focus, .field select:focus { border-color: var(--color-red); }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script>
+window.IMGS = {
+  cesteBg: "images/brand/ceste_bg.jpg",
+  gazzettino: "images/brand/gazzettino.jpg",
+  menuDoc: "images/brand/menu_doc.webp",
+  logoSvg: "images/brand/logo_svg.svg",
+  logo: "images/brand/logo.jpg",
+  storefront: "images/brand/storefront.jpg",
+  team: "images/brand/team.jpg",
+  pastaFresca: "images/brand/pasta_fresca.jpg",
+  ricetteFeste: "images/brand/ricette_per_le_feste.jpg",
+  prodottiQualita: "images/brand/prodotti_qualita.jpg",
+  piattiStagionali: "images/brand/piatti_stagionali.jpg",
+  stillLife: "images/brand/still_life.jpg"
+};
+</script>
+<script src="app.js"></script>
+</body>
+</html>
