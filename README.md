@@ -16,6 +16,8 @@ site/
   vendor/              self-hosted React + ReactDOM (no third-party CDN dependency)
   images/brand/        logo, storefront, team, etc.
   images/dishes/       150+ menu item photos
+  audio/               background music track
+  rovigoto/index.html  standalone Rovigòto dialect dictionary (self-contained, own page)
 ```
 
 ## Why it's structured this way
@@ -40,9 +42,6 @@ It's a single-page app: there's one real HTML page, and "Home / Menu / Chi Siamo
 
 ## Known gaps
 
-- **Rovigòto dialect toggle** works for the header/nav/hero/menu/footer copy (all present
-  in the source), but the standalone dialect dictionary page it links out to
-  (`rovigoto/index.html`) isn't part of this handoff and doesn't exist yet.
 - **Fixed a bug from the original design**: one dish (`Polpette di Verdure`) had an invalid
   `season: 'sempre'` value that crashed the entire Menu page (`SEASONS['sempre']` doesn't
   exist). Removed the invalid season tag — dish now shows year-round with no seasonal badge,
