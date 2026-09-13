@@ -1342,9 +1342,6 @@ const MENU_DISHES = [{
   name: 'Riso Acquerello 8 Anni',
   src: 'images/dishes/riso_acquerello_8_anni.jpg'
 }, {
-  name: 'Pinzimonio di Verdure Brezzo',
-  src: 'images/dishes/pinzimonio_di_verdure_brezzo.jpg'
-}, {
   name: 'Specialità di Grano',
   src: 'images/dishes/specialita_di_grano.jpg'
 }, {
@@ -1796,7 +1793,6 @@ const DISH_DESCRIPTIONS = {
   'Prosciutto di San Daniele Magnum': 'Prosciutto di San Daniele DOP Linea Extra Magnum — Carni Padane. Stagionatura lunga, dolce e delicato, tagliato al coltello.',
   'Frutta in Acquavite Prunotto': 'Frutta sotto spirito Mariangela Prunotto, in due gusti: ciliegie in acquavite e vinaccia di Moscato, e uva in acquavite di vinaccia di Moscato. Da gustare a fine pasto o con formaggi e dolci.',
   'Riso Acquerello 8 Anni': 'Riso Carnaroli invecchiato 8 anni — Acquerello. Chicco integro, ricco di gusto, ideale per risotti.',
-  'Pinzimonio di Verdure Brezzo': 'Verdure miste lavorate dal fresco in agrodolce — Brezzo. Da gustare come antipasto o contorno.',
   'Specialità di Grano': 'Puccia, focacce e snack di grano artigianali — Cerchi di Grano al rosmarino e alla pizza, Le Figlie, Saltimbocca e Fili di Grano croccanti.',
   'Tiramisù della casa': 'Mascarpone montato, savoiardi inzuppati nel caffè, cacao amaro in superficie — preparato in casa.',
   'Zuppa Inglese': 'Crema pasticcera e cioccolato a strati con pan di Spagna imbevuto nell\'Alchermes — dolce al cucchiaio della tradizione.',
@@ -1927,7 +1923,6 @@ const DISH_DESCRIPTIONS_VEC = {
   'Prosciutto di San Daniele Magnum': 'Prosciuto de San Daniele DOP Linea Extra Magnum — Carni Padane. Stagionà a longo, dolse e delicà, tajà col cortèl.',
   'Frutta in Acquavite Prunotto': 'Fruta soto spìrito Mariangela Prunotto, in do gusti: siriese in acquavita e vinacia de Moscato, e ua in acquavita de vinacia de Moscato. Da magnar a fin pasto o co\' formaji e dolsi.',
   'Riso Acquerello 8 Anni': 'Riso Carnaroli invecià 8 ani — Acquerello. Graneo intiero, pien de gusto, giusto par i risoti.',
-  'Pinzimonio di Verdure Brezzo': 'Verdure misse lavoràe dal fresco in agrodolse — Brezzo. Da magnar come antipasto o contorno.',
   'Specialità di Grano': 'Puccia, focace e snack de gran fati a man — Cerchi de Grano al rosmarin e a la pissa, Le Figlie, Saltimbocca e Fili de Grano crocanti.',
   'Tiramisù della casa': 'Mascarpon montà, savoiardi bagnài in tel cafè, cacao amaro de sora — fato in casa.',
   'Zuppa Inglese': 'Crema e ciocolàto a strati co\' pan de Spagna bagnà in te l\'Alchermes — dolse col cuciaro de \'na volta.',
@@ -2126,7 +2121,6 @@ const DISH_NAME_EN = {
   'Prosciutto di San Daniele Magnum': 'San Daniele Magnum Ham',
   'Frutta in Acquavite Prunotto': 'Prunotto Fruit in Spirits',
   'Riso Acquerello 8 Anni': '8-Year Aged Acquerello Rice',
-  'Pinzimonio di Verdure Brezzo': 'Sweet & Sour Vegetables',
   'Specialità di Grano': 'Wheat Specialties',
   'Tiramisù della casa': 'House Tiramisù',
   'Zuppa Inglese': 'Zuppa Inglese Custard Trifle',
@@ -2251,7 +2245,6 @@ const DISH_DESCRIPTIONS_EN = {
   'Prosciutto di San Daniele Magnum': 'Prosciutto di San Daniele DOP Linea Extra Magnum — Carni Padane. Long-aged, sweet and delicate, knife-cut.',
   'Frutta in Acquavite Prunotto': 'Mariangela Prunotto fruit preserved in spirits, in two flavors: cherries in Moscato grappa spirits, and grapes in Moscato grappa spirits. Enjoy at the end of a meal or with cheeses and desserts.',
   'Riso Acquerello 8 Anni': 'Carnaroli rice aged 8 years — Acquerello. Whole grain, rich in flavor, ideal for risotto.',
-  'Pinzimonio di Verdure Brezzo': 'Mixed fresh vegetables prepared sweet-and-sour — Brezzo. Enjoy as an appetizer or side dish.',
   'Specialità di Grano': 'Artisanal wheat puccia, focaccia and snacks — rosemary and pizza Cerchi di Grano, Le Figlie, Saltimbocca and crunchy Fili di Grano.',
   'Tiramisù della casa': 'Whipped mascarpone, ladyfingers soaked in coffee, bitter cocoa on top — made in house.',
   'Zuppa Inglese': 'Layers of pastry cream and chocolate with sponge cake soaked in Alchermes — a traditional spoon dessert.',
@@ -2373,7 +2366,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Albicocche in Grappa Brezzo', 'Pinzimonio di Verdure Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
