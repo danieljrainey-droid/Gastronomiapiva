@@ -40,9 +40,6 @@ It's a single-page app: there's one real HTML page, and "Home / Menu / Chi Siamo
 
 ## Known gaps
 
-- **No background music file.** The player references `audio/inno-italia-navy-band.mp3`,
-  which isn't included — the player just doesn't render until that file exists at
-  `site/audio/inno-italia-navy-band.mp3`. No crash, no broken UI either way.
 - **Rovigòto dialect toggle** works for the header/nav/hero/menu/footer copy (all present
   in the source), but the standalone dialect dictionary page it links out to
   (`rovigoto/index.html`) isn't part of this handoff and doesn't exist yet.
