@@ -2350,7 +2350,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba par Scominsiar & Contorni',
   subtitle: 'Vitello tonnato, verdure e insalate',
   subtitleEn: 'Vitello tonnato, vegetables and salads',
-  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Lenticchie', 'Polpette di Verdure', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo']
+  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Lenticchie', 'Polpette di Verdure', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo', 'Fondi di Carciofi']
 }, {
   id: 'primi',
   title: 'Primi Piatti',
@@ -2358,7 +2358,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Insalata di Riso', 'Insalata di Farro', 'Insalata di Pasta', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
@@ -2366,7 +2366,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Secondi Piati',
   subtitle: 'Specialità di carne e pesce',
   subtitleEn: 'Meat and fish specialties',
-  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
+  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
 }, {
   id: 'dolci',
   title: 'Dolci',
@@ -2382,7 +2382,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Albicocche in Grappa Brezzo', 'Pinzimonio di Verdure Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
