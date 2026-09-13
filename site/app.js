@@ -3657,7 +3657,8 @@ function AboutPage() {
     }
   }, en ? '— Il Gazzettino, September 28, 1999' : '— Il Gazzettino, 28 settembre 1999'))), React.createElement(ScrollReveal, {
     style: {
-      marginBottom: vp.isMobile ? 40 : 56
+      marginBottom: vp.isMobile ? 40 : 56,
+      textAlign: 'center'
     }
   }, React.createElement("div", null, React.createElement("div", {
     style: {
@@ -3672,12 +3673,14 @@ function AboutPage() {
   }, lang === 'vec' ? 'I ne gà meso in television!' : en ? 'On television' : 'In televisione'), React.createElement("video", {
     controls: true,
     playsInline: true,
-    preload: "metadata",
+    preload: "none",
+    poster: "images/brand/rai1_poster.jpg",
     style: {
       width: '100%',
       maxWidth: 800,
       height: 'auto',
       display: 'block',
+      margin: '0 auto',
       borderRadius: 10,
       boxShadow: '0 4px 20px rgba(26,17,8,0.16)',
       background: '#1A1108'
@@ -3693,7 +3696,7 @@ function AboutPage() {
       color: '#6B4C33',
       marginTop: 8
     }
-  }, lang === 'vec' ? "La volta che Rai 1 la xe vegnùa a catarne in botéga" : en ? 'The Rai 1 visit to the gastronomia' : 'La visita da Rai 1 alla gastronomia'))), React.createElement(ScrollReveal, {
+  }, lang === 'vec' ? "La volta che Rai 1 la xe vegnùa a catarne in botéga — Linea Verde Life" : en ? 'The Rai 1 visit to the gastronomia — Linea Verde Life' : 'La visita da Rai 1 alla gastronomia — Linea Verde Life'))), React.createElement(ScrollReveal, {
     style: {
       display: 'grid',
       gridTemplateColumns: vp.isMobile ? '1fr' : '1.2fr 1fr',

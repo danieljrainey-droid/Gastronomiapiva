@@ -2428,13 +2428,13 @@ function AboutPage() {
       </ScrollReveal>
 
       {/* Video Rai 1 */}
-      <ScrollReveal style={{ marginBottom: vp.isMobile ? 40 : 56 }}>
+      <ScrollReveal style={{ marginBottom: vp.isMobile ? 40 : 56, textAlign: 'center' }}>
       <div>
         <div style={{ fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C8251D', marginBottom: 10 }}>{lang === 'vec' ? 'I ne gà meso in television!' : en ? 'On television' : 'In televisione'}</div>
-        <video controls playsInline preload="metadata" style={{ width: '100%', maxWidth: 800, height: 'auto', display: 'block', borderRadius: 10, boxShadow: '0 4px 20px rgba(26,17,8,0.16)', background: '#1A1108' }}>
+        <video controls playsInline preload="none" poster="images/brand/rai1_poster.jpg" style={{ width: '100%', maxWidth: 800, height: 'auto', display: 'block', margin: '0 auto', borderRadius: 10, boxShadow: '0 4px 20px rgba(26,17,8,0.16)', background: '#1A1108' }}>
           <source src="videos/rai1.mp4" type="video/mp4" />
         </video>
-        <div style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: 11, color: '#6B4C33', marginTop: 8 }}>{lang === 'vec' ? "La volta che Rai 1 la xe vegnùa a catarne in botéga" : en ? 'The Rai 1 visit to the gastronomia' : 'La visita da Rai 1 alla gastronomia'}</div>
+        <div style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: 11, color: '#6B4C33', marginTop: 8 }}>{lang === 'vec' ? "La volta che Rai 1 la xe vegnùa a catarne in botéga — Linea Verde Life" : en ? 'The Rai 1 visit to the gastronomia — Linea Verde Life' : 'La visita da Rai 1 alla gastronomia — Linea Verde Life'}</div>
       </div>
       </ScrollReveal>
 
