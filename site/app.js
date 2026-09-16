@@ -1228,6 +1228,9 @@ const MENU_DISHES = [{
   name: 'Fettuccine Fresche',
   src: 'images/dishes/fettuccine_fresche.jpg'
 }, {
+  name: 'Tagliolini Freschi',
+  src: 'images/dishes/tagliolini_freschi.jpg'
+}, {
   name: 'Pasta Fredda',
   src: 'images/dishes/pasta_fredda.jpg',
   season: 'estate'
@@ -1770,6 +1773,7 @@ const DISH_DESCRIPTIONS = {
   'Insalata Russa': 'Carote, piselli, patate, cetrioli, cren, maionese',
   'Pasta Radicchio & Salsiccia': 'Pasta, Radicchio, Salsiccia, Grana',
   'Fettuccine Fresche': 'Fettuccine all\'uovo fatte a mano, di nostra produzione.',
+  'Tagliolini Freschi': 'Tagliolini all\'uovo fatti a mano, di nostra produzione.',
   'Pasta Italia': 'Bresaola, Grana, Philadelphia, Rucola, Pasta',
   'Insalata di Riso': 'Riso, verdure, prosciutto cotto, olive, funghi, carciofi, wurstel, giardiniera',
   'Insalata di Farro': 'Farro, verdure, olive, feta, prosciutto',
@@ -1901,6 +1905,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Insalata Russa': 'Carote, bisi, patate, cogómbari, cren, maionese',
   'Pasta Radicchio & Salsiccia': 'Pasta, radicio, luganega, Grana',
   'Fettuccine Fresche': 'Fetucine a l\'ovo fate a man da nualtri.',
+  'Tagliolini Freschi': 'Taglioléti a l\'ovo fati a man da nualtri.',
   'Pasta Italia': 'Bresaola, Grana, Philadelphia, rucola, pasta',
   'Insalata di Riso': 'Riso, verdure, prosciuto còto, olive, fonghi, articiochi, wurstel, giardiniera',
   'Insalata di Farro': 'Faro, verdure, olive, feta, prosciuto',
@@ -2046,6 +2051,7 @@ const DISH_NAME_VEC = {
   'Pasta Fredda': 'Pasta Freda',
   'Pasta Radicchio & Salsiccia': 'Pasta Radicio & Luganega',
   'Fettuccine Fresche': 'Fetucine Fresche',
+  'Tagliolini Freschi': 'Taglioléti Freschi',
   'Gnocchi di Zucca': 'Gnochi de Suca',
   'Gnocchi alla Romana': 'Gnochi a la Romana',
   'Gnocchi alla Sorrentina': 'Gnochi a la Sorentina',
@@ -2092,6 +2098,7 @@ const DISH_NAME_EN = {
   'Insalata Russa': 'Russian Salad',
   'Pasta Radicchio & Salsiccia': 'Pasta with Radicchio & Sausage',
   'Fettuccine Fresche': 'Fresh Fettuccine',
+  'Tagliolini Freschi': 'Fresh Tagliolini',
   'Pasta Fredda': 'Cold Pasta Salad',
   'Pasta Italia': 'Pasta Italia',
   'Insalata di Riso': 'Rice Salad',
@@ -2226,6 +2233,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Insalata Russa': 'Carrots, peas, potatoes, cucumbers, horseradish, mayonnaise',
   'Pasta Radicchio & Salsiccia': 'Pasta, radicchio, sausage, Grana',
   'Fettuccine Fresche': 'Hand-made egg fettuccine, our own production.',
+  'Tagliolini Freschi': 'Hand-made egg tagliolini, our own production.',
   'Pasta Italia': 'Bresaola, Grana, Philadelphia, arugula, pasta',
   'Insalata di Riso': 'Rice, vegetables, cooked ham, olives, mushrooms, artichokes, wurstel, pickled vegetables',
   'Insalata di Farro': 'Farro, vegetables, olives, feta, ham',
@@ -2349,7 +2357,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
