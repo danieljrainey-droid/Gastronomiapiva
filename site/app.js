@@ -1536,10 +1536,10 @@ const MENU_DISHES = [{
   src: 'images/dishes/tris_tartufo_brezzo.png'
 }, {
   name: 'Salsa Dolce Pere e Zenzero Brezzo',
-  src: 'images/dishes/salsa_dolce_brezzo.jpg'
+  src: 'images/dishes/salsa_dolce_pere_zenzero_brezzo.jpg'
 }, {
   name: 'Salsa Dolce Peperone Senapato Brezzo',
-  src: 'images/dishes/salsa_dolce_brezzo.jpg'
+  src: 'images/dishes/salsa_dolce_peperone_senapato_brezzo.jpg'
 }, {
   name: 'Confetture Albicocca e Pesca Lazzaris',
   src: 'images/dishes/confetture_albicocca_pesca_lazzaris.jpg'
