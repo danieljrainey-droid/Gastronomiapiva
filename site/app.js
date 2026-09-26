@@ -1535,11 +1535,8 @@ const MENU_DISHES = [{
   name: 'Tris di Specialità al Tartufo Brezzo',
   src: 'images/dishes/tris_tartufo_brezzo.png'
 }, {
-  name: 'Salsa Dolce Pere e Zenzero Brezzo',
-  src: 'images/dishes/salsa_dolce_pere_zenzero_brezzo.jpg'
-}, {
-  name: 'Salsa Dolce Peperone Senapato Brezzo',
-  src: 'images/dishes/salsa_dolce_peperone_senapato_brezzo.jpg'
+  name: 'Salsa Dolce Brezzo',
+  src: 'images/dishes/salsa_dolce_brezzo.jpg'
 }, {
   name: 'Confetture Albicocca e Pesca Lazzaris',
   src: 'images/dishes/confetture_albicocca_pesca_lazzaris.jpg'
@@ -1926,8 +1923,7 @@ const DISH_DESCRIPTIONS = {
   'Amaretti Morbidi al Limone Brezzo': 'Amaretti morbidi Brezzo con succo e scorza di limone non trattato, senza glutine.',
   'Tris di Sughi Brezzo': 'Confezione regalo Brezzo con tre sughi pronti: Cacio e Pepe, Sugo alla Carbonara, Sugo all\'Amatriciana.',
   'Tris di Specialità al Tartufo Brezzo': 'Confezione regalo Brezzo con tre specialità al tartufo: Sale con Tartufo, Salsa Tartufata, Crema di Tartufo Bianco.',
-  'Salsa Dolce Pere e Zenzero Brezzo': 'Salsa dolce Brezzo di pere e zenzero, ideale per accompagnare formaggi e carni bollite.',
-  'Salsa Dolce Peperone Senapato Brezzo': 'Salsa dolce Brezzo al peperone e senape, perfetta con formaggi e bolliti.',
+  'Salsa Dolce Brezzo': 'Salse dolci Brezzo nei gusti Pere e Zenzero e Peperone Senapato, ideali per accompagnare formaggi e carni bollite.',
   'Confetture Albicocca e Pesca Lazzaris': 'Confetture Lazzaris di albicocca e pesca, con solo zucchero d\'uva. Frutta selezionata dal gusto naturale e genuino.',
   'Gianduiotto Fondente Barbero': 'Gianduiotti fondenti D. Barbero di Asti, nella latta vintage da collezione. Cioccolato pregiato con nocciole del Piemonte.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Olio extravergine di oliva biologico Frantoio Salvagno, spremuto a freddo. Fruttato ed equilibrato, ideale a crudo.',
@@ -2072,8 +2068,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Amaretti Morbidi al Limone Brezzo': 'Amareti morbidi Brezzo co\' sugo e scorsa de limon no trata, sensa glutine.',
   'Tris di Sughi Brezzo': 'Pachéto regalo Brezzo co\' tre sughi pronti: Cacio e Pévare, Sugo a la Carbonara, Sugo a l\'Amatriciana.',
   'Tris di Specialità al Tartufo Brezzo': 'Pachéto regalo Brezzo co\' tre specialità al tartufo: Sal co\' Tartufo, Salsa Tartufàda, Crema de Tartufo Bianco.',
-  'Salsa Dolce Pere e Zenzero Brezzo': 'Salsa dolse Brezzo de pere e zenzero, giusta co\' i formaji e la carne bolìa.',
-  'Salsa Dolce Peperone Senapato Brezzo': 'Salsa dolse Brezzo al peperon e senàpa, giusta co\' i formaji e i bolìi.',
+  'Salsa Dolce Brezzo': 'Salse dolse Brezzo — Pere e Zenzero e Peperone Senapato — giuste co\' i formaji e la carne bolìa.',
   'Confetture Albicocca e Pesca Lazzaris': 'Confeture Lazzaris de armelin e persego, co\' sol zùcaro d\'ua. Fruta sielta dal gusto natural e genuin.',
   'Gianduiotto Fondente Barbero': 'Gianduioti fondenti D. Barbero de Asti, in te la lata vintage da colessión. Ciocolàto fin co\' nosele del Piemonte.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Ojo estravèrgine biologico Frantoio Salvagno, sprémù a fredo. Fruità e equilibrà, giusto a crudo.',
@@ -2290,8 +2285,7 @@ const DISH_NAME_EN = {
   'Amaretti Morbidi al Limone Brezzo': 'Brezzo Soft Amaretti, Lemon',
   'Tris di Sughi Brezzo': 'Brezzo Ready Sauce Trio',
   'Tris di Specialità al Tartufo Brezzo': 'Brezzo Truffle Specialty Trio',
-  'Salsa Dolce Pere e Zenzero Brezzo': 'Brezzo Sweet Pear & Ginger Sauce',
-  'Salsa Dolce Peperone Senapato Brezzo': 'Brezzo Sweet Pepper & Mustard Sauce',
+  'Salsa Dolce Brezzo': 'Brezzo Sweet Sauces (Pear & Ginger / Pepper & Mustard)',
   'Gianduiotto Fondente Barbero': 'Barbero Dark Gianduiotto',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Salvagno Organic Extra Virgin Olive Oil',
   'Crema di Pistacchio': 'Pistachio Pesto',
@@ -2428,8 +2422,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Amaretti Morbidi al Limone Brezzo': 'Soft Brezzo amaretti with untreated lemon juice and zest, gluten-free.',
   'Tris di Sughi Brezzo': 'Brezzo gift set with three ready-made sauces: Cacio e Pepe, Carbonara Sauce, Amatriciana Sauce.',
   'Tris di Specialità al Tartufo Brezzo': 'Brezzo gift set with three truffle specialties: Truffle Salt, Truffle Sauce, White Truffle Cream.',
-  'Salsa Dolce Pere e Zenzero Brezzo': 'Brezzo sweet pear and ginger sauce, ideal with cheeses and boiled meats.',
-  'Salsa Dolce Peperone Senapato Brezzo': 'Brezzo sweet pepper and mustard sauce, perfect with cheeses and boiled meats.',
+  'Salsa Dolce Brezzo': 'Brezzo sweet sauces in Pear & Ginger and Pepper & Mustard flavors, ideal with cheeses and boiled meats.',
   'Confetture Albicocca e Pesca Lazzaris': 'Lazzaris apricot and peach jams, sweetened only with grape sugar. Selected fruit with a natural, genuine taste.',
   'Gianduiotto Fondente Barbero': 'Dark gianduiotti by D. Barbero of Asti, in a collectible vintage tin. Fine chocolate with Piedmont hazelnuts.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Organic extra virgin olive oil by Frantoio Salvagno, cold-pressed. Fruity and balanced, ideal used raw.',
@@ -2479,7 +2472,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele di Castagno Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Miele di Acacia Brezzo', 'Crema Fondente Brezzo', 'Miele di Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Misto Frutta Brezzo', 'Amaretti Morbidi al Limone Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Pere e Zenzero Brezzo', 'Salsa Dolce Peperone Senapato Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele di Castagno Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Miele di Acacia Brezzo', 'Crema Fondente Brezzo', 'Miele di Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Misto Frutta Brezzo', 'Amaretti Morbidi al Limone Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
