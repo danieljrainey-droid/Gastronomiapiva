@@ -1514,6 +1514,12 @@ const MENU_DISHES = [{
   name: 'Miele di Acacia Brezzo',
   src: 'images/dishes/miele_acacia_brezzo.png'
 }, {
+  name: 'Crema Fondente Brezzo',
+  src: 'images/dishes/crema_fondente_brezzo.png'
+}, {
+  name: 'Miele di Corbezzolo Brezzo',
+  src: 'images/dishes/miele_corbezzolo_brezzo.png'
+}, {
   name: 'Confetture Albicocca e Pesca Lazzaris',
   src: 'images/dishes/confetture_albicocca_pesca_lazzaris.jpg'
 }, {
@@ -1892,6 +1898,8 @@ const DISH_DESCRIPTIONS = {
   'Miele del Favo Acacia Brezzo': 'Miele di acacia Brezzo ancora nel favo, nella cera d\'origine. Da gustare a fette o spalmato sul pane.',
   'Miele di Acacia Biologico Brezzo': 'Miele italiano di acacia biologico Brezzo, chiaro e delicato, non cristallizza. Da agricoltura biologica certificata.',
   'Miele di Acacia Brezzo': 'Miele italiano di acacia Brezzo, chiaro e dal gusto delicato. Non cristallizza, ideale per dolcificare senza coprire i sapori.',
+  'Crema Fondente Brezzo': 'Crema spalmabile al cioccolato fondente Brezzo, ottenuta esclusivamente da Nocciola Piemonte I.G.P. Ottima sul pane o a cucchiaiate.',
+  'Miele di Corbezzolo Brezzo': 'Miele italiano di corbezzolo Brezzo, dal gusto intenso e amarognolo, tipico della macchia mediterranea. Da gustare con formaggi stagionati.',
   'Confetture Albicocca e Pesca Lazzaris': 'Confetture Lazzaris di albicocca e pesca, con solo zucchero d\'uva. Frutta selezionata dal gusto naturale e genuino.',
   'Gianduiotto Fondente Barbero': 'Gianduiotti fondenti D. Barbero di Asti, nella latta vintage da collezione. Cioccolato pregiato con nocciole del Piemonte.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Olio extravergine di oliva biologico Frantoio Salvagno, spremuto a freddo. Fruttato ed equilibrato, ideale a crudo.',
@@ -2029,6 +2037,8 @@ const DISH_DESCRIPTIONS_VEC = {
   'Miele del Favo Acacia Brezzo': 'Miel de acacia Brezzo ancora in tel favo, in te la cera. Bon a fete o spalmà sul pan.',
   'Miele di Acacia Biologico Brezzo': 'Miel italian de acacia biològico Brezzo, ciaro e delicà, no\' el cristalisa. Da agricoltura biològica.',
   'Miele di Acacia Brezzo': 'Miel italian de acacia Brezzo, ciaro e co\' un gusto delicà. No\' el cristalisa, giusto par indolsir sensa coprir i sapori.',
+  'Crema Fondente Brezzo': 'Crema da spalmar al ciocolàto fondente Brezzo, fata sol co\' Nosèla Piemonte I.G.P. Bona sul pan o a cuciaràe.',
+  'Miele di Corbezzolo Brezzo': 'Miel italian de corbezolo Brezzo, co\' un gusto forte e un poco mari, tìpico de la maquia mediteranea. Bon co\' i formaji stagionài.',
   'Confetture Albicocca e Pesca Lazzaris': 'Confeture Lazzaris de armelin e persego, co\' sol zùcaro d\'ua. Fruta sielta dal gusto natural e genuin.',
   'Gianduiotto Fondente Barbero': 'Gianduioti fondenti D. Barbero de Asti, in te la lata vintage da colessión. Ciocolàto fin co\' nosele del Piemonte.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Ojo estravèrgine biologico Frantoio Salvagno, sprémù a fredo. Fruità e equilibrà, giusto a crudo.',
@@ -2238,6 +2248,8 @@ const DISH_NAME_EN = {
   'Miele del Favo Acacia Brezzo': 'Brezzo Acacia Honeycomb',
   'Miele di Acacia Biologico Brezzo': 'Brezzo Organic Acacia Honey',
   'Miele di Acacia Brezzo': 'Brezzo Acacia Honey',
+  'Crema Fondente Brezzo': 'Brezzo Dark Chocolate Hazelnut Spread',
+  'Miele di Corbezzolo Brezzo': 'Brezzo Strawberry Tree Honey',
   'Gianduiotto Fondente Barbero': 'Barbero Dark Gianduiotto',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Salvagno Organic Extra Virgin Olive Oil',
   'Crema di Pistacchio': 'Pistachio Pesto',
@@ -2367,6 +2379,8 @@ const DISH_DESCRIPTIONS_EN = {
   'Miele del Favo Acacia Brezzo': 'Brezzo acacia honey still in the honeycomb, in its original wax. Enjoy sliced or spread on bread.',
   'Miele di Acacia Biologico Brezzo': 'Organic Italian acacia honey by Brezzo, pale and delicate, does not crystallize. From certified organic farming.',
   'Miele di Acacia Brezzo': 'Italian acacia honey by Brezzo, pale with a delicate flavor. Does not crystallize, ideal for sweetening without masking other flavors.',
+  'Crema Fondente Brezzo': 'Dark chocolate spreadable cream by Brezzo, made exclusively from Piedmont I.G.P. hazelnuts. Excellent on bread or by the spoonful.',
+  'Miele di Corbezzolo Brezzo': 'Italian strawberry tree honey by Brezzo, with an intense, slightly bitter flavor typical of Mediterranean scrubland. Pairs well with aged cheeses.',
   'Confetture Albicocca e Pesca Lazzaris': 'Lazzaris apricot and peach jams, sweetened only with grape sugar. Selected fruit with a natural, genuine taste.',
   'Gianduiotto Fondente Barbero': 'Dark gianduiotti by D. Barbero of Asti, in a collectible vintage tin. Fine chocolate with Piedmont hazelnuts.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Organic extra virgin olive oil by Frantoio Salvagno, cold-pressed. Fruity and balanced, ideal used raw.',
@@ -2416,7 +2430,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele di Castagno Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Miele di Acacia Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele di Castagno Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Miele di Acacia Brezzo', 'Crema Fondente Brezzo', 'Miele di Corbezzolo Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
