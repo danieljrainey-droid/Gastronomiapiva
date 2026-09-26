@@ -769,7 +769,7 @@ const MENU_DISHES = [
   { name: 'Assortimento Tisane Biologiche Brezzo', src: 'images/dishes/tisane_biologiche_brezzo.png' },
   { name: 'Amaretti Morbidi Misto Frutta Brezzo', src: 'images/dishes/amaretti_misto_frutta_brezzo.png' },
   { name: 'Amaretti Morbidi al Limone Brezzo', src: 'images/dishes/amaretti_limone_brezzo.png' },
-  { name: 'Tris di Sughi Brezzo', src: 'images/dishes/tris_sughi_brezzo.png' },
+  { name: 'Tris di Sughi Brezzo', src: 'images/dishes/tris_sughi_brezzo.jpg' },
   { name: 'Tris di Specialità al Tartufo Brezzo', src: 'images/dishes/tris_tartufo_brezzo.png' },
   { name: 'Confetture Albicocca e Pesca Lazzaris', src: 'images/dishes/confetture_albicocca_pesca_lazzaris.jpg' },
   { name: 'Gianduiotto Fondente Barbero', src: 'images/dishes/gianduiotto_fondente_barbero.jpg' },

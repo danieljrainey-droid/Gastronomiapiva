@@ -1530,7 +1530,7 @@ const MENU_DISHES = [{
   src: 'images/dishes/amaretti_limone_brezzo.png'
 }, {
   name: 'Tris di Sughi Brezzo',
-  src: 'images/dishes/tris_sughi_brezzo.png'
+  src: 'images/dishes/tris_sughi_brezzo.jpg'
 }, {
   name: 'Tris di Specialità al Tartufo Brezzo',
   src: 'images/dishes/tris_tartufo_brezzo.png'
