@@ -1502,23 +1502,17 @@ const MENU_DISHES = [{
   name: 'Atlante dei Mieli Brezzo',
   src: 'images/dishes/atlante_dei_mieli_brezzo.png'
 }, {
-  name: 'Miele di Castagno Brezzo',
-  src: 'images/dishes/miele_castagno_brezzo.png'
-}, {
   name: 'Miele del Favo Acacia Brezzo',
   src: 'images/dishes/miele_favo_acacia_brezzo.png'
 }, {
   name: 'Miele di Acacia Biologico Brezzo',
   src: 'images/dishes/miele_acacia_biologico_brezzo.png'
 }, {
-  name: 'Miele di Acacia Brezzo',
-  src: 'images/dishes/miele_acacia_brezzo.png'
-}, {
   name: 'Crema Fondente Brezzo',
   src: 'images/dishes/crema_fondente_brezzo.png'
 }, {
-  name: 'Miele di Corbezzolo Brezzo',
-  src: 'images/dishes/miele_corbezzolo_brezzo.png'
+  name: 'Miele di Castagno, Acacia e Corbezzolo Brezzo',
+  src: 'images/dishes/miele_tris_brezzo.jpg'
 }, {
   name: 'Assortimento Tisane Biologiche Brezzo',
   src: 'images/dishes/tisane_biologiche_brezzo.png'
@@ -1915,12 +1909,10 @@ const DISH_DESCRIPTIONS = {
   'Confettura di Mirtilli Brezzo': 'Confettura di mirtilli Brezzo "La Sciroppata", lavorata a mano con frutta fresca. Ideale su crostate, formaggi e colazioni genuine.',
   "Miele all'Arancio Brezzo": 'Miele italiano Brezzo aromatizzato all\'arancio, nel vasetto con cucchiaino in legno. Delicato e profumato, perfetto per tè e tisane.',
   'Atlante dei Mieli Brezzo': 'Cofanetto degustazione Brezzo con 18 mieli monoflorali italiani in vasetti da assaggio — un viaggio alla scoperta dei principali mieli italiani.',
-  'Miele di Castagno Brezzo': 'Miele italiano di castagno Brezzo, dal gusto intenso e leggermente amarognolo. Ideale con formaggi stagionati.',
   'Miele del Favo Acacia Brezzo': 'Miele di acacia Brezzo ancora nel favo, nella cera d\'origine. Da gustare a fette o spalmato sul pane.',
   'Miele di Acacia Biologico Brezzo': 'Miele italiano di acacia biologico Brezzo, chiaro e delicato, non cristallizza. Da agricoltura biologica certificata.',
-  'Miele di Acacia Brezzo': 'Miele italiano di acacia Brezzo, chiaro e dal gusto delicato. Non cristallizza, ideale per dolcificare senza coprire i sapori.',
   'Crema Fondente Brezzo': 'Crema spalmabile al cioccolato fondente Brezzo, ottenuta esclusivamente da Nocciola Piemonte I.G.P. Ottima sul pane o a cucchiaiate.',
-  'Miele di Corbezzolo Brezzo': 'Miele italiano di corbezzolo Brezzo, dal gusto intenso e amarognolo, tipico della macchia mediterranea. Da gustare con formaggi stagionati.',
+  'Miele di Castagno, Acacia e Corbezzolo Brezzo': 'Tris di mieli italiani Brezzo: Castagno, dal gusto intenso e leggermente amarognolo; Acacia, chiaro e delicato, non cristallizza; Corbezzolo, intenso e amarognolo, tipico della macchia mediterranea. Ideali con formaggi stagionati.',
   'Assortimento Tisane Biologiche Brezzo': 'Espositore con assortimento completo di tisane da agricoltura biologica Brezzo: Camomilla, Liquirizia-Finocchio, Drenante, Tè Verde, Mirtillo, Digestiva, Seraserena, Bioregola, Depurativa, Tiglio-Arancio, Malva, Limone-Zenzero, Menta-Verbena, Rooibos-Mandarino-Zenzero, Melograno, Arancia-Cannella-Zenzero, Finocchio, Pino Mugo-Eucalipto, Rosa Canina-Ibisco, Zenzero-Curcuma.',
   'Amaretti Morbidi Brezzo': 'Amaretti morbidi Brezzo nei gusti Misto Frutta, Limone e Pesca e Cioccolato, senza glutine.',
   'Le Creme Spalmabili Brezzo': 'Confezione regalo Brezzo con creme spalmabili: Crema di Mandorla, Crema di Pistacchio, Crema Gianduia, Crema Fondente e Noccolata Nocciolata al miele e nocciola.',
@@ -2061,12 +2053,10 @@ const DISH_DESCRIPTIONS_VEC = {
   'Confettura di Mirtilli Brezzo': 'Confetura de mirtili Brezzo "La Sciroppata", lavoràda a man co\' fruta fresca. Giusta su crostate, formaji e colassión genuine.',
   "Miele all'Arancio Brezzo": 'Miel italian Brezzo profumà a la naranza, in tel vaséto col cuciarin de legno. Delicà, giusto par tè e tisane.',
   'Atlante dei Mieli Brezzo': 'Scàtola de assaggio Brezzo co\' 18 mieli italiani in vasetini — un viajo par scoprir i mieli pi\' boni de l\'Italia.',
-  'Miele di Castagno Brezzo': 'Miel italian de castagno Brezzo, co\' un gusto forte e un poco mari. Bon co\' i formaji stagionài.',
   'Miele del Favo Acacia Brezzo': 'Miel de acacia Brezzo ancora in tel favo, in te la cera. Bon a fete o spalmà sul pan.',
   'Miele di Acacia Biologico Brezzo': 'Miel italian de acacia biològico Brezzo, ciaro e delicà, no\' el cristalisa. Da agricoltura biològica.',
-  'Miele di Acacia Brezzo': 'Miel italian de acacia Brezzo, ciaro e co\' un gusto delicà. No\' el cristalisa, giusto par indolsir sensa coprir i sapori.',
   'Crema Fondente Brezzo': 'Crema da spalmar al ciocolàto fondente Brezzo, fata sol co\' Nosèla Piemonte I.G.P. Bona sul pan o a cuciaràe.',
-  'Miele di Corbezzolo Brezzo': 'Miel italian de corbezolo Brezzo, co\' un gusto forte e un poco mari, tìpico de la maquia mediteranea. Bon co\' i formaji stagionài.',
+  'Miele di Castagno, Acacia e Corbezzolo Brezzo': 'Tris de mieli italiani Brezzo: Castagno, co\' un gusto forte e un poco mari; Acacia, ciaro e delicà, no\' el cristalisa; Corbezzolo, forte e mari, tìpico de la maquia mediteranea. Boni co\' i formaji stagionài.',
   'Assortimento Tisane Biologiche Brezzo': 'Espositor co\' tuta la sielta de tisane da agricoltura biològica Brezzo — camomìla, regolìsia-fenocio, tè verde, mortìdola e tante altre, par tuti i gusti.',
   'Amaretti Morbidi Brezzo': 'Amareti morbidi Brezzo — Misto Fruta, Limon e Persego e Ciocolàto — sensa glutine.',
   'Le Creme Spalmabili Brezzo': 'Pachéto regalo Brezzo co\' creme da spalmar: Crema de Màndola, Crema de Pistacio, Crema Gianduia, Crema Fondente e Nocciolata al miel e nosèla.',
@@ -2279,12 +2269,10 @@ const DISH_NAME_EN = {
   "Miele all'Arancio Brezzo": 'Brezzo Orange Honey',
   'Confetture Albicocca e Pesca Lazzaris': 'Lazzaris Apricot & Peach Jams',
   'Atlante dei Mieli Brezzo': 'Brezzo Honey Atlas Tasting Box',
-  'Miele di Castagno Brezzo': 'Brezzo Chestnut Honey',
   'Miele del Favo Acacia Brezzo': 'Brezzo Acacia Honeycomb',
   'Miele di Acacia Biologico Brezzo': 'Brezzo Organic Acacia Honey',
-  'Miele di Acacia Brezzo': 'Brezzo Acacia Honey',
   'Crema Fondente Brezzo': 'Brezzo Dark Chocolate Hazelnut Spread',
-  'Miele di Corbezzolo Brezzo': 'Brezzo Strawberry Tree Honey',
+  'Miele di Castagno, Acacia e Corbezzolo Brezzo': 'Brezzo Chestnut, Acacia & Strawberry Tree Honey Trio',
   'Assortimento Tisane Biologiche Brezzo': 'Brezzo Organic Herbal Tea Assortment',
   'Amaretti Morbidi Brezzo': 'Brezzo Soft Amaretti (Mixed Fruit / Lemon / Peach & Chocolate)',
   'Le Creme Spalmabili Brezzo': 'Brezzo Spreadable Creams Gift Set',
@@ -2417,12 +2405,10 @@ const DISH_DESCRIPTIONS_EN = {
   'Confettura di Mirtilli Brezzo': 'Brezzo "La Sciroppata" blueberry jam, handmade with fresh fruit. Ideal on tarts, cheeses and wholesome breakfasts.',
   "Miele all'Arancio Brezzo": 'Italian Brezzo honey flavored with orange, in a jar with a wooden dipper. Delicate and fragrant, perfect for tea and infusions.',
   'Atlante dei Mieli Brezzo': 'Tasting box with 18 single-origin Italian honeys in sample jars — Brezzo. A journey through Italy\'s finest honey varieties.',
-  'Miele di Castagno Brezzo': 'Italian chestnut honey by Brezzo, with an intense, slightly bitter flavor. Excellent with aged cheeses.',
   'Miele del Favo Acacia Brezzo': 'Brezzo acacia honey still in the honeycomb, in its original wax. Enjoy sliced or spread on bread.',
   'Miele di Acacia Biologico Brezzo': 'Organic Italian acacia honey by Brezzo, pale and delicate, does not crystallize. From certified organic farming.',
-  'Miele di Acacia Brezzo': 'Italian acacia honey by Brezzo, pale with a delicate flavor. Does not crystallize, ideal for sweetening without masking other flavors.',
   'Crema Fondente Brezzo': 'Dark chocolate spreadable cream by Brezzo, made exclusively from Piedmont I.G.P. hazelnuts. Excellent on bread or by the spoonful.',
-  'Miele di Corbezzolo Brezzo': 'Italian strawberry tree honey by Brezzo, with an intense, slightly bitter flavor typical of Mediterranean scrubland. Pairs well with aged cheeses.',
+  'Miele di Castagno, Acacia e Corbezzolo Brezzo': 'Trio of Italian honeys by Brezzo: Chestnut, with an intense, slightly bitter flavor; Acacia, pale and delicate, does not crystallize; Strawberry Tree, intense and slightly bitter, typical of Mediterranean scrubland. All pair well with aged cheeses.',
   'Assortimento Tisane Biologiche Brezzo': 'Display stand with the complete assortment of Brezzo organic herbal teas: Chamomile, Licorice-Fennel, Drainage, Green Tea, Blueberry, Digestive, Seraserena, Bioregola, Detox, Linden-Orange, Mallow, Lemon-Ginger, Mint-Verbena, Rooibos-Mandarin-Ginger, Pomegranate, Orange-Cinnamon-Ginger, Fennel, Mountain Pine-Eucalyptus, Dog Rose-Hibiscus, Ginger-Turmeric.',
   'Amaretti Morbidi Brezzo': 'Soft Brezzo amaretti in Mixed Fruit, Lemon, and Peach & Chocolate flavors, gluten-free.',
   'Le Creme Spalmabili Brezzo': 'Brezzo gift set of spreadable creams: Almond Cream, Pistachio Cream, Gianduia Cream, Dark Chocolate & Hazelnut Cream, and Honey & Hazelnut Cream.',
@@ -2479,7 +2465,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele di Castagno Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Miele di Acacia Brezzo', 'Crema Fondente Brezzo', 'Miele di Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
