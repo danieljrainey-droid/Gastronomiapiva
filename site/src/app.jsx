@@ -420,7 +420,7 @@ function getHolidaysList(today, lang) {
   const easterLabel = sameMonth
     ? `${easter.getDate()} – ${fmt(easterMonday)} ${easterMonday.getFullYear()}`
     : `${fmt(easter)} – ${fmt(easterMonday)} ${easterMonday.getFullYear()}`;
-  const list = HOLIDAYS_BASE.map(h => h.variableEaster ? { name: h.name, date: easterLabel } : { ...h, date: lang === 'en' ? (HOLIDAY_DATE_EN[h.name] || h.date) : h.date });
+  const list = HOLIDAYS_BASE.map(h => h.variableEaster ? { name: h.name, date: easterLabel } : { ...h, date: lang === 'en' ? (HOLIDAY_DATE_EN[h.name] || h.date) : lang === 'vec' ? (HOLIDAY_DATE_VEC[h.name] || h.date) : h.date });
   const today0 = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   const extra = CHIUSURE_STRAORDINARIE.filter(c => today0 <= closureRange(c)[1]).map(c => {
     const [s, e] = closureRange(c);
@@ -443,6 +443,11 @@ const HOLIDAY_DATE_EN = {
   'Capodanno': 'January 1', 'Epifania': 'January 6', 'Festa della Liberazione': 'April 25',
   'Festa del Lavoro': 'May 1', 'Festa della Repubblica': 'June 2', 'Ferragosto': 'August 15',
   'Ognissanti': 'November 1', 'Immacolata Concezione': 'December 8', 'Natale': 'December 25', 'Santo Stefano': 'December 26',
+};
+const HOLIDAY_DATE_VEC = {
+  'Capodanno': '1 zenaro', 'Epifania': '6 zenaro', 'Festa della Liberazione': '25 avril',
+  'Festa del Lavoro': '1 majo', 'Festa della Repubblica': '2 zugno', 'Ferragosto': '15 agosto',
+  'Ognissanti': '1 novembre', 'Immacolata Concezione': '8 disembre', 'Natale': '25 disembre', 'Santo Stefano': '26 disembre',
 };
 const FIXED_HOLIDAYS = [
   { month: 1,  day: 1,  name: 'Capodanno' },
@@ -520,12 +525,16 @@ function getDstRangeLabel(year, seasonKind, lang) {
     const end = getLastSundayOfMonth(year + 1, 2);      // ultima domenica di marzo dell'anno successivo
     return lang === 'en'
       ? `from the last Sunday of October (${fmt(start)}) to the last Sunday of March ${year + 1} (${fmt(end)})`
+      : lang === 'vec'
+      ? `da l'ultima doménega de otobre (${fmt(start)}) a l'ultima doménega de marso ${year + 1} (${fmt(end)})`
       : `dall'ultima domenica di ottobre (${fmt(start)}) all'ultima domenica di marzo ${year + 1} (${fmt(end)})`;
   }
   const start = getLastSundayOfMonth(year, 2);  // ultima domenica di marzo
   const end = getLastSundayOfMonth(year, 9);    // ultima domenica di ottobre
   return lang === 'en'
     ? `from the last Sunday of March (${fmt(start)}) to the last Sunday of October (${fmt(end)})`
+    : lang === 'vec'
+    ? `da l'ultima doménega de marso (${fmt(start)}) a l'ultima doménega de otobre (${fmt(end)})`
     : `dall'ultima domenica di marzo (${fmt(start)}) all'ultima domenica di ottobre (${fmt(end)})`;
 }
 /* Etichetta breve "DD mese – DD mese AAAA" per il periodo estivo/invernale in corso
@@ -1132,7 +1141,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Cappelletti Mostarda': 'Capeléti dolsi friti co\' drento la mostarda, co\' su el zùcaro a vélo. Dolse de Carneval de \'na volta.',
   'Porchetta di Nostra Produzione': 'Porchéta rostìa fata da nualtri, profumàda co\' rosmarin, ajo e finociéto, còta pian fin che la vien morbida e saorìa.',
   'Scaloppine di Pollo al Marsala': 'Fetine de peto de polastro còte in tècia e sfumàe co\' Marsala, par \'na salsa delicàda e velutàda.',
-  'Cioccolato Laica': 'Ciocolàto Laica, amor par el ciocolàto dal 1946. Tradissión e qualità da Arona.',
+  'Cioccolato Laica': 'Ciocolàto Laica, amor par el ciocolàto dal 1946. Tradizion e qualità da Arona.',
   'Pane di Semola Forte': 'Pan de semola de gran duro co\' lievito madre, marca Forte de Altamura. Crosta crocante e mòlica morbida e profumàda.',
   'Taralli Danieli': 'Taralli pugliesi fati a man da Danieli, el forno de le Puglie de Bitonto. Cacio e Pévare, Pissa e Delisie dolsi.',
   'Lasagne Carne': 'Pasta fresca, ragù, besciamela, Grana',
@@ -1156,7 +1165,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Aceto Balsamico Oro Gold': 'Aseo Balsàmico de Modena IGP invecià — Fattoria Estense, riserva Oro Gold 250ml.',
   'Confettura Extra Mistilli': 'Confeture extra fate a man Mistilli, còte pian co\' sol fruta e zùcaro de cana.',
   'Albicocche in Grappa Brezzo': 'Fruta intiera tegnùa in tel siropo co\' la grapa — la linea "Le Grappolose" de Brezzo.',
-  'Distillati Of Bonollo 1908': 'La linea Of de Bonollo 1908: Of Dorange co\' l\'arancio, Grapa Of Amarone Barrique e Amaro Of. Da finir el disnar, in botilie da colession. Se compra sépari, no tute insieme in t\'una confezion.',
+  'Distillati Of Bonollo 1908': 'La linea Of de Bonollo 1908: Of Dorange co\' l\'arancio, Grapa Of Amarone Barrique e Amaro Of. Da finir el disnar, in botilie da colessión. Se compra sépari, no tute insieme in t\'una confezion.',
   'Fusilli di Pisa Martelli': 'Fusilli de Pisa tirài al bronzo — Martelli, fameia de pastari dal 1926. Semola de gran duro, sugà pian.',
   'Ragù di Cervo Regi': 'Ragù de servo fato in casa — Regi, specialità de l\'Alto Adige. Sugo pronto, giusto par pasta e polenta.',
   'Grissini Il Panificio': 'Grissini fati a man Il Panificio — Gran Rustico ai cereali missi e Cereali Scuri tostài, co\' lievito madre.',
@@ -1222,7 +1231,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Atlante dei Mieli Brezzo': 'Scàtola de assaggio Brezzo co\' 18 mieli italiani in vasetini — un viajo par scoprir i mieli pi\' boni de l\'Italia. Vendùi insieme in t\'una confezion sola, come che se vede in foto.',
   'Miele del Favo Acacia Brezzo': 'Miel de acacia Brezzo ancora in tel favo, in te la cera. Bon a fete o spalmà sul pan.',
   'Miele di Acacia Biologico Brezzo': 'Miel italian de acacia biològico Brezzo, ciaro e delicà, no\' el cristalisa. Da agricoltura biològica.',
-  'Crema Fondente Brezzo': 'Crema da spalmar al ciocolàto fondente Brezzo, fata sol co\' Nosèla Piemonte I.G.P. Bona sul pan o a cuciaràe.',
+  'Crema Fondente Brezzo': 'Crema da spalmar al ciocolàto fondente Brezzo, fata sol co\' Nosèla Piemonte I.G.P. Bòna sul pan o a cuciaràe.',
   'Miele di Castagno, Acacia e Corbezzolo Brezzo': 'Mieli italiani Brezzo: Castagno, co\' un gusto forte e un poco mari; Acacia, ciaro e delicà, no\' el cristalisa; Corbezzolo, forte e mari, tìpico de la maquia mediteranea. Boni co\' i formaji stagionài. Se compra sépari, no tuti insieme in t\'una confezion.',
   'Assortimento Tisane Biologiche Brezzo': 'Espositor co\' tuta la sielta de tisane da agricoltura biològica Brezzo — camomìla, regolìsia-fenocio, tè verde, mortìdola e tante altre, par tuti i gusti. Ogni gusto se compra sépara, no in t\'una confezion sola.',
   'Amaretti Morbidi Brezzo': 'Amareti morbidi Brezzo — Misto Fruta, Limon e Persego e Ciocolàto — sensa glutine. Se compra sépari, no tuti insieme in t\'una confezion.',
@@ -1243,7 +1252,7 @@ const DISH_DESCRIPTIONS_VEC = {
 
 const DISH_NAME_VEC = {
   "Foglie d'Ulivo agli Spinaci": 'Foie de Ulivo',
-  'Olio Extra Vergine di Oliva Biologico Salvagno': 'Oio de Oliva',
+  'Olio Extra Vergine di Oliva Biologico Salvagno': 'Ojo de Oliva',
   'Crema Zabaione con Marsala': 'Crema Zabaion',
   'Tonno di Carloforte': 'Ton Carloforte',
   'Pasticciata': "Pasticcio co' la carne",
@@ -1299,7 +1308,7 @@ const DISH_NAME_VEC = {
   'Seppie con Piselli': "Sépe co' i Bisi",
   'Cotolette di Pollo': 'Cotolete de Polastro',
   'Bistecca di Tonno': 'Bistéca de Ton',
-  'Salmone agli Agrumi': 'Salmon co’ i Agrumi',
+  'Salmone agli Agrumi': 'Salmon co\' i Agrumi',
   'Sarde in Saor': 'Sardee in Saor',
   'Gallinella con Pomodorini e Olive': "Galinèla co' Pomarini e Olive",
   'Scaloppine di Pollo al Marsala': 'Scalopine de Polastro al Marsala',
@@ -1801,7 +1810,7 @@ function MenuSection() {
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 14, marginBottom: 18 }}>
           <div>
             <div style={{ fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', opacity: 0.85 }}>
-              {lang === 'en' ? 'In season now' : lang === 'vec' ? 'Qualcosa in stagion adesso' : 'Alcuni in stagione adesso'}
+              {lang === 'en' ? 'In season now' : lang === 'vec' ? 'Qualcosa in stagión deso' : 'Alcuni in stagione adesso'}
             </div>
             <h3 style={{ fontFamily: 'var(--font-display)', fontSize: vp.isMobile ? 20 : 26, fontWeight: 700, margin: '4px 0 0', display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: 10 }}>
               <span>{lang === 'vec' ? `Qualche Savor ${(curSeasonKey === 'estate' || curSeasonKey === 'inverno') ? 'par i' : 'de'} ${curSeason.shortVec}` : lang === 'en' ? `Some Flavors ${(curSeasonKey === 'estate' || curSeasonKey === 'inverno') ? 'for the' : 'of'} ${curSeason.labelEn}` : `Alcuni Sapori ${(curSeasonKey === 'estate' || curSeasonKey === 'inverno') ? 'per i' : 'di'} ${curSeason.label}`}</span>
@@ -2750,7 +2759,7 @@ function ContactPage() {
           )}
           {(season === 'standard' || isInverno) && (
             <div style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 11.5 : 12, color: '#C9A97A', margin: '10px 0 4px', lineHeight: 1.5 }}>
-              {lang === 'vec' ? `Orario ${season === 'standard' ? 'de l\'istà' : 'de l\'inverno'} — ${getDstRangeLabel(new Date().getFullYear(), season === 'standard' ? 'estate' : 'inverno')}` : en ? `${season === 'standard' ? 'Summer' : 'Winter'} hours — ${getDstRangeLabel(new Date().getFullYear(), season === 'standard' ? 'estate' : 'inverno', 'en')}` : `Orario ${season === 'standard' ? 'estivo' : 'invernale'} — ${getDstRangeLabel(new Date().getFullYear(), season === 'standard' ? 'estate' : 'inverno')}`}
+              {lang === 'vec' ? `Orario ${season === 'standard' ? 'de l\'istà' : 'de l\'inverno'} — ${getDstRangeLabel(new Date().getFullYear(), season === 'standard' ? 'estate' : 'inverno', 'vec')}` : en ? `${season === 'standard' ? 'Summer' : 'Winter'} hours — ${getDstRangeLabel(new Date().getFullYear(), season === 'standard' ? 'estate' : 'inverno', 'en')}` : `Orario ${season === 'standard' ? 'estivo' : 'invernale'} — ${getDstRangeLabel(new Date().getFullYear(), season === 'standard' ? 'estate' : 'inverno')}`}
             </div>
           )}
 
@@ -2892,7 +2901,7 @@ function ContactPage() {
                 </div>
                 {sendError && (
                   <div style={{ fontFamily: 'var(--font-body)', fontSize: 12.5, color: '#C8251D', marginTop: 10, lineHeight: 1.6 }}>
-                    {lang === 'vec' ? 'No semo riussìi a mandar el mesajo. Prova da novo, o scrìvine a ' : en ? "We couldn't send your message. Please try again, or write to " : 'Non siamo riusciti a inviare il messaggio. Riprova, oppure scrivici a '}
+                    {lang === 'vec' ? 'No sémo riussìi a mandar el mesajo. Prova da novo, o scrìvine a ' : en ? "We couldn't send your message. Please try again, or write to " : 'Non siamo riusciti a inviare il messaggio. Riprova, oppure scrivici a '}
                     <a href={'mailto:' + CONTACT_EMAIL} style={{ color: '#C8251D', fontWeight: 600 }}>{CONTACT_EMAIL}</a>
                   </div>
                 )}
