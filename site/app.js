@@ -628,7 +628,7 @@ function Header({
       color: '#6B4C33',
       whiteSpace: 'nowrap'
     }
-  }, "dal 1960 · in cucina per voi"))), React.createElement("nav", {
+  }, "dal 1952 · in cucina per voi"))), React.createElement("nav", {
     style: {
       display: 'flex',
       gap: vp.isMobile ? 12 : vp.isTablet ? 16 : 28,
@@ -1150,7 +1150,7 @@ function Hero({
       lineHeight: 1.5,
       marginBottom: vp.isMobile ? 22 : 32
     }
-  }, lang === 'vec' ? React.createElement(React.Fragment, null, "Dal 1960 la fameia Piva", React.createElement("br", null), "la tien viva la tradizion a Rovigo.") : lang === 'en' ? React.createElement(React.Fragment, null, "Since 1960, the Piva family's", React.createElement("br", null), "culinary tradition in Rovigo.") : React.createElement(React.Fragment, null, "Dal 1960, la tradizione gastronomica", React.createElement("br", null), "della famiglia Piva a Rovigo.")), React.createElement("div", {
+  }, lang === 'vec' ? React.createElement(React.Fragment, null, "Dal 1952 la fameia Piva", React.createElement("br", null), "la tien viva la tradizion a Rovigo.") : lang === 'en' ? React.createElement(React.Fragment, null, "Since 1952, the Piva family's", React.createElement("br", null), "culinary tradition in Rovigo.") : React.createElement(React.Fragment, null, "Dal 1952, la tradizione gastronomica", React.createElement("br", null), "della famiglia Piva a Rovigo.")), React.createElement("div", {
     style: {
       display: 'flex',
       gap: vp.isPhone ? 8 : 12,
@@ -3110,7 +3110,7 @@ function Footer({
       lineHeight: 1.7,
       maxWidth: 320
     }
-  }, lang === 'vec' ? "Dal 1960 al servizio dei bongustai de Rovigo e dintorni. Salumeria, gastronomia e 'na sielta de vini de qualità." : lang === 'en' ? 'Serving the food lovers of Rovigo and the surrounding area since 1960. Delicatessen, prepared foods and a selection of quality wines.' : 'Dal 1960 al servizio dei buongustai di Rovigo e dintorni. Salumeria, gastronomia e una selezione di vini di qualità.')), React.createElement("div", null, React.createElement("div", {
+  }, lang === 'vec' ? "Dal 1952 al servizio dei bongustai de Rovigo e dintorni. Salumeria, gastronomia e 'na sielta de vini de qualità." : lang === 'en' ? 'Serving the food lovers of Rovigo and the surrounding area since 1952. Delicatessen, prepared foods and a selection of quality wines.' : 'Dal 1952 al servizio dei buongustai di Rovigo e dintorni. Salumeria, gastronomia e una selezione di vini di qualità.')), React.createElement("div", null, React.createElement("div", {
     style: {
       fontFamily: 'var(--font-body)',
       fontSize: 11,
@@ -3192,7 +3192,7 @@ function Footer({
       fontSize: 11,
       color: '#6B4C33'
     }
-  }, lang === 'en' ? '© F.lli Piva · Gastronomia since 1960 · Rovigo' : '© F.lli Piva · Gastronomia dal 1960 · Rovigo'), React.createElement("div", {
+  }, lang === 'en' ? '© F.lli Piva · Gastronomia since 1952 · Rovigo' : '© F.lli Piva · Gastronomia dal 1952 · Rovigo'), React.createElement("div", {
     style: {
       fontFamily: 'var(--font-display)',
       fontStyle: 'italic',
@@ -3672,7 +3672,7 @@ function AboutPage() {
       marginBottom: vp.isMobile ? 24 : 32,
       lineHeight: 1.15
     }
-  }, lang === 'vec' ? "Dal 1960 co' i stesi paróni" : en ? 'Since 1960, under the same family' : 'Dal 1960 con gli stessi proprietari')), React.createElement(ScrollReveal, {
+  }, lang === 'vec' ? "Dal 1952 co' i stesi paróni" : en ? 'Since 1952, under the same family' : 'Dal 1952 con gli stessi proprietari')), React.createElement(ScrollReveal, {
     style: {
       display: 'grid',
       gridTemplateColumns: vp.isMobile ? '1fr' : '1fr 1fr',
@@ -3688,7 +3688,7 @@ function AboutPage() {
       lineHeight: 1.85,
       marginBottom: 16
     }
-  }, lang === 'vec' ? "El botegón dei Piva el xe nato come botéga de tradizion polesana, in t'un palaso che za del 1600-1700 el gaveva drento comerci compagni. Tirà a nòvo da cao a piè nel 1990, el negosio el gà savesto tegner l'ària vera de 'na volta." : en ? 'The Piva grocery shop was born as a store rooted in Polesine tradition, in a building that already housed similar commercial activities back in the 1600s–1700s. Fully renovated in 1990, the shop has preserved the authentic character that has always defined it.' : 'Il negozio di generi alimentari Piva nasce come bottega di tradizione polesana, in un palazzo che dal 1600–1700 ospitava già attività commerciali affini. Completamente rinnovato e ristrutturato nel 1990, il negozio ha saputo conservare il carattere autentico che lo ha sempre contraddistinto.'), React.createElement("p", {
+  }, lang === 'vec' ? "El botegón dei Piva el xe nato nel 1952 in via Miani, a l'angolo co' via Alberto Mario, come botéga de tradizion polesana. Nel 1960 l'ativetà la se gà trasferìa in te la sede de incuò, in piazza Garibaldi, in t'un palaso che za del 1600-1700 el gaveva drento comerci compagni. Tirà a nòvo da cao a piè nel 1990, el negosio el gà savesto tegner l'ària vera de 'na volta." : en ? 'The shop was founded in 1952 on Via Miani, at the corner of Via Alberto Mario, as a store rooted in Polesine tradition. In 1960 the business moved to its current home in Piazza Garibaldi, in a building that already housed similar commercial activities back in the 1600s–1700s. Fully renovated in 1990, the shop has preserved the authentic character that has always defined it.' : 'Il negozio nasce nel 1952 in via Miani, all\'angolo con via Alberto Mario, come bottega di tradizione polesana. Nel 1960 l\'attività si trasferisce nell\'attuale sede di piazza Garibaldi, in un palazzo che dal 1600–1700 ospitava già attività commerciali affini. Completamente rinnovato e ristrutturato nel 1990, il negozio ha saputo conservare il carattere autentico che lo ha sempre contraddistinto.'), React.createElement("p", {
     style: {
       fontFamily: 'var(--font-body)',
       fontSize: vp.isMobile ? 14 : 15,
@@ -4874,7 +4874,7 @@ function HomePage({
       flexWrap: 'wrap',
       gap: 16
     } : undefined
-  }, [['1960', lang === 'vec' ? 'Ano de fondazion' : en ? 'Founded' : 'Anno di fondazione'], ['2', lang === 'vec' ? 'Generazion' : en ? 'Generations' : 'Generazioni'], ['200+', lang === 'vec' ? 'Piati fati' : en ? 'Dishes Prepared' : 'Piatti preparati'], [`${new Date().getFullYear() - 1960}+`, lang === 'vec' ? 'Ani de tradizion' : en ? 'Years of Tradition' : 'Anni di tradizione']].map(([n, l]) => React.createElement("div", {
+  }, [['1952', lang === 'vec' ? 'Ano de fondazion' : en ? 'Founded' : 'Anno di fondazione'], ['2', lang === 'vec' ? 'Generazion' : en ? 'Generations' : 'Generazioni'], ['200+', lang === 'vec' ? 'Piati fati' : en ? 'Dishes Prepared' : 'Piatti preparati'], [`${new Date().getFullYear() - 1952}+`, lang === 'vec' ? 'Ani de tradizion' : en ? 'Years of Tradition' : 'Anni di tradizione']].map(([n, l]) => React.createElement("div", {
     key: n,
     style: vp.isMobile ? {
       flex: '1 1 40%'

@@ -1,6 +1,6 @@
 # Gastronomiapiva
 
-Website for F.lli Piva Gastronomia (Rovigo, since 1960) — https://www.gastronomiapiva.com
+Website for F.lli Piva Gastronomia (Rovigo, since 1952) — https://www.gastronomiapiva.com
 
 ## What this is
 

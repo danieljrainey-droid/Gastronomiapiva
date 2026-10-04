@@ -326,7 +326,7 @@ function Header({ activePage, onNavigate }) {
           <div style={{ minWidth: 0 }}>
             <div style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: vp.isMobile ? 14 : 17, color: '#1A1108', lineHeight: 1.1, whiteSpace: 'nowrap' }}>F.lli Piva</div>
             {!vp.isPhone && !vp.isTablet && (
-              <div style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: vp.isMobile ? 9 : 10, color: '#6B4C33', whiteSpace: 'nowrap' }}>dal 1960 · in cucina per voi</div>
+              <div style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: vp.isMobile ? 9 : 10, color: '#6B4C33', whiteSpace: 'nowrap' }}>dal 1952 · in cucina per voi</div>
             )}
           </div>
         </div>
@@ -645,7 +645,7 @@ function Hero({ onNavigate }) {
         <div style={{ maxWidth: 520 }}>
           <div style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 10 : 11, fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#D4A640', marginBottom: vp.isMobile ? 12 : 16 }}>{lang === 'vec' ? 'Salumi · Roba Bòna · Cantina de Vin' : lang === 'en' ? 'Delicatessen · Prepared Foods · Wine Shop' : 'Salumeria · Gastronomia · Enoteca'}</div>
           <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: vp.isPhone ? 36 : vp.isMobile ? 44 : 58, lineHeight: 1.08, letterSpacing: '-0.02em', color: '#FDFAF4', marginBottom: vp.isMobile ? 12 : 16 }}>{lang === 'vec' ? <React.Fragment>In cusina<br/>par voaltri</React.Fragment> : lang === 'en' ? <React.Fragment>In the kitchen<br/>for you</React.Fragment> : <React.Fragment>In cucina<br/>per voi</React.Fragment>}</h1>
-          <p style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: vp.isPhone ? 14 : vp.isMobile ? 15 : 18, color: '#E8DCC8', lineHeight: 1.5, marginBottom: vp.isMobile ? 22 : 32 }}>{lang === 'vec' ? <React.Fragment>Dal 1960 la fameia Piva<br/>la tien viva la tradizion a Rovigo.</React.Fragment> : lang === 'en' ? <React.Fragment>Since 1960, the Piva family's<br/>culinary tradition in Rovigo.</React.Fragment> : <React.Fragment>Dal 1960, la tradizione gastronomica<br/>della famiglia Piva a Rovigo.</React.Fragment>}</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: vp.isPhone ? 14 : vp.isMobile ? 15 : 18, color: '#E8DCC8', lineHeight: 1.5, marginBottom: vp.isMobile ? 22 : 32 }}>{lang === 'vec' ? <React.Fragment>Dal 1952 la fameia Piva<br/>la tien viva la tradizion a Rovigo.</React.Fragment> : lang === 'en' ? <React.Fragment>Since 1952, the Piva family's<br/>culinary tradition in Rovigo.</React.Fragment> : <React.Fragment>Dal 1952, la tradizione gastronomica<br/>della famiglia Piva a Rovigo.</React.Fragment>}</p>
           <div style={{ display: 'flex', gap: vp.isPhone ? 8 : 12, flexWrap: 'wrap' }}>
             <button onClick={() => onNavigate('menu')} style={{
               background: '#C8251D', color: '#fff', fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 13 : 14, fontWeight: 600,
@@ -2124,7 +2124,7 @@ function Footer({ onNavigate }) {
                 <div style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 11, color: '#C9A97A' }}>{lang === 'vec' ? 'in cusina par voaltri' : lang === 'en' ? 'in the kitchen for you' : 'in cucina per voi'}</div>
               </div>
             </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#C9A97A', lineHeight: 1.7, maxWidth: 320 }}>{lang === 'vec' ? "Dal 1960 al servizio dei bongustai de Rovigo e dintorni. Salumeria, gastronomia e 'na sielta de vini de qualità." : lang === 'en' ? 'Serving the food lovers of Rovigo and the surrounding area since 1960. Delicatessen, prepared foods and a selection of quality wines.' : 'Dal 1960 al servizio dei buongustai di Rovigo e dintorni. Salumeria, gastronomia e una selezione di vini di qualità.'}</p>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: 13, color: '#C9A97A', lineHeight: 1.7, maxWidth: 320 }}>{lang === 'vec' ? "Dal 1952 al servizio dei bongustai de Rovigo e dintorni. Salumeria, gastronomia e 'na sielta de vini de qualità." : lang === 'en' ? 'Serving the food lovers of Rovigo and the surrounding area since 1952. Delicatessen, prepared foods and a selection of quality wines.' : 'Dal 1952 al servizio dei buongustai di Rovigo e dintorni. Salumeria, gastronomia e una selezione di vini di qualità.'}</p>
           </div>
           <div>
             <div style={{ fontFamily: 'var(--font-body)', fontSize: 11, fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#D4A640', marginBottom: 16 }}>{lang === 'vec' ? 'Navigazion' : lang === 'en' ? 'Navigation' : 'Navigazione'}</div>
@@ -2165,7 +2165,7 @@ function Footer({ onNavigate }) {
           justifyContent: 'space-between',
           alignItems: vp.isPhone ? 'flex-start' : 'center',
         }}>
-          <div style={{ fontFamily: 'var(--font-body)', fontSize: 11, color: '#6B4C33' }}>{lang === 'en' ? '© F.lli Piva · Gastronomia since 1960 · Rovigo' : '© F.lli Piva · Gastronomia dal 1960 · Rovigo'}</div>
+          <div style={{ fontFamily: 'var(--font-body)', fontSize: 11, color: '#6B4C33' }}>{lang === 'en' ? '© F.lli Piva · Gastronomia since 1952 · Rovigo' : '© F.lli Piva · Gastronomia dal 1952 · Rovigo'}</div>
           <div style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', fontSize: 12, color: '#6B4C33' }}>{lang === 'vec' ? 'in cusina par voaltri' : lang === 'en' ? 'in the kitchen for you' : 'in cucina per voi'}</div>
         </div>
         {/* Crediti musicali (revert: rimuovere questo blocco <details> e MUSIC_CREDITS) */}
@@ -2482,14 +2482,14 @@ function AboutPage() {
       {/* Heading */}
       <ScrollReveal>
       <div style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 10 : 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8251D', marginBottom: 12 }}>{lang === 'vec' ? 'La storia nostra' /*kicker*/ : en ? 'Our Story' : 'La nostra storia'}</div>
-      <h1 style={{ fontFamily: 'var(--font-display)', fontSize: vp.isPhone ? 30 : vp.isMobile ? 36 : 46, fontWeight: 700, color: '#1A1108', letterSpacing: '-0.02em', marginBottom: vp.isMobile ? 24 : 32, lineHeight: 1.15 }}>{lang === 'vec' ? "Dal 1960 co' i stesi paróni" : en ? 'Since 1960, under the same family' : 'Dal 1960 con gli stessi proprietari'}</h1>
+      <h1 style={{ fontFamily: 'var(--font-display)', fontSize: vp.isPhone ? 30 : vp.isMobile ? 36 : 46, fontWeight: 700, color: '#1A1108', letterSpacing: '-0.02em', marginBottom: vp.isMobile ? 24 : 32, lineHeight: 1.15 }}>{lang === 'vec' ? "Dal 1952 co' i stesi paróni" : en ? 'Since 1952, under the same family' : 'Dal 1952 con gli stessi proprietari'}</h1>
       </ScrollReveal>
 
       {/* Intro + storefront */}
       <ScrollReveal style={{ display: 'grid', gridTemplateColumns: vp.isMobile ? '1fr' : '1fr 1fr', gap: vp.isMobile ? 28 : 40, alignItems: 'start', marginBottom: vp.isMobile ? 40 : 56 }}>
         <div>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 14 : 15, color: '#3D2B1A', lineHeight: 1.85, marginBottom: 16 }}>
-            {lang === 'vec' ? "El botegón dei Piva el xe nato come botéga de tradizion polesana, in t'un palaso che za del 1600-1700 el gaveva drento comerci compagni. Tirà a nòvo da cao a piè nel 1990, el negosio el gà savesto tegner l'ària vera de 'na volta." : en ? 'The Piva grocery shop was born as a store rooted in Polesine tradition, in a building that already housed similar commercial activities back in the 1600s–1700s. Fully renovated in 1990, the shop has preserved the authentic character that has always defined it.' : 'Il negozio di generi alimentari Piva nasce come bottega di tradizione polesana, in un palazzo che dal 1600–1700 ospitava già attività commerciali affini. Completamente rinnovato e ristrutturato nel 1990, il negozio ha saputo conservare il carattere autentico che lo ha sempre contraddistinto.'}
+            {lang === 'vec' ? "El botegón dei Piva el xe nato nel 1952 in via Miani, a l'angolo co' via Alberto Mario, come botéga de tradizion polesana. Nel 1960 l'ativetà la se gà trasferìa in te la sede de incuò, in piazza Garibaldi, in t'un palaso che za del 1600-1700 el gaveva drento comerci compagni. Tirà a nòvo da cao a piè nel 1990, el negosio el gà savesto tegner l'ària vera de 'na volta." : en ? 'The shop was founded in 1952 on Via Miani, at the corner of Via Alberto Mario, as a store rooted in Polesine tradition. In 1960 the business moved to its current home in Piazza Garibaldi, in a building that already housed similar commercial activities back in the 1600s–1700s. Fully renovated in 1990, the shop has preserved the authentic character that has always defined it.' : 'Il negozio nasce nel 1952 in via Miani, all\'angolo con via Alberto Mario, come bottega di tradizione polesana. Nel 1960 l\'attività si trasferisce nell\'attuale sede di piazza Garibaldi, in un palazzo che dal 1600–1700 ospitava già attività commerciali affini. Completamente rinnovato e ristrutturato nel 1990, il negozio ha saputo conservare il carattere autentico che lo ha sempre contraddistinto.'}
           </p>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 14 : 15, color: '#3D2B1A', lineHeight: 1.85, marginBottom: 16 }}>
             {lang === 'vec' ? <React.Fragment>I fondatori — i fradèi <strong>Walter e Nazareno Piva</strong> — in pi de trent'ani i gà tirà su 'na roba de gran qualità, passàndo la passión par la roba genuina e i riguardi par la gente.</React.Fragment> : en ? <React.Fragment>The founders — brothers <strong>Walter and Nazareno Piva</strong> — built a business of great quality over more than 30 years, passing on their passion for genuine products and care for customers.</React.Fragment> : <React.Fragment>I fondatori — i fratelli <strong>Piva, Walter e Nazareno</strong> — hanno costruito in oltre 30 anni una realtà di grande qualità, trasmettendo la passione per i prodotti genuini e la cura verso la clientela.</React.Fragment>}
@@ -3034,7 +3034,7 @@ function HomePage({ onNavigate }) {
 
       <div className="stats-bar" style={vp.isMobile ? { padding: '24px 16px' } : undefined}>
         <div className="stats-inner" style={vp.isMobile ? { flexWrap: 'wrap', gap: 16 } : undefined}>
-          {[['1960', lang === 'vec' ? 'Ano de fondazion' : en ? 'Founded' : 'Anno di fondazione'],['2', lang === 'vec' ? 'Generazion' : en ? 'Generations' : 'Generazioni'],['200+', lang === 'vec' ? 'Piati fati' : en ? 'Dishes Prepared' : 'Piatti preparati'],[`${new Date().getFullYear() - 1960}+`, lang === 'vec' ? 'Ani de tradizion' : en ? 'Years of Tradition' : 'Anni di tradizione']].map(([n,l]) => (
+          {[['1952', lang === 'vec' ? 'Ano de fondazion' : en ? 'Founded' : 'Anno di fondazione'],['2', lang === 'vec' ? 'Generazion' : en ? 'Generations' : 'Generazioni'],['200+', lang === 'vec' ? 'Piati fati' : en ? 'Dishes Prepared' : 'Piatti preparati'],[`${new Date().getFullYear() - 1952}+`, lang === 'vec' ? 'Ani de tradizion' : en ? 'Years of Tradition' : 'Anni di tradizione']].map(([n,l]) => (
             <div key={n} style={vp.isMobile ? { flex: '1 1 40%' } : undefined}>
               <AnimatedStat n={n} l={l} numStyle={vp.isMobile ? { fontSize: 30 } : undefined} />
             </div>
