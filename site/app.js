@@ -1559,6 +1559,9 @@ const MENU_DISHES = [{
   name: 'Fegato alla Veneziana',
   src: 'images/dishes/fegato_alla_veneziana.jpg'
 }, {
+  name: 'Osso Buco',
+  src: 'images/dishes/osso_buco.jpg'
+}, {
   name: 'Polpettone di Carni Bianche e Verdure',
   src: 'images/dishes/polpettone_carni_bianche_verdure.jpg'
 }, {
@@ -1896,6 +1899,7 @@ const DISH_DESCRIPTIONS = {
   'Selezione Champagne e Spumanti': 'Selezione di champagne e spumanti delle migliori case: Ferrari, Veuve Clicquot, Moët & Chandon, Laurent-Perrier e Richard Cheurlin. Disponibili singolarmente, non in un\'unica confezione.',
   'Bellavista Alma Grande Cuvée Brut': 'Franciacorta DOCG Bellavista Alma Grande Cuvée Brut. Bollicine eleganti e persistenti, perfette per un brindisi importante.',
   'Fegato alla Veneziana': 'Fegato di vitello, cipolle, olio, prezzemolo, vino bianco',
+  'Osso Buco': 'Stinco di vitello, pomodoro, cipolla, carota, sedano, vino bianco',
   'Polpettone di Carni Bianche e Verdure': 'Carni bianche, carote, zucchine, grana, uova, pangrattato',
   'Merluzzo in Tempura': 'Merluzzo, pastella, olio — fritto croccante',
   'Seppie con Piselli': 'Seppie, piselli, pomodoro, cipolla, prezzemolo',
@@ -2041,6 +2045,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Selezione Champagne e Spumanti': 'Sielta de champagne e spumanti de le mèjo case: Ferrari, Veuve Clicquot, Moët & Chandon, Laurent-Perrier e Richard Cheurlin. Se compra sépari, no tuti insieme in t\'una confezion.',
   'Bellavista Alma Grande Cuvée Brut': 'Franciacorta DOCG Bellavista Alma Grande Cuvée Brut. Bolesine eleganti e persistenti, giuste par un brindisi importante.',
   'Fegato alla Veneziana': 'Figà de vitèl, zegoe, ojo, persémolo, vin bianco',
+  'Osso Buco': 'Stinco de vitèl, pomodoro, zegoa, carota, selino, vin bianco',
   'Polpettone di Carni Bianche e Verdure': 'Carne bianca, carote, sucine, Grana, ovi, pan gratà',
   'Merluzzo in Tempura': 'Merlusso, pastèla, ojo — frito crocante',
   'Seppie con Piselli': 'Sépe, bisi, pomodoro, zegola, persémolo',
@@ -2145,6 +2150,7 @@ const DISH_NAME_VEC = {
   'Brasato al Vino': 'Brasà al Vin',
   'Pollo con Patate': "Polastro co' le Patate",
   'Fegato alla Veneziana': 'Figà a la Venessiana',
+  'Osso Buco': 'Osso Buso',
   'Merluzzo in Tempura': 'Merlusso in Tempura',
   'Seppie con Piselli': "Sépe co' i Bisi",
   'Cotolette di Pollo': 'Cotolete de Polastro',
@@ -2257,6 +2263,7 @@ const DISH_NAME_EN = {
   'Selezione Champagne e Spumanti': 'Champagne & Sparkling Wine Selection',
   'Bellavista Alma Grande Cuvée Brut': 'Bellavista Franciacorta Brut',
   'Fegato alla Veneziana': 'Venetian-Style Liver',
+  'Osso Buco': 'Osso Buco',
   'Polpettone di Carni Bianche e Verdure': 'White Meat & Vegetable Meatloaf',
   'Merluzzo in Tempura': 'Cod Tempura',
   'Seppie con Piselli': 'Cuttlefish with Peas',
@@ -2396,6 +2403,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Selezione Champagne e Spumanti': 'A selection of champagne and sparkling wines from top houses: Ferrari, Veuve Clicquot, Moët & Chandon, Laurent-Perrier and Richard Cheurlin. Available individually, not sold as a single package.',
   'Bellavista Alma Grande Cuvée Brut': 'Franciacorta DOCG Bellavista Alma Grande Cuvée Brut. Elegant, persistent bubbles — perfect for a special toast.',
   'Fegato alla Veneziana': 'Veal liver, onions, oil, parsley, white wine',
+  'Osso Buco': 'Veal shank, tomato, onion, carrot, celery, white wine',
   'Polpettone di Carni Bianche e Verdure': 'White meats, carrots, zucchini, Grana, eggs, breadcrumbs',
   'Merluzzo in Tempura': 'Cod, tempura batter, oil — crispy fried',
   'Seppie con Piselli': 'Cuttlefish, peas, tomato, onion, parsley',
@@ -2469,7 +2477,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Secondi Piati',
   subtitle: 'Specialità di carne e pesce',
   subtitleEn: 'Meat and fish specialties',
-  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
+  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Osso Buco', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
 }, {
   id: 'dolci',
   title: 'Dolci',
