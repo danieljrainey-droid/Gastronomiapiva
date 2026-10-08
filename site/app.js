@@ -1589,6 +1589,9 @@ const MENU_DISHES = [{
   name: 'Sugo di Pesce',
   src: 'images/dishes/sugo_di_pesce.jpg'
 }, {
+  name: 'Ragù di Anatra',
+  src: 'images/dishes/ragu_di_anatra.jpg'
+}, {
   name: 'Peperonata',
   src: 'images/dishes/peperonata.jpg',
   season: 'estate'
@@ -1909,6 +1912,7 @@ const DISH_DESCRIPTIONS = {
   'Ricciola': 'Filetto di ricciola al forno con limone, rosmarino e olio extravergine. Pesce nobile dalle carni sode e delicate.',
   'Gallinella con Pomodorini e Olive': 'Filetti di gallinella in tegame con pomodorini, olive taggiasche, aglio e prezzemolo. Tipico secondo di pesce dell\'Adriatico.',
   'Sugo di Pesce': 'Sugo di mare con cozze, vongole e frutti di mare sgusciati, insaporiti con pomodoro, aglio e prezzemolo. Ideale per condire spaghetti.',
+  'Ragù di Anatra': 'Ragù di anatra fatto in casa, sfumato con vino bianco e insaporito con sedano, carota e cipolla. Ideale per pasta fresca e polenta.',
   'Peperonata': 'Peperoni, melanzane e cipolla stufati lentamente con pomodoro e olio extravergine. Contorno estivo dolce e saporito.',
   'Sarde in Saor': 'Sarde fritte marinate con cipolle stufate nell\'aceto, uvetta e pinoli. Storico piatto agrodolce della tradizione veneziana, ottimo servito il giorno dopo.',
   'Lenticchie': 'Lenticchie, cipolla, carota, sedano, olio extravergine',
@@ -2055,6 +2059,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Ricciola': 'Fileto de ricciola al forno co\' limon, rosmarin e ojo bon. Pesse fin da le carne sòde e delicàe.',
   'Gallinella con Pomodorini e Olive': 'Fileti de galinèla in tècia co\' pomarini, olive taggiasche, ajo e persémolo. Tipico secondo de pese de l\'Adriàtico.',
   'Sugo di Pesce': 'Sugo de mar co\' peóci, càpe e fruti de mar sgusài, insaorìi co\' pomodoro, ajo e persémolo. Giusto par condir i spaghéti.',
+  'Ragù di Anatra': 'Ragù de àneda fato in casa, sfumà co\' vin bianco e insaorìo co\' selino, carota e zegoa. Giusto par pasta fresca e poénta.',
   'Peperonata': 'Peperoni, melansane e zegola stufài pian co\' pomodoro e ojo bon. Contorno de istà, dolse e saorìo.',
   'Sarde in Saor': 'Sardee frite marinàe co\' zegoe stufàe in te l\'aseo, ua passa e pinoli. Piato agrodolse de \'na volta, ancora mèjo el dì dopo.',
   'Lenticchie': 'Lentìce, zegola, carota, selino, ojo bon',
@@ -2141,6 +2146,7 @@ const DISH_NAME_VEC = {
   'Lasagne Carne': 'Lasagne de Carne',
   'Lasagne con Asparagi': "Lasagne co' i Sparasi",
   'Sugo di Pesce': 'Sugo de Pesse',
+  'Ragù di Anatra': 'Ragù de Àneda',
   'Faraona Arrosto': 'Faraona Rostìa',
   'Spezzatino di Tacchino': 'Spesatin de Tachin',
   'Coniglio in Salmì': 'Conéjo in Salmì',
@@ -2273,6 +2279,7 @@ const DISH_NAME_EN = {
   'Ricciola': 'Amberjack',
   'Gallinella con Pomodorini e Olive': 'Gurnard with Cherry Tomatoes & Olives',
   'Sugo di Pesce': 'Seafood Sauce',
+  'Ragù di Anatra': 'Duck Ragù',
   'Peperonata': 'Peperonata',
   'Sarde in Saor': 'Sarde in Saor',
   'Lenticchie': 'Lentils',
@@ -2413,6 +2420,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Ricciola': 'Baked amberjack fillet with lemon, rosemary and extra virgin olive oil. A noble fish with firm, delicate flesh.',
   'Gallinella con Pomodorini e Olive': 'Pan-cooked gurnard fillets with cherry tomatoes, taggiasca olives, garlic and parsley. A classic Adriatic fish main.',
   'Sugo di Pesce': 'Seafood sauce with mussels, clams and shelled seafood, flavored with tomato, garlic and parsley. Ideal for spaghetti.',
+  'Ragù di Anatra': 'Homemade duck ragù, deglazed with white wine and flavored with celery, carrot and onion. Ideal for fresh pasta and polenta.',
   'Peperonata': 'Peppers, eggplant and onion slowly stewed with tomato and extra virgin olive oil. A sweet, flavorful summer side.',
   'Sarde in Saor': 'Fried sardines marinated with onions stewed in vinegar, raisins and pine nuts. A historic sweet-and-sour Venetian dish, best served the next day.',
   'Lenticchie': 'Lentils, onion, carrot, celery, extra virgin olive oil',
@@ -2469,7 +2477,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
