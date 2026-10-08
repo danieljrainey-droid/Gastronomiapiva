@@ -1453,6 +1453,9 @@ const MENU_DISHES = [{
   name: 'Gnocchi alla Romana',
   src: 'images/dishes/gnocchi_alla_romana.jpg'
 }, {
+  name: 'Gnocchi Reali',
+  src: 'images/dishes/gnocchi_reali.jpg'
+}, {
   name: 'Gnocchi alla Sorrentina',
   src: 'images/dishes/gnocchi_alla_sorrentina.jpg'
 }, {
@@ -1896,6 +1899,7 @@ const DISH_DESCRIPTIONS = {
   'Brasato al Vino': 'Manzo, vino rosso, cipolla, carota, sedano, alloro',
   'Pollo con Patate': 'Pollo, patate, rosmarino, aglio, vino bianco, olio',
   'Gnocchi alla Romana': 'Semolino, latte, burro, grana, uova',
+  'Gnocchi Reali': 'Latte, burro, semolino, uova, grana, speck, formaggio',
   'Gnocchi alla Sorrentina': 'Gnocchi di patate, pomodoro, mozzarella, basilico',
   'Pasticciata': 'Pasta al forno con piselli e prosciutto cotto, besciamella e grana gratinati',
   'Crespelle': 'Crespelle di latte, farina e uova, farcite con verdure, besciamella e grana gratinati',
@@ -2046,6 +2050,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Brasato al Vino': 'Manzo, vin rosso, zegola, carota, selino, alloro',
   'Pollo con Patate': 'Polastro, patate, rosmarin, ajo, vin bianco, ojo',
   'Gnocchi alla Romana': 'Semolin, late, butiro, Grana, ovi',
+  'Gnocchi Reali': 'Late, butiro, semolin, vovi, Grana, speck, formajo',
   'Gnocchi alla Sorrentina': 'Gnochi de patate, pomodoro, mozzarela, basìlico',
   'Pasticciata': 'Pasta al forno co\' bisi e prosciuto còto, besciamela e Grana gratinài',
   'Crespelle': 'Crespele de late, farina e vovi, piéne de verdure, besciamela e Grana gratinàe',
@@ -2159,6 +2164,7 @@ const DISH_NAME_VEC = {
   'Tagliolini Freschi': 'Taglioléti Freschi',
   'Gnocchi di Zucca': 'Gnochi de Suca',
   'Gnocchi alla Romana': 'Gnochi a la Romana',
+  'Gnocchi Reali': 'Gnochi Reali',
   'Gnocchi alla Sorrentina': 'Gnochi a la Sorentina',
   'Lasagne Carne': 'Lasagne de Carne',
   'Lasagne con Asparagi': "Lasagne co' i Sparasi",
@@ -2272,6 +2278,7 @@ const DISH_NAME_EN = {
   'Brasato al Vino': 'Wine-Braised Beef',
   'Pollo con Patate': 'Chicken with Potatoes',
   'Gnocchi alla Romana': 'Gnocchi alla Romana',
+  'Gnocchi Reali': 'Gnocchi Reali',
   'Gnocchi alla Sorrentina': 'Gnocchi alla Sorrentina',
   'Pasticciata': 'Pasticciata',
   'Crespelle': 'Crespelle',
@@ -2416,6 +2423,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Brasato al Vino': 'Beef, red wine, onion, carrot, celery, bay leaf',
   'Pollo con Patate': 'Chicken, potatoes, rosemary, garlic, white wine, oil',
   'Gnocchi alla Romana': 'Semolina, milk, butter, Grana, eggs',
+  'Gnocchi Reali': 'Milk, butter, semolina, eggs, Grana, speck, cheese',
   'Gnocchi alla Sorrentina': 'Potato gnocchi, tomato, mozzarella, basil',
   'Pasticciata': 'Baked pasta with peas and cooked ham, béchamel and Grana au gratin',
   'Crespelle': 'Savory crêpes made with milk, flour and eggs, filled with vegetables, béchamel and Grana au gratin',
@@ -2501,7 +2509,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Crespelle', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi Reali', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Crespelle', 'Gnocchi di Zucca', 'Canederli con Speck']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
