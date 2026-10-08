@@ -1459,6 +1459,9 @@ const MENU_DISHES = [{
   name: 'Pasticciata',
   src: 'images/dishes/pasticciata.png'
 }, {
+  name: 'Crespelle',
+  src: 'images/dishes/crespelle.jpg'
+}, {
   name: 'Stoccafisso',
   src: 'images/dishes/stoccafisso.jpg',
   season: 'inverno'
@@ -1892,6 +1895,7 @@ const DISH_DESCRIPTIONS = {
   'Gnocchi alla Romana': 'Semolino, latte, burro, grana, uova',
   'Gnocchi alla Sorrentina': 'Gnocchi di patate, pomodoro, mozzarella, basilico',
   'Pasticciata': 'Pasta al forno con piselli e prosciutto cotto, besciamella e grana gratinati',
+  'Crespelle': 'Crespelle di latte, farina e uova, farcite con verdure, besciamella e grana gratinati',
   'Stoccafisso': 'Stoccafisso, olio extravergine, aglio, prezzemolo — mantecato alla veneta',
   'Fondi di Carciofi': 'Fondi di carciofo, olio extravergine',
   'Puré di Patate': 'Patate, latte, burro, grana',
@@ -2040,6 +2044,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Gnocchi alla Romana': 'Semolin, late, butiro, Grana, ovi',
   'Gnocchi alla Sorrentina': 'Gnochi de patate, pomodoro, mozzarela, basìlico',
   'Pasticciata': 'Pasta al forno co\' bisi e prosciuto còto, besciamela e Grana gratinài',
+  'Crespelle': 'Crespele de late, farina e vovi, piéne de verdure, besciamela e Grana gratinàe',
   'Stoccafisso': 'Stocafisso, ojo bon, ajo, persémolo — mantecà a la veneta',
   'Fondi di Carciofi': 'Fondi de articioco, ojo bon',
   'Puré di Patate': 'Patate, late, butiro, Grana',
@@ -2111,6 +2116,7 @@ const DISH_NAME_VEC = {
   'Crema Zabaione con Marsala': 'Crema Zabaion',
   'Tonno di Carloforte': 'Ton Carloforte',
   'Pasticciata': "Pasticcio co' la carne",
+  'Crespelle': 'Crespele',
   'Vini Assortiti': 'Vini Assortìi',
   'Prodotti Tipici Rovigo': 'Roba Nostrana de Rovigo',
   'Selezione di Formaggi': 'Sielta de Formaji',
@@ -2262,6 +2268,7 @@ const DISH_NAME_EN = {
   'Gnocchi alla Romana': 'Gnocchi alla Romana',
   'Gnocchi alla Sorrentina': 'Gnocchi alla Sorrentina',
   'Pasticciata': 'Pasticciata',
+  'Crespelle': 'Crespelle',
   'Stoccafisso': 'Stockfish',
   'Fondi di Carciofi': 'Artichoke Hearts',
   'Puré di Patate': 'Mashed Potatoes',
@@ -2404,6 +2411,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Gnocchi alla Romana': 'Semolina, milk, butter, Grana, eggs',
   'Gnocchi alla Sorrentina': 'Potato gnocchi, tomato, mozzarella, basil',
   'Pasticciata': 'Baked pasta with peas and cooked ham, béchamel and Grana au gratin',
+  'Crespelle': 'Savory crêpes made with milk, flour and eggs, filled with vegetables, béchamel and Grana au gratin',
   'Stoccafisso': 'Stockfish, extra virgin olive oil, garlic, parsley — Venetian-style creamed',
   'Fondi di Carciofi': 'Artichoke hearts, extra virgin olive oil',
   'Puré di Patate': 'Potatoes, milk, butter, Grana',
@@ -2485,7 +2493,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Crespelle', 'Gnocchi di Zucca', 'Canederli con Speck']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
