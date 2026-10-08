@@ -2521,6 +2521,34 @@ function RecipePage() {
           </div>
         </div>
       </div>
+
+      {/* Tortellini fatti a mano */}
+      <div style={{ borderRadius: 14, overflow: 'hidden', boxShadow: '0 4px 24px rgba(26,17,8,0.14)', background: '#F5F0E6', marginTop: vp.isMobile ? 32 : 48 }}>
+        <div style={{ padding: vp.isMobile ? '24px 20px' : '36px 44px' }}>
+          <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#C8251D' }}>{lang === 'vec' ? 'Fati a man, uno a uno' : lang === 'en' ? 'Handmade, one by one' : 'Fatti a mano, uno a uno'}</div>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: vp.isMobile ? 22 : 28, fontWeight: 700, color: '#1A1108', margin: '8px 0 16px' }}>{lang === 'vec' ? 'I nostri tortelini' : lang === 'en' ? 'Our Tortellini' : 'I nostri tortellini'}</h2>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 14 : 15, color: '#3D2B1A', lineHeight: 1.85, marginBottom: vp.isMobile ? 20 : 28 }}>
+            {lang === 'vec' ? "Ogni stimana fémo i tortelini come na volta: gnente scorciatoie, solo passiensa e man esperte." : lang === 'en' ? 'Every week we make our tortellini the old way: no shortcuts, just patience and skilled hands.' : 'Ogni settimana prepariamo i tortellini come una volta: niente scorciatoie, solo pazienza e mani esperte.'}
+          </p>
+          <div style={{ textAlign: 'center', marginBottom: vp.isMobile ? 20 : 28 }}>
+            <video controls playsInline preload="none" poster="images/brand/tortellini_poster.jpg" style={{ width: '100%', maxWidth: 420, height: 'auto', display: 'block', margin: '0 auto', borderRadius: 10, boxShadow: '0 4px 20px rgba(26,17,8,0.16)', background: '#1A1108' }}>
+              <source src="videos/tortellini.mp4" type="video/mp4" />
+            </video>
+            <div style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: 11, color: '#6B4C33', marginTop: 8 }}>{lang === 'vec' ? 'I nostri tortelini, fati a man in botega' : lang === 'en' ? 'Our tortellini, handmade in the kitchen' : 'I nostri tortellini, fatti a mano in laboratorio'}</div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: vp.isMobile ? '1fr' : '1fr 1fr', gap: vp.isMobile ? 28 : 40, alignItems: 'start' }}>
+            <ol style={{ margin: 0, paddingLeft: 18, lineHeight: 1.9, fontSize: 14, color: '#3D2B1A' }}>
+              <li>{lang === 'vec' ? "La sfoja fresca la vien tirà co' la machina fin che la ga el giusto spessor." : lang === 'en' ? 'The fresh pasta sheet is rolled out using our pasta machine until it reaches just the right thickness.' : "La sfoglia fresca viene tirata con l'apposita macchina fino a raggiungere lo spessore giusto."}</li>
+              <li>{lang === 'vec' ? 'Se taja a quadretini e se méte un fià de carne in tel mezo de ognuno.' : lang === 'en' ? "It's cut into small squares, and a little meat filling is placed in the center of each one." : 'Si taglia a quadretti e si posiziona un piccolo ripieno di carne al centro di ciascuno.'}</li>
+              <li>{lang === 'vec' ? "Ogni quadretin se piega e se sara a man, uno a la volta, fin che'l ciapa la forma clàsica de anelo." : lang === 'en' ? 'Each square is folded and sealed by hand, one at a time, until it takes on the classic tortellino ring shape.' : 'Ogni quadretto viene piegato e chiuso a mano, uno alla volta, fino a dargli la classica forma ad anello.'}</li>
+            </ol>
+            <div>
+              <img src={window.IMGS.tortelliniTray} alt="Tortellini freschi fatti a mano" loading="lazy" decoding="async" style={{ width: '100%', height: vp.isMobile ? 220 : 260, objectFit: 'cover', objectPosition: 'top', borderRadius: 10, boxShadow: '0 4px 20px rgba(26,17,8,0.14)', display: 'block' }} />
+              <div style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: 11, color: '#6B4C33', marginTop: 8, textAlign: 'center' }}>{lang === 'vec' ? 'Pronti par còsar — na tégia de tortelini freschi' : lang === 'en' ? 'Ready for the pot — a tray of fresh tortellini' : 'Pronti per essere cotti — una teglia di tortellini freschi'}</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
