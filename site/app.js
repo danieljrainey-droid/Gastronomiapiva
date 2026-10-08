@@ -1621,6 +1621,9 @@ const MENU_DISHES = [{
   name: 'Polpette di Carne',
   src: 'images/dishes/polpette_di_carne.jpg'
 }, {
+  name: 'Spiedini di Zucchine',
+  src: 'images/dishes/spiedini_di_zucchine.jpg'
+}, {
   name: 'Fagioli con Cipolla',
   src: 'images/dishes/fagioli_con_cipolla.jpg',
   season: 'estate'
@@ -1934,6 +1937,7 @@ const DISH_DESCRIPTIONS = {
   'Lenticchie': 'Lenticchie, cipolla, carota, sedano, olio extravergine',
   'Polpette di Verdure': 'Melanzane e mozzarella, pomodoro, zucchine, radicchio e speck, piselli e carote, rucola e pollo, grana',
   'Polpette di Carne': 'Carne mista di manzo e maiale, pane raffermo, uova, grana, prezzemolo',
+  'Spiedini di Zucchine': 'Zucchine, scamorza, prosciutto cotto, grana',
   'Fagioli con Cipolla': 'Fagioli borlotti, cipolla bianca, olio extravergine, aceto',
   'Fagioli al Prezzemolo': 'Fagioli bianchi, aglio, prezzemolo, olio extravergine',
   'Insalata di Orzo': 'Orzo perlato, melanzane, zucchine, pomodorini, olio extravergine',
@@ -2085,6 +2089,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Lenticchie': 'Lentìce, zegola, carota, selino, ojo bon',
   'Polpette di Verdure': 'Melanzane e mozzarela, pomodoro, sucine, radicio e speck, bisi e carote, rucola e polo, Grana',
   'Polpette di Carne': 'Carne mista de manzo e porco, pan vecio, vovi, Grana, persémolo',
+  'Spiedini di Zucchine': 'Sucine, scamorsa, presuto còto, Grana',
   'Fagioli con Cipolla': 'Fasoi borlòti, zegola bianca, ojo bon, aseo',
   'Fagioli al Prezzemolo': 'Fasoi bianchi, ajo, persémolo, ojo bon',
   'Insalata di Orzo': 'Orzo perlà, melansane, sucine, pomarini, ojo bon',
@@ -2156,6 +2161,7 @@ const DISH_NAME_VEC = {
   'Patate al Rosmarino al Forno': 'Patate al Rosmarin al Forno',
   'Polpette di Verdure': 'Polpéte de Verdure',
   'Polpette di Carne': 'Polpéte de Carne',
+  'Spiedini di Zucchine': 'Spiedini de Sucine',
   "Pesto d'Agrumi": 'Pesto de Agrumi',
   'Fondi di Carciofi': 'Fondi de Articiochi',
   'Pasta Fredda': 'Pasta Freda',
@@ -2313,6 +2319,7 @@ const DISH_NAME_EN = {
   'Lenticchie': 'Lentils',
   'Polpette di Verdure': 'Vegetable Meatballs',
   'Polpette di Carne': 'Meat Meatballs',
+  'Spiedini di Zucchine': 'Zucchini Skewers',
   'Fagioli con Cipolla': 'Beans with Onion',
   'Fagioli al Prezzemolo': 'Beans with Parsley',
   'Insalata di Orzo': 'Barley Salad',
@@ -2458,6 +2465,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Lenticchie': 'Lentils, onion, carrot, celery, extra virgin olive oil',
   'Polpette di Verdure': 'Eggplant and mozzarella, tomato, zucchini, radicchio and speck, peas and carrots, arugula and chicken, Grana',
   'Polpette di Carne': 'Mixed beef and pork, stale bread, eggs, Grana cheese, parsley',
+  'Spiedini di Zucchine': 'Zucchini, scamorza, cooked ham, Grana',
   'Fagioli con Cipolla': 'Borlotti beans, white onion, extra virgin olive oil, vinegar',
   'Fagioli al Prezzemolo': 'White beans, garlic, parsley, extra virgin olive oil',
   'Insalata di Orzo': 'Pearl barley, eggplant, zucchini, cherry tomatoes, extra virgin olive oil',
@@ -2501,7 +2509,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba par Scominsiar & Contorni',
   subtitle: 'Vitello tonnato, verdure e insalate',
   subtitleEn: 'Vitello tonnato, vegetables and salads',
-  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Cavolfiore', 'Lenticchie', 'Polpette di Verdure', 'Polpette di Carne', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo', 'Fondi di Carciofi']
+  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Cavolfiore', 'Lenticchie', 'Polpette di Verdure', 'Polpette di Carne', 'Spiedini di Zucchine', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo', 'Fondi di Carciofi']
 }, {
   id: 'primi',
   title: 'Primi Piatti',
