@@ -1490,6 +1490,9 @@ const MENU_DISHES = [{
   name: 'Spinaci',
   src: 'images/dishes/spinaci.jpg'
 }, {
+  name: 'Cavolfiore',
+  src: 'images/dishes/cavolfiore.jpg'
+}, {
   name: 'Prodotti Tipici Rovigo',
   src: 'images/dishes/prodotti_tipici_rovigo.jpg'
 }, {
@@ -1905,6 +1908,7 @@ const DISH_DESCRIPTIONS = {
   'Bistecca di Tonno': 'Tonno, salvia, pepe in grani, olio extravergine',
   'Piselli': 'Piselli, cipolla, olio extravergine, brodo — in tegame',
   'Spinaci': 'Spinaci freschi saltati in padella con olio extravergine e aglio.',
+  'Cavolfiore': 'Cavolfiore cotto al vapore, condito con olio extravergine.',
   'Prodotti Tipici Rovigo': 'Selezione di specialità locali: vini rossi, riso Arborio, sughi di pomodoro e altre eccellenze del territorio.',
   'Selezione Champagne e Spumanti': 'Selezione di champagne e spumanti delle migliori case: Ferrari, Veuve Clicquot, Moët & Chandon, Laurent-Perrier e Richard Cheurlin. Disponibili singolarmente, non in un\'unica confezione.',
   'Bellavista Alma Grande Cuvée Brut': 'Franciacorta DOCG Bellavista Alma Grande Cuvée Brut. Bollicine eleganti e persistenti, perfette per un brindisi importante.',
@@ -2054,6 +2058,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Bistecca di Tonno': 'Ton, salvia, pévare in grani, ojo bon',
   'Piselli': 'Bisi, zegola, ojo bon, brodo — in tècia',
   'Spinaci': 'Spinasse fresche saltàe in tècia co\' ojo bon e ajo.',
+  'Cavolfiore': 'Cavolfiore còto al vapor, condìo co\' ojo bon.',
   'Prodotti Tipici Rovigo': 'Sielta de robe nostrane: vini rossi, riso Arborio, sughi de pomodoro e altre bontà del teritorio.',
   'Selezione Champagne e Spumanti': 'Sielta de champagne e spumanti de le mèjo case: Ferrari, Veuve Clicquot, Moët & Chandon, Laurent-Perrier e Richard Cheurlin. Se compra sépari, no tuti insieme in t\'una confezion.',
   'Bellavista Alma Grande Cuvée Brut': 'Franciacorta DOCG Bellavista Alma Grande Cuvée Brut. Bolesine eleganti e persistenti, giuste par un brindisi importante.',
@@ -2140,6 +2145,7 @@ const DISH_NAME_VEC = {
   'Fagioli in "Potacin"': 'Fasoi in Potacin',
   'Spinaci': 'Spinasse',
   'Piselli': 'Bisi',
+  'Cavolfiore': 'Cavolfior',
   'Lenticchie': 'Lentéce',
   'Puré di Patate': 'Puré de Patate',
   'Patate al Rosmarino al Forno': 'Patate al Rosmarin al Forno',
@@ -2278,6 +2284,7 @@ const DISH_NAME_EN = {
   'Bistecca di Tonno': 'Tuna Steak',
   'Piselli': 'Peas',
   'Spinaci': 'Spinach',
+  'Cavolfiore': 'Cauliflower',
   'Prodotti Tipici Rovigo': 'Local Rovigo Products',
   'Selezione Champagne e Spumanti': 'Champagne & Sparkling Wine Selection',
   'Bellavista Alma Grande Cuvée Brut': 'Bellavista Franciacorta Brut',
@@ -2421,6 +2428,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Bistecca di Tonno': 'Tuna, sage, peppercorns, extra virgin olive oil',
   'Piselli': 'Peas, onion, extra virgin olive oil, broth — pan-cooked',
   'Spinaci': 'Fresh spinach sautéed in a pan with extra virgin olive oil and garlic.',
+  'Cavolfiore': 'Steamed cauliflower, dressed with extra virgin olive oil.',
   'Prodotti Tipici Rovigo': 'A selection of local specialties: red wines, Arborio rice, tomato sauces and other regional excellences.',
   'Selezione Champagne e Spumanti': 'A selection of champagne and sparkling wines from top houses: Ferrari, Veuve Clicquot, Moët & Chandon, Laurent-Perrier and Richard Cheurlin. Available individually, not sold as a single package.',
   'Bellavista Alma Grande Cuvée Brut': 'Franciacorta DOCG Bellavista Alma Grande Cuvée Brut. Elegant, persistent bubbles — perfect for a special toast.',
@@ -2485,7 +2493,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba par Scominsiar & Contorni',
   subtitle: 'Vitello tonnato, verdure e insalate',
   subtitleEn: 'Vitello tonnato, vegetables and salads',
-  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Lenticchie', 'Polpette di Verdure', 'Polpette di Carne', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo', 'Fondi di Carciofi']
+  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Cavolfiore', 'Lenticchie', 'Polpette di Verdure', 'Polpette di Carne', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo', 'Fondi di Carciofi']
 }, {
   id: 'primi',
   title: 'Primi Piatti',
