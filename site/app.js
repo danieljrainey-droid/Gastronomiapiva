@@ -3755,6 +3755,7 @@ function RecipePage() {
     }
   }, React.createElement("video", {
     controls: true,
+    loop: true,
     playsInline: true,
     preload: "none",
     poster: "images/brand/tortellini_poster.jpg",
