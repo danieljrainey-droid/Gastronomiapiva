@@ -2531,7 +2531,7 @@ function RecipePage() {
             {lang === 'vec' ? "Ogni stimana fémo i tortelini come na volta: gnente scorciatoie, solo passiensa e man esperte." : lang === 'en' ? 'Every week we make our tortellini the old way: no shortcuts, just patience and skilled hands.' : 'Ogni settimana prepariamo i tortellini come una volta: niente scorciatoie, solo pazienza e mani esperte.'}
           </p>
           <div style={{ textAlign: 'center', marginBottom: vp.isMobile ? 20 : 28 }}>
-            <video controls playsInline preload="none" poster="images/brand/tortellini_poster.jpg" style={{ width: '100%', maxWidth: 420, height: 'auto', display: 'block', margin: '0 auto', borderRadius: 10, boxShadow: '0 4px 20px rgba(26,17,8,0.16)', background: '#1A1108' }}>
+            <video controls playsInline preload="none" poster="images/brand/tortellini_poster.jpg" style={{ width: '100%', maxWidth: 480, height: 'auto', display: 'block', margin: '0 auto', borderRadius: 10, boxShadow: '0 4px 20px rgba(26,17,8,0.16)', background: '#1A1108' }}>
               <source src="videos/tortellini.mp4" type="video/mp4" />
             </video>
             <div style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: 11, color: '#6B4C33', marginTop: 8 }}>{lang === 'vec' ? 'I nostri tortelini, fati a man in botega' : lang === 'en' ? 'Our tortellini, handmade in the kitchen' : 'I nostri tortellini, fatti a mano in laboratorio'}</div>

@@ -3760,7 +3760,7 @@ function RecipePage() {
     poster: "images/brand/tortellini_poster.jpg",
     style: {
       width: '100%',
-      maxWidth: 420,
+      maxWidth: 480,
       height: 'auto',
       display: 'block',
       margin: '0 auto',
