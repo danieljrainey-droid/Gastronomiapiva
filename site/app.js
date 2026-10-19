@@ -1277,6 +1277,9 @@ const MENU_DISHES = [{
   name: 'Pollo alla Piastra',
   src: 'images/dishes/pollo_alla_piastra.jpg'
 }, {
+  name: 'Salsiccia alla Griglia',
+  src: 'images/dishes/salsiccia_alla_griglia.jpg'
+}, {
   name: 'Cappelletti Mostarda',
   src: 'images/dishes/cappelletti_mostarda.jpg',
   season: 'carnevale'
@@ -1863,6 +1866,7 @@ const DISH_DESCRIPTIONS = {
   'Gnocchi di Zucca': 'Gnocchi di zucca mantovana e patate, impastati a mano. Si servono con burro fuso e salvia o con un velo di Grana.',
   'Cipolle al Forno': 'Cipolline borettane cotte lentamente al forno e caramellate in agrodolce, dolci e morbide.',
   'Pollo alla Piastra': 'Fettine di petto di pollo grigliate alla piastra, leggere e saporite, con un filo di olio extravergine.',
+  'Salsiccia alla Griglia': 'Luganega nostrana, cotta alla griglia.',
   'Cappelletti Mostarda': 'Cappelletti dolci fritti ripieni di mostarda, spolverati di zucchero a velo. Dolce della tradizione carnevalesca veneta.',
   'Porchetta di Nostra Produzione': 'Porchetta arrosto di nostra produzione, profumata con rosmarino, aglio e finocchietto, cotta lentamente fino a renderla morbida e saporita.',
   'Scaloppine di Pollo al Marsala': 'Fettine di petto di pollo cotte in padella e sfumate con Marsala, per una salsa delicata e vellutata.',
@@ -2018,6 +2022,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Gnocchi di Zucca': 'Gnochi de suca mantovana e patate, fati a man. Se serve co\' buro fuso e salvia o co\' un fil de Grana.',
   'Cipolle al Forno': 'Zegolete borretane còte pian in forno e caramelàe in agrodolse, dolse e morbide.',
   'Pollo alla Piastra': 'Fetine de peto de polastro grilàe su la piastra, lisiere e saorìe, co\' un fil de ojo bon.',
+  'Salsiccia alla Griglia': 'Luganega nostrana, grilà.',
   'Cappelletti Mostarda': 'Capeléti dolsi friti co\' drento la mostarda, co\' su el zùcaro a vélo. Dolse de Carneval de \'na volta.',
   'Porchetta di Nostra Produzione': 'Porchéta rostìa fata da nualtri, profumàda co\' rosmarin, ajo e finociéto, còta pian fin che la vien morbida e saorìa.',
   'Scaloppine di Pollo al Marsala': 'Fetine de peto de polastro còte in tècia e sfumàe co\' Marsala, par \'na salsa delicàda e velutàda.',
@@ -2160,6 +2165,7 @@ const DISH_NAME_VEC = {
   'Verza con Pancetta': "Verza co' la Pancéta",
   'Cipolle al Forno': 'Zegoe al Forno',
   'Pollo alla Piastra': 'Polastro a la Piastra',
+  'Salsiccia alla Griglia': 'Luganega a la Gradèla',
   'Pomodori Ripieni': 'Pomodori Impinìi',
   'Verdure Ripiene': 'Verdure Impinìe',
   'Insalata di Riso': 'Insalata de Riso',
@@ -2246,6 +2252,7 @@ const DISH_NAME_EN = {
   'Gnocchi di Zucca': 'Pumpkin Gnocchi',
   'Cipolle al Forno': 'Baked Onions',
   'Pollo alla Piastra': 'Grilled Chicken',
+  'Salsiccia alla Griglia': 'Grilled Sausage',
   'Cappelletti Mostarda': 'Sweet Cappelletti with Mostarda',
   'Porchetta di Nostra Produzione': 'House-Made Porchetta',
   'Scaloppine di Pollo al Marsala': 'Chicken Scaloppine in Marsala',
@@ -2402,6 +2409,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Gnocchi di Zucca': 'Hand-made gnocchi of Mantuan pumpkin and potatoes. Served with melted butter and sage or a dusting of Grana.',
   'Cipolle al Forno': 'Small borettane onions slow-baked and caramelized sweet-and-sour, tender and soft.',
   'Pollo alla Piastra': 'Grilled chicken breast slices, light and flavorful, with a drizzle of extra virgin olive oil.',
+  'Salsiccia alla Griglia': 'Our own fresh sausage, grilled.',
   'Cappelletti Mostarda': 'Sweet fried cappelletti filled with mostarda, dusted with icing sugar. A traditional Venetian Carnival sweet.',
   'Porchetta di Nostra Produzione': 'House-made roast porchetta, scented with rosemary, garlic and wild fennel, slow-cooked until soft and flavorful.',
   'Scaloppine di Pollo al Marsala': 'Chicken breast slices pan-cooked and deglazed with Marsala, for a delicate, velvety sauce.',
@@ -2548,7 +2556,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Secondi Piati',
   subtitle: 'Specialità di carne e pesce',
   subtitleEn: 'Meat and fish specialties',
-  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Osso Buco', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
+  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Salsiccia alla Griglia', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Osso Buco', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
 }, {
   id: 'dolci',
   title: 'Dolci',
