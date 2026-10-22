@@ -948,27 +948,6 @@ function getDstRangeLabel(year, seasonKind, lang) {
   const end = getLastSundayOfMonth(year, 9);
   return lang === 'en' ? `from the last Sunday of March (${fmt(start)}) to the last Sunday of October (${fmt(end)})` : lang === 'vec' ? `da l'ultima doménega de marso (${fmt(start)}) a l'ultima doménega de otobre (${fmt(end)})` : `dall'ultima domenica di marzo (${fmt(start)}) all'ultima domenica di ottobre (${fmt(end)})`;
 }
-function getUpcomingDstRangeLabel(seasonKind, today, lang) {
-  const months = lang === 'en' ? MONTH_NAMES_EN : lang === 'vec' ? MONTH_NAMES_VEC : MONTH_NAMES_IT;
-  const fmt = d => `${d.getDate()} ${months[d.getMonth()]}`;
-  const year = today.getFullYear();
-  if (seasonKind === 'inverno') {
-    let start = getLastSundayOfMonth(year, 9);
-    let end = getLastSundayOfMonth(year + 1, 2);
-    if (today > end) {
-      start = getLastSundayOfMonth(year + 1, 9);
-      end = getLastSundayOfMonth(year + 2, 2);
-    }
-    return `${fmt(start)} ${start.getFullYear()} – ${fmt(end)} ${end.getFullYear()}`;
-  }
-  let start = getLastSundayOfMonth(year, 2);
-  let end = getLastSundayOfMonth(year, 9);
-  if (today > end) {
-    start = getLastSundayOfMonth(year + 1, 2);
-    end = getLastSundayOfMonth(year + 1, 9);
-  }
-  return `${fmt(start)} – ${fmt(end)} ${end.getFullYear()}`;
-}
 const DISH_PRIORITY_OVERRIDE = 'inverno';
 function getHoursSeasonForDate(date) {
   const year = date.getFullYear();
@@ -2610,9 +2589,14 @@ function MenuSection() {
     });
     return m;
   }, []);
-  const [autoSeasonKey, setAutoSeasonKey] = useState(() => getSeasonForDate(new Date()));
+  const resolveBannerSeason = date => {
+    const calSeason = getSeasonForDate(date);
+    if (calSeason === 'estate' || calSeason === 'inverno') return DISH_PRIORITY_OVERRIDE || calSeason;
+    return calSeason;
+  };
+  const [autoSeasonKey, setAutoSeasonKey] = useState(() => resolveBannerSeason(new Date()));
   useEffect(() => {
-    const check = () => setAutoSeasonKey(getSeasonForDate(new Date()));
+    const check = () => setAutoSeasonKey(resolveBannerSeason(new Date()));
     const id = setInterval(check, 60 * 60 * 1000);
     return () => clearInterval(id);
   }, []);
@@ -2753,14 +2737,7 @@ function MenuSection() {
       fontWeight: 600,
       opacity: 0.85
     }
-  }, getUpcomingCarnevaleRangeLabel(new Date(), lang)), (curSeasonKey === 'estate' || curSeasonKey === 'inverno') && React.createElement("span", {
-    style: {
-      fontFamily: 'var(--font-body)',
-      fontSize: vp.isMobile ? 12 : 14,
-      fontWeight: 600,
-      opacity: 0.85
-    }
-  }, getUpcomingDstRangeLabel(curSeasonKey, new Date(), lang)), curSeasonKey === 'feste' && React.createElement("span", {
+  }, getUpcomingCarnevaleRangeLabel(new Date(), lang)), curSeasonKey === 'feste' && React.createElement("span", {
     style: {
       fontFamily: 'var(--font-body)',
       fontSize: vp.isMobile ? 12 : 14,

@@ -537,31 +537,6 @@ function getDstRangeLabel(year, seasonKind, lang) {
     ? `da l'ultima doménega de marso (${fmt(start)}) a l'ultima doménega de otobre (${fmt(end)})`
     : `dall'ultima domenica di marzo (${fmt(start)}) all'ultima domenica di ottobre (${fmt(end)})`;
 }
-/* Etichetta breve "DD mese – DD mese AAAA" per il periodo estivo/invernale in corso
-   (o il prossimo, se quello attuale è già terminato) — usata accanto al titolo
-   "Alcuni Sapori di Estate/Inverno" nel menù. Si aggiorna da sola ogni anno perché
-   le date derivano sempre da getLastSundayOfMonth. */
-function getUpcomingDstRangeLabel(seasonKind, today, lang) {
-  const months = lang === 'en' ? MONTH_NAMES_EN : lang === 'vec' ? MONTH_NAMES_VEC : MONTH_NAMES_IT;
-  const fmt = d => `${d.getDate()} ${months[d.getMonth()]}`;
-  const year = today.getFullYear();
-  if (seasonKind === 'inverno') {
-    let start = getLastSundayOfMonth(year, 9);
-    let end = getLastSundayOfMonth(year + 1, 2);
-    if (today > end) {
-      start = getLastSundayOfMonth(year + 1, 9);
-      end = getLastSundayOfMonth(year + 2, 2);
-    }
-    return `${fmt(start)} ${start.getFullYear()} – ${fmt(end)} ${end.getFullYear()}`;
-  }
-  let start = getLastSundayOfMonth(year, 2);
-  let end = getLastSundayOfMonth(year, 9);
-  if (today > end) {
-    start = getLastSundayOfMonth(year + 1, 2);
-    end = getLastSundayOfMonth(year + 1, 9);
-  }
-  return `${fmt(start)} – ${fmt(end)} ${end.getFullYear()}`;
-}
 /* Estate/Inverno seguono il cambio ora legale (UE): l'orario estivo comincia
    l'ultima domenica di marzo e finisce l'ultima domenica di ottobre.
    Dicembre ha sempre il proprio orario esteso, indipendentemente dall'ora legale. */
@@ -1831,11 +1806,19 @@ function MenuSection() {
     MENU_DISHES.forEach(d => { m[d.name] = d; });
     return m;
   }, []);
-  const [autoSeasonKey, setAutoSeasonKey] = useState(() => getSeasonForDate(new Date()));
+  // Per estate/inverno la priorità segue DISH_PRIORITY_OVERRIDE (preferenza dei
+  // proprietari in base al meteo, non più legata al cambio ora legale); carnevale/
+  // feste/pasqua restano invece legati al calendario, essendo eventi fissi.
+  const resolveBannerSeason = date => {
+    const calSeason = getSeasonForDate(date);
+    if (calSeason === 'estate' || calSeason === 'inverno') return DISH_PRIORITY_OVERRIDE || calSeason;
+    return calSeason;
+  };
+  const [autoSeasonKey, setAutoSeasonKey] = useState(() => resolveBannerSeason(new Date()));
   // Ricontrolla la data periodicamente così il cambio di stagione (e il Martedì Grasso,
   // che cade in un giorno diverso ogni anno) scatta da solo senza ricaricare la pagina.
   useEffect(() => {
-    const check = () => setAutoSeasonKey(getSeasonForDate(new Date()));
+    const check = () => setAutoSeasonKey(resolveBannerSeason(new Date()));
     const id = setInterval(check, 60 * 60 * 1000); // ogni ora
     return () => clearInterval(id);
   }, []);
@@ -1895,9 +1878,6 @@ function MenuSection() {
               <span>{lang === 'vec' ? `Qualche Savor ${(curSeasonKey === 'estate' || curSeasonKey === 'inverno') ? 'par i' : 'de'} ${curSeason.shortVec}` : lang === 'en' ? `Some Flavors ${(curSeasonKey === 'estate' || curSeasonKey === 'inverno') ? 'for the' : 'of'} ${curSeason.labelEn}` : `Alcuni Sapori ${(curSeasonKey === 'estate' || curSeasonKey === 'inverno') ? 'per i' : 'di'} ${curSeason.label}`}</span>
               {curSeasonKey === 'carnevale' && (
                 <span style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 12 : 14, fontWeight: 600, opacity: 0.85 }}>{getUpcomingCarnevaleRangeLabel(new Date(), lang)}</span>
-              )}
-              {(curSeasonKey === 'estate' || curSeasonKey === 'inverno') && (
-                <span style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 12 : 14, fontWeight: 600, opacity: 0.85 }}>{getUpcomingDstRangeLabel(curSeasonKey, new Date(), lang)}</span>
               )}
               {curSeasonKey === 'feste' && (
                 <span style={{ fontFamily: 'var(--font-body)', fontSize: vp.isMobile ? 12 : 14, fontWeight: 600, opacity: 0.85 }}>{getUpcomingFesteRangeLabel(new Date(), lang)}</span>
