@@ -565,6 +565,11 @@ function getUpcomingDstRangeLabel(seasonKind, today, lang) {
 /* Estate/Inverno seguono il cambio ora legale (UE): l'orario estivo comincia
    l'ultima domenica di marzo e finisce l'ultima domenica di ottobre.
    Dicembre ha sempre il proprio orario esteso, indipendentemente dall'ora legale. */
+/* Override manuale della priorità freddi/caldi nel menù (indipendente dall'orario,
+   che segue sempre il cambio ora legale). null = usa il calendario estate/inverno
+   di default; 'estate' forza la priorità ai piatti freddi, 'inverno' ai piatti caldi.
+   Da modificare su richiesta esplicita dei proprietari. */
+const DISH_PRIORITY_OVERRIDE = null;
 function getHoursSeasonForDate(date) {
   const year = date.getFullYear();
   const summerStart = getLastSundayOfMonth(year, 2);  // ultima domenica di marzo
@@ -1919,14 +1924,15 @@ function MenuSection() {
 
       {MENU_SECTIONS.map((section, sIdx) => {
         const END_SEASON_ORDER = { carnevale: 1, feste: 2, pasqua: 3 };
-        const curDstSeason = getHoursSeasonForDate(new Date());
+        const curDstSeason = DISH_PRIORITY_OVERRIDE || getHoursSeasonForDate(new Date());
+        const offDstSeason = curDstSeason === 'estate' ? 'inverno' : 'estate';
         const sectionDishes = section.dishes
           .map(name => dishByName[name])
           .filter(Boolean)
           .map((d, i) => ({ d, i }))
           .sort((a, b) => {
-            const ra = a.d.season === curDstSeason ? -1 : (END_SEASON_ORDER[a.d.season] || 0);
-            const rb = b.d.season === curDstSeason ? -1 : (END_SEASON_ORDER[b.d.season] || 0);
+            const rank = d => d.season === curDstSeason ? -1 : d.season === offDstSeason ? 99 : (END_SEASON_ORDER[d.season] || 0);
+            const ra = rank(a.d), rb = rank(b.d);
             if (ra !== rb) return ra - rb;
             return a.i - b.i;
           })
@@ -2408,6 +2414,76 @@ const RECIPES = [
     steps: ['Preparare un soffritto con sedano, carota e cipolla tritati finemente.', 'Aggiungere le lenticchie e la passata di pomodoro.', 'Coprire con acqua o brodo e unire una foglia di alloro.', 'Cuocere a fuoco basso per circa 40 minuti, mescolando di tanto in tanto.', 'Salare a fine cottura e servire calde.'],
     stepsEn: ["Prepare a soffritto with finely chopped celery, carrot and onion.","Add the lentils and tomato passata.","Cover with water or broth and add a bay leaf.","Cook over low heat for about 40 minutes, stirring occasionally.","Season with salt at the end and serve hot."],
   },
+  {
+    id: 'osso-buco', name: 'Osso Buco', nameEn: "Osso Buco", season: null,
+    img: 'images/dishes/osso_buco.jpg',
+    tagline: 'Stinco di vitello brasato lentamente con pomodoro e verdure: un grande classico della cucina veneta.',
+    taglineEn: "Veal shank slowly braised with tomato and vegetables: a great classic of Venetian cooking.",
+    ingredients: ['4 fette di stinco di vitello', '1 cipolla', '1 carota', '1 costa di sedano', '2 pomodori maturi', 'Vino bianco, olio extravergine, farina, sale'],
+    ingredientsEn: ["4 veal shank slices","1 onion","1 carrot","1 celery stalk","2 ripe tomatoes","White wine, extra virgin olive oil, flour, salt"],
+    steps: ['Infarinare leggermente le fette di stinco.', 'Rosolarle in olio caldo da entrambi i lati, poi tenerle da parte.', 'Nella stessa pentola, appassire cipolla, carota e sedano tritati.', 'Rimettere la carne, sfumare con vino bianco e aggiungere i pomodori a pezzi.', 'Cuocere coperto a fuoco basso per circa 2 ore, aggiungendo brodo se necessario.'],
+    stepsEn: ["Lightly dust the shank slices with flour.","Brown them in hot oil on both sides, then set aside.","In the same pot, soften the chopped onion, carrot and celery.","Return the meat to the pot, deglaze with white wine and add the chopped tomatoes.","Cook covered over low heat for about 2 hours, adding broth if needed."],
+  },
+  {
+    id: 'pasticciata', name: 'Pasticciata', nameEn: "Pasticciata", season: null,
+    img: 'images/dishes/pasticciata.png',
+    tagline: 'Pasta al forno con besciamella, piselli e prosciutto cotto: il piatto gratinato della domenica.',
+    taglineEn: "Baked pasta with béchamel, peas and cooked ham: the gratin dish for Sunday lunch.",
+    ingredients: ['400g pasta corta', '300ml besciamella', '150g piselli', '150g prosciutto cotto a dadini', 'Grana grattugiato, burro'],
+    ingredientsEn: ["400g short pasta","300ml béchamel","150g peas","150g diced cooked ham","Grated Grana, butter"],
+    steps: ['Cuocere la pasta molto al dente e scolarla.', 'Unirla alla besciamella, ai piselli e al prosciutto cotto.', 'Versare in una teglia imburrata e livellare.', 'Spolverare con grana e qualche fiocco di burro.', 'Gratinare in forno a 200°C per 20 minuti, fino a doratura.'],
+    stepsEn: ["Cook the pasta very al dente and drain.","Combine with the béchamel, peas and cooked ham.","Pour into a buttered baking dish and level it out.","Dust with Grana and a few knobs of butter.","Bake at 200°C (390°F) for 20 minutes, until golden."],
+  },
+  {
+    id: 'seppie-con-piselli', name: 'Seppie con Piselli', nameEn: "Cuttlefish with Peas", season: null,
+    img: 'images/dishes/seppie_con_piselli.jpg',
+    tagline: 'Seppie stufate con piselli e pomodoro: un piatto di pesce della tradizione veneta, ottimo con la polenta.',
+    taglineEn: "Cuttlefish stewed with peas and tomato: a traditional Venetian fish dish, excellent with polenta.",
+    ingredients: ['800g seppie pulite', '300g piselli', '1 cipolla', 'Passata di pomodoro', 'Olio extravergine, prezzemolo, sale'],
+    ingredientsEn: ["800g cleaned cuttlefish","300g peas","1 onion","Tomato passata","Extra virgin olive oil, parsley, salt"],
+    steps: ['Tagliare le seppie ad anelli o striscioline.', 'Appassire la cipolla tritata in olio.', 'Aggiungere le seppie e rosolarle per qualche minuto.', 'Unire la passata di pomodoro e i piselli, coprire e cuocere a fuoco basso per 30-40 minuti.', 'Profumare con prezzemolo fresco e servire con la polenta.'],
+    stepsEn: ["Cut the cuttlefish into rings or strips.","Soften the chopped onion in oil.","Add the cuttlefish and brown for a few minutes.","Add the tomato passata and peas, cover and cook over low heat for 30-40 minutes.","Finish with fresh parsley and serve with polenta."],
+  },
+  {
+    id: 'cannelloni', name: 'Cannelloni', nameEn: "Cannelloni", season: null,
+    img: 'images/dishes/cannelloni.jpg',
+    tagline: 'Cannelloni di pasta fresca ripieni di spinaci e ricotta, gratinati con besciamella: un classico da forno.',
+    taglineEn: "Fresh pasta cannelloni filled with spinach and ricotta, baked with béchamel: a classic gratin dish.",
+    ingredients: ['12 cannelloni di pasta fresca', '300g spinaci cotti', '250g ricotta', '300ml besciamella', 'Grana grattugiato, sale, noce moscata'],
+    ingredientsEn: ["12 fresh pasta cannelloni","300g cooked spinach","250g ricotta","300ml béchamel","Grated Grana, salt, nutmeg"],
+    steps: ['Tritare finemente gli spinaci cotti e strizzarli bene.', 'Mescolarli con la ricotta, un po\' di grana, sale e noce moscata.', 'Farcire i cannelloni con il composto.', 'Disporli in una teglia, coprirli con besciamella e grana.', 'Cuocere in forno a 200°C per 25-30 minuti, fino a doratura.'],
+    stepsEn: ["Finely chop the cooked spinach and squeeze out excess liquid.","Mix with the ricotta, a little Grana, salt and nutmeg.","Fill the cannelloni with the mixture.","Arrange in a baking dish, cover with béchamel and Grana.","Bake at 200°C (390°F) for 25-30 minutes, until golden."],
+  },
+  {
+    id: 'ragu-di-salsiccia', name: 'Ragù di Salsiccia', nameEn: "Sausage Ragù", season: null,
+    img: 'images/dishes/ragu_di_salsiccia.jpg',
+    tagline: 'Ragù di salsiccia fatto in casa con pomodoro e verdure: ideale per condire pasta fresca o polenta.',
+    taglineEn: "Homemade sausage ragù with tomato and vegetables: ideal for dressing fresh pasta or polenta.",
+    ingredients: ['500g salsiccia fresca', '1 cipolla', '1 carota', '1 costa di sedano', 'Passata di pomodoro', 'Vino bianco, olio extravergine'],
+    ingredientsEn: ["500g fresh sausage","1 onion","1 carrot","1 celery stalk","Tomato passata","White wine, extra virgin olive oil"],
+    steps: ['Spellare la salsiccia e sgranarla con le mani.', 'Preparare un soffritto con cipolla, carota e sedano tritati.', 'Aggiungere la salsiccia e rosolarla, sfumando con vino bianco.', 'Unire la passata di pomodoro e cuocere a fuoco basso per 40 minuti.', 'Servire con pasta fresca o polenta ben calda.'],
+    stepsEn: ["Remove the casing from the sausage and crumble it by hand.","Prepare a soffritto with chopped onion, carrot and celery.","Add the sausage and brown it, deglazing with white wine.","Add the tomato passata and cook over low heat for 40 minutes.","Serve with fresh pasta or hot polenta."],
+  },
+  {
+    id: 'coniglio-in-salmi', name: 'Coniglio in Salmì', nameEn: "Rabbit in Salmì Sauce", season: null,
+    img: 'images/dishes/coniglio_in_salmi.jpg',
+    tagline: 'Coniglio marinato e brasato nel vino rosso con erbe aromatiche: un secondo robusto della tradizione contadina.',
+    taglineEn: "Rabbit marinated and braised in red wine with aromatic herbs: a hearty dish from the farmhouse tradition.",
+    ingredients: ['1 coniglio a pezzi', '½ litro di vino rosso', 'Rosmarino, salvia, alloro', '1 cipolla', 'Olio extravergine, sale, pepe'],
+    ingredientsEn: ["1 rabbit, cut into pieces","½ liter red wine","Rosemary, sage, bay leaf","1 onion","Extra virgin olive oil, salt, pepper"],
+    steps: ['Marinare il coniglio nel vino rosso con le erbe aromatiche per almeno 4 ore.', 'Scolare la carne, conservando il vino della marinatura.', 'Rosolare il coniglio in olio caldo insieme alla cipolla tritata.', 'Sfumare con il vino della marinatura filtrato e coprire.', 'Cuocere a fuoco basso per circa 1 ora e mezza, fino a quando la carne è tenera.'],
+    stepsEn: ["Marinate the rabbit in red wine with the aromatic herbs for at least 4 hours.","Drain the meat, reserving the marinade wine.","Brown the rabbit in hot oil together with the chopped onion.","Deglaze with the strained marinade wine and cover.","Cook over low heat for about 1½ hours, until the meat is tender."],
+  },
+  {
+    id: 'brasato-al-vino', name: 'Brasato al Vino', nameEn: "Wine-Braised Beef", season: null,
+    img: 'images/dishes/brasato_al_vino.jpg',
+    tagline: 'Manzo brasato lentamente nel vino rosso con verdure: un secondo ricco, perfetto con la polenta.',
+    taglineEn: "Beef slowly braised in red wine with vegetables: a rich main course, perfect with polenta.",
+    ingredients: ['1kg manzo in un unico pezzo', '½ litro di vino rosso', '1 cipolla', '1 carota', '1 costa di sedano', 'Alloro, olio extravergine, sale'],
+    ingredientsEn: ["1kg beef, in a single piece","½ liter red wine","1 onion","1 carrot","1 celery stalk","Bay leaf, extra virgin olive oil, salt"],
+    steps: ['Legare la carne e rosolarla in olio caldo da tutti i lati.', 'Aggiungere cipolla, carota e sedano tritati e lasciare appassire.', 'Sfumare con il vino rosso e unire una foglia di alloro.', 'Cuocere coperto a fuoco basso per circa 2 ore e mezza, girando di tanto in tanto.', 'Affettare e servire con il suo fondo di cottura e la polenta.'],
+    stepsEn: ["Tie the meat and brown it in hot oil on all sides.","Add the chopped onion, carrot and celery and let them soften.","Deglaze with the red wine and add a bay leaf.","Cook covered over low heat for about 2½ hours, turning occasionally.","Slice and serve with its cooking juices and polenta."],
+  },
 ];
 
 /* Sceglie la ricetta della settimana tra: le ricette senza tag di stagione
@@ -2485,6 +2561,41 @@ const RECIPE_VEC = {
     ingredients: ['400g de lentìce', 'Selino, carota, zegola', 'Passata de pomodoro', 'Ojo bon, alloro, sal'],
     steps: ['Far un soffrito co\' selino, carota e zegola trinciài fin.', 'Zontar le lentìce e la passata de pomodoro.', 'Coverzar co\' acqua o brodo e zontar \'na foja de alloro.', 'Còsar a fógo basso par circa 40 minuti, missiando ogni tanto.', 'Salar a fin còtura e servir calde.'],
   },
+  'osso-buco': {
+    tagline: "Stinco de vitèl brasà pian pian co\' pomodoro e verdure: un gran clàsico de la cusina veneta.",
+    ingredients: ['4 féte de stinco de vitèl', '1 zegola', '1 carota', '1 còsta de selino', '2 pomodori maduri', 'Vin bianco, ojo bon, farina, sal'],
+    steps: ['Infarinar un fià le féte de stinco.', 'Rosolarle in te l\'ojo caldo da tute do le bande, po\' tegnerle da parte.', 'In te la stessa pignata, far pasir zegola, carota e selino trinciài.', 'Rimétar la carne, sfumar co\' vin bianco e zontar i pomodori a tocheti.', 'Còsar coverto a fógo basso par circa 2 ore, zontando brodo se serve.'],
+  },
+  'pasticciata': {
+    tagline: "Pasta al forno co\' besciamela, bisi e prosciuto còto: el piato gratinà de la doménega.",
+    ingredients: ['400g de pasta curta', '300ml de besciamela', '150g de bisi', '150g de prosciuto còto a dadini', 'Grana gratà, butiro'],
+    steps: ['Còsar la pasta ben al dente e colarla.', 'Zontarghe la besciamela, i bisi e el prosciuto còto.', 'Versar in tuna tégia imburà e lissar ben.', 'Spolverar co\' Grana e qualche fiòco de butiro.', 'Gratinar in forno a 200°C par 20 minuti, fin che vien dorà.'],
+  },
+  'seppie-con-piselli': {
+    tagline: "Sépe stufà co\' bisi e pomodoro: un piato de pésse de la tradizion veneta, bon co\' la poénta.",
+    ingredients: ['800g de sépe netàe', '300g de bisi', '1 zegola', 'Passata de pomodoro', 'Ojo bon, persémolo, sal'],
+    steps: ['Tajar le sépe a anèi o strissoline.', 'Far pasir la zegola trinciàda in te l\'ojo.', 'Zontar le sépe e rosolarle par qualche minuto.', 'Zontar la passata de pomodoro e i bisi, coverzar e còsar a fógo basso par 30-40 minuti.', 'Profumar co\' persémolo fresco e servir co\' la poénta.'],
+  },
+  'cannelloni': {
+    tagline: "Canelóni de pasta fresca piéni de spinasse e ricota, gratinài co\' besciamela: un clàsico da forno.",
+    ingredients: ['12 canelóni de pasta fresca', '300g de spinasse còte', '250g de ricota', '300ml de besciamela', 'Grana gratà, sal, nosmoscada'],
+    steps: ['Trinciar fin le spinasse còte e strucarle ben.', 'Mìssiarle co\' la ricota, un fià de Grana, sal e nosmoscada.', 'Impinir i canelóni co\' el composto.', 'Metarli in tuna tégia, coverzarli co\' besciamela e Grana.', 'Còsar in forno a 200°C par 25-30 minuti, fin che vien dorà.'],
+  },
+  'ragu-di-salsiccia': {
+    tagline: "Ragù de luganega fato in casa co\' pomodoro e verdure: giusto par condir pasta fresca o poénta.",
+    ingredients: ['500g de luganega fresca', '1 zegola', '1 carota', '1 còsta de selino', 'Passata de pomodoro', 'Vin bianco, ojo bon'],
+    steps: ['Cavar la pèle a la luganega e sgranarla co\' le man.', 'Far un soffrito co\' zegola, carota e selino trinciài.', 'Zontar la luganega e rosolarla, sfumando co\' vin bianco.', 'Zontar la passata de pomodoro e còsar a fógo basso par 40 minuti.', 'Servir co\' pasta fresca o poénta ben calda.'],
+  },
+  'coniglio-in-salmi': {
+    tagline: "Conéjo marinà e brasà in tel vin rosso co\' erbe: un secondo robusto de la tradizion contadina.",
+    ingredients: ['1 conéjo a tocheti', '½ litro de vin rosso', 'Rosmarin, salvia, alloro', '1 zegola', 'Ojo bon, sal, pévare'],
+    steps: ['Marinar el conéjo in tel vin rosso co\' le erbe par almanco 4 ore.', 'Colar la carne, tegnendo da parte el vin de la marinada.', 'Rosolar el conéjo in te l\'ojo caldo insieme a la zegola trinciàda.', 'Sfumar co\' el vin de la marinada colà e coverzar.', 'Còsar a fógo basso par circa un\'ora e mèza, fin che la carne la xe tènara.'],
+  },
+  'brasato-al-vino': {
+    tagline: "Manzo brasà pian pian in tel vin rosso co\' verdure: un secondo rico, giusto co\' la poénta.",
+    ingredients: ['1kg de manzo in tun tòco solo', '½ litro de vin rosso', '1 zegola', '1 carota', '1 còsta de selino', 'Alloro, ojo bon, sal'],
+    steps: ['Ligar la carne e rosolarla in te l\'ojo caldo da tute le bande.', 'Zontar zegola, carota e selino trinciài e lassarli pasir.', 'Sfumar co\' el vin rosso e zontar \'na foja de alloro.', 'Còsar coverto a fógo basso par circa 2 ore e mèza, voltàndola ogni tanto.', 'Tajarla a féte e servirla co\' el so fondo e la poénta.'],
+  },
 };
 
 /* Numero di settimana ISO 8601 (settimana che inizia il lunedì). */
@@ -2496,7 +2607,12 @@ function getISOWeek(date) {
 }
 function getRecipeOfTheWeek(date) {
   const seasonKey = getSeasonForDate(date);
-  const pool = RECIPES.filter(r => r.season === null || r.season === seasonKey);
+  // In inverno (stagione fredda) la rotazione esclude le ricette etichettate
+  // 'inverno' (caldi) su richiesta esplicita dei proprietari — mostra solo
+  // ricette senza stagione o di altre stagioni.
+  const pool = seasonKey === 'inverno'
+    ? RECIPES.filter(r => r.season !== 'inverno')
+    : RECIPES.filter(r => r.season === null || r.season === seasonKey);
   if (pool.length === 0) return RECIPES[0];
   const { week, year } = getISOWeek(date);
   return pool[(year * 53 + week) % pool.length];
