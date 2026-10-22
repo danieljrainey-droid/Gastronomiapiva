@@ -566,10 +566,12 @@ function getUpcomingDstRangeLabel(seasonKind, today, lang) {
    l'ultima domenica di marzo e finisce l'ultima domenica di ottobre.
    Dicembre ha sempre il proprio orario esteso, indipendentemente dall'ora legale. */
 /* Override manuale della priorità freddi/caldi nel menù (indipendente dall'orario,
-   che segue sempre il cambio ora legale). null = usa il calendario estate/inverno
-   di default; 'estate' forza la priorità ai piatti freddi, 'inverno' ai piatti caldi.
-   Da modificare su richiesta esplicita dei proprietari. */
-const DISH_PRIORITY_OVERRIDE = null;
+   che segue sempre il cambio ora legale). 'estate' = badge "Mesi Caldi" (caldi);
+   'inverno' = badge "Mesi Freddi" (freddi). null = usa il calendario estate/inverno
+   di default (stesse date del cambio orario). Impostato a 'inverno' su richiesta
+   dei proprietari: priorità ai piatti freddi in anticipo sul cambio ora legale
+   del 25/10. Da modificare su richiesta esplicita dei proprietari. */
+const DISH_PRIORITY_OVERRIDE = 'inverno';
 function getHoursSeasonForDate(date) {
   const year = date.getFullYear();
   const summerStart = getLastSundayOfMonth(year, 2);  // ultima domenica di marzo
@@ -2607,12 +2609,7 @@ function getISOWeek(date) {
 }
 function getRecipeOfTheWeek(date) {
   const seasonKey = getSeasonForDate(date);
-  // In inverno (stagione fredda) la rotazione esclude le ricette etichettate
-  // 'inverno' (caldi) su richiesta esplicita dei proprietari — mostra solo
-  // ricette senza stagione o di altre stagioni.
-  const pool = seasonKey === 'inverno'
-    ? RECIPES.filter(r => r.season !== 'inverno')
-    : RECIPES.filter(r => r.season === null || r.season === seasonKey);
+  const pool = RECIPES.filter(r => r.season === null || r.season === seasonKey);
   if (pool.length === 0) return RECIPES[0];
   const { week, year } = getISOWeek(date);
   return pool[(year * 53 + week) % pool.length];

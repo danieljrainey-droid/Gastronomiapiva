@@ -969,7 +969,7 @@ function getUpcomingDstRangeLabel(seasonKind, today, lang) {
   }
   return `${fmt(start)} – ${fmt(end)} ${end.getFullYear()}`;
 }
-const DISH_PRIORITY_OVERRIDE = null;
+const DISH_PRIORITY_OVERRIDE = 'inverno';
 function getHoursSeasonForDate(date) {
   const year = date.getFullYear();
   const summerStart = getLastSundayOfMonth(year, 2);
@@ -3726,7 +3726,7 @@ function getISOWeek(date) {
 }
 function getRecipeOfTheWeek(date) {
   const seasonKey = getSeasonForDate(date);
-  const pool = seasonKey === 'inverno' ? RECIPES.filter(r => r.season !== 'inverno') : RECIPES.filter(r => r.season === null || r.season === seasonKey);
+  const pool = RECIPES.filter(r => r.season === null || r.season === seasonKey);
   if (pool.length === 0) return RECIPES[0];
   const {
     week,
