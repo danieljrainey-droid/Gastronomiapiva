@@ -1566,7 +1566,7 @@ const MENU_DISHES = [{
   name: 'Seppie con Piselli',
   src: 'images/dishes/seppie_con_piselli.jpg'
 }, {
-  name: 'Branzino',
+  name: 'Branzino al Forno',
   src: 'images/dishes/branzino.jpg'
 }, {
   name: 'Cotolette di Pollo',
@@ -1921,7 +1921,7 @@ const DISH_DESCRIPTIONS = {
   'Polpettone di Carni Bianche e Verdure': 'Carni bianche, carote, zucchine, grana, uova, pangrattato',
   'Merluzzo in Tempura': 'Merluzzo, pastella, olio — fritto croccante',
   'Seppie con Piselli': 'Seppie, piselli, pomodoro, cipolla, prezzemolo',
-  'Branzino': 'Filetti di branzino al forno, olio extravergine, sale, pepe',
+  'Branzino al Forno': 'Filetti di branzino al forno, olio extravergine, sale, pepe',
   'Cotolette di Pollo': 'Cotolette di pollo impanate e fritte, croccanti',
   'Platessa': 'Filetto di platessa impanato, croccante — da cuocere al forno o in padella',
   'Ricciola': 'Filetto di ricciola al forno con limone, rosmarino e olio extravergine. Pesce nobile dalle carni sode e delicate.',
@@ -2078,7 +2078,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Polpettone di Carni Bianche e Verdure': 'Carne bianca, carote, sucine, Grana, ovi, pan gratà',
   'Merluzzo in Tempura': 'Merlusso, pastèla, ojo — frito crocante',
   'Seppie con Piselli': 'Sépe, bisi, pomodoro, zegola, persémolo',
-  'Branzino': 'Fileti de branzin al forno, ojo bon, sal, pévare',
+  'Branzino al Forno': 'Fileti de branzin al forno, ojo bon, sal, pévare',
   'Cotolette di Pollo': 'Cotolete de polastro impanàe e frite, crocanti',
   'Platessa': 'Fileto de platessa impanà, crocante — da còsar al forno o in tècia',
   'Ricciola': 'Fileto de ricciola al forno co\' limon, rosmarin e ojo bon. Pesse fin da le carne sòde e delicàe.',
@@ -2318,7 +2318,7 @@ const DISH_NAME_EN = {
   'Polpettone di Carni Bianche e Verdure': 'White Meat & Vegetable Meatloaf',
   'Merluzzo in Tempura': 'Cod Tempura',
   'Seppie con Piselli': 'Cuttlefish with Peas',
-  'Branzino': 'Sea Bass',
+  'Branzino al Forno': 'Baked Sea Bass',
   'Cotolette di Pollo': 'Chicken Cutlets',
   'Platessa': 'Plaice',
   'Ricciola': 'Amberjack',
@@ -2468,7 +2468,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Polpettone di Carni Bianche e Verdure': 'White meats, carrots, zucchini, Grana, eggs, breadcrumbs',
   'Merluzzo in Tempura': 'Cod, tempura batter, oil — crispy fried',
   'Seppie con Piselli': 'Cuttlefish, peas, tomato, onion, parsley',
-  'Branzino': 'Baked sea bass fillets, extra virgin olive oil, salt, pepper',
+  'Branzino al Forno': 'Baked sea bass fillets, extra virgin olive oil, salt, pepper',
   'Cotolette di Pollo': 'Breaded, fried chicken cutlets, crispy',
   'Platessa': 'Breaded plaice fillet, crispy — to bake or pan-fry',
   'Ricciola': 'Baked amberjack fillet with lemon, rosemary and extra virgin olive oil. A noble fish with firm, delicate flesh.',
@@ -2544,7 +2544,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Secondi Piati',
   subtitle: 'Specialità di carne e pesce',
   subtitleEn: 'Meat and fish specialties',
-  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Salsiccia alla Griglia', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Osso Buco', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
+  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Salsiccia alla Griglia', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Osso Buco', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino al Forno', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
 }, {
   id: 'dolci',
   title: 'Dolci',
