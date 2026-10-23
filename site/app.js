@@ -152,7 +152,8 @@ function MenuSectionReveal({
         }
       });
     }, {
-      threshold: 0.12
+      threshold: 0,
+      rootMargin: '0px 0px -10% 0px'
     });
     obs.observe(el);
     return () => obs.disconnect();
