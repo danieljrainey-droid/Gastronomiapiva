@@ -2719,7 +2719,8 @@ function MenuSection() {
     href: `#section-${section.id}`,
     onClick: e => {
       e.preventDefault();
-      document.getElementById(`section-${section.id}`)?.scrollIntoView({
+      const el = document.getElementById(`section-${section.id}`);
+      if (el) el.scrollIntoView({
         behavior: 'smooth'
       });
     },

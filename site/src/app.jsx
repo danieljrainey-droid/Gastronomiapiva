@@ -1883,7 +1883,7 @@ function MenuSection() {
         display: 'flex', gap: 8, overflowX: 'auto', WebkitOverflowScrolling: 'touch',
       }}>
         {MENU_SECTIONS.map(section => (
-          <a key={section.id} href={`#section-${section.id}`} onClick={e => { e.preventDefault(); document.getElementById(`section-${section.id}`)?.scrollIntoView({ behavior: 'smooth' }); }} style={{
+          <a key={section.id} href={`#section-${section.id}`} onClick={e => { e.preventDefault(); const el = document.getElementById(`section-${section.id}`); if (el) el.scrollIntoView({ behavior: 'smooth' }); }} style={{
             flex: '0 0 auto', fontFamily: 'var(--font-body)', fontSize: 12.5, fontWeight: 600, letterSpacing: '0.02em',
             padding: '7px 14px', borderRadius: 999, textDecoration: 'none', whiteSpace: 'nowrap',
             color: activeSectionId === section.id ? '#FDFAF4' : '#3D2B1A',
