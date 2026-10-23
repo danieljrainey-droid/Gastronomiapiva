@@ -1373,6 +1373,9 @@ const MENU_DISHES = [{
   name: 'Distillati Of Bonollo 1908',
   src: "images/dishes/grappe_of_bonollo.jpg"
 }, {
+  name: 'Coccole Of Bonollo',
+  src: "images/dishes/coccole_of_bonollo.jpg"
+}, {
   name: 'Fusilli di Pisa Martelli',
   src: "images/dishes/fusilli_di_pisa_martelli.jpg"
 }, {
@@ -1881,6 +1884,7 @@ const DISH_DESCRIPTIONS = {
   'Confettura Extra Mistilli': "Confetture extra artigianali Mistilli, cotte a fuoco lento con sola frutta e zucchero di canna.",
   'Albicocche in Grappa Brezzo': "Frutta intera conservata in sciroppo con grappa — la linea 'Le Grappolose' di Brezzo.",
   'Distillati Of Bonollo 1908': "La linea Of di Bonollo 1908: Of Dorange all'arancia, Grappa Of Amarone Barrique e Amaro Of. Da fine pasto, in bottiglie da collezione. Disponibili anche in confezione regalo.",
+  'Coccole Of Bonollo': "Cioccolatini Coccole Of di Bonollo, ripieni di Grappa Of Amarone Barrique.",
   'Fusilli di Pisa Martelli': 'Fusilli di Pisa trafilati al bronzo — Martelli, famiglia di pastai dal 1926. Semola di grano duro, essiccazione lenta.',
   'Ragù di Cervo Regi': 'Ragù di cervo fatto in casa — Regi, specialità altoatesina. Sugo pronto, ideale per pasta e polenta.',
   'Grissini Il Panificio': "Grissini artigianali Il Panificio — linee Gran Rustico ai cereali misti e Cereali Scuri tostati, con lievito madre.",
@@ -2039,6 +2043,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Confettura Extra Mistilli': 'Confeture extra fate a man Mistilli, còte pian co\' sol fruta e zùcaro de cana.',
   'Albicocche in Grappa Brezzo': 'Fruta intiera tegnùa in tel siropo co\' la grapa — la linea "Le Grappolose" de Brezzo.',
   'Distillati Of Bonollo 1908': 'La linea Of de Bonollo 1908: Of Dorange co\' l\'arancio, Grapa Of Amarone Barrique e Amaro Of. Da finir el disnar, in botilie da colessión. Disponìbili anca in pachéto regalo.',
+  'Coccole Of Bonollo': 'Ciocolatini Coccole Of de Bonollo, co\' drento la Grapa Of Amarone Barrique.',
   'Fusilli di Pisa Martelli': 'Fusilli de Pisa tirài al bronzo — Martelli, fameia de pastari dal 1926. Semola de gran duro, sugà pian.',
   'Ragù di Cervo Regi': 'Ragù de servo fato in casa — Regi, specialità de l\'Alto Adige. Sugo pronto, giusto par pasta e polenta.',
   'Grissini Il Panificio': 'Grissini fati a man Il Panificio — Gran Rustico ai cereali missi e Cereali Scuri tostài, co\' lievito madre.',
@@ -2281,6 +2286,7 @@ const DISH_NAME_EN = {
   'Confettura Extra Mistilli': 'Mixed Berry Jam',
   'Albicocche in Grappa Brezzo': 'Apricots in Grappa',
   'Distillati Of Bonollo 1908': 'Bonollo Of Spirits',
+  'Coccole Of Bonollo': 'Bonollo Coccole Of Chocolates',
   'Fusilli di Pisa Martelli': 'Martelli Fusilli',
   'Ragù di Cervo Regi': 'Venison Ragù',
   'Grissini Il Panificio': 'Breadsticks',
@@ -2432,6 +2438,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Confettura Extra Mistilli': 'Artisanal extra jams by Mistilli, slow-cooked with only fruit and cane sugar.',
   'Albicocche in Grappa Brezzo': "Whole fruit preserved in syrup with grappa — Brezzo's 'Le Grappolose' line.",
   'Distillati Of Bonollo 1908': 'The Of line by Bonollo 1908: Of Dorange with orange, Grappa Of Amarone Barrique and Amaro Of. After-dinner spirits in collectible bottles. Also available as a gift box.',
+  'Coccole Of Bonollo': 'Coccole Of chocolates by Bonollo, filled with Grappa Of Amarone Barrique.',
   'Fusilli di Pisa Martelli': 'Bronze-drawn Fusilli di Pisa — Martelli, a family of pasta makers since 1926. Durum wheat semolina, slow drying.',
   'Ragù di Cervo Regi': 'Homemade venison ragù — Regi, a South Tyrolean specialty. Ready sauce, ideal with pasta and polenta.',
   'Grissini Il Panificio': 'Artisanal breadsticks by Il Panificio — Gran Rustico mixed grain and toasted Cereali Scuri lines, with sourdough starter.',
@@ -2568,7 +2575,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
