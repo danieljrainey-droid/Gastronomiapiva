@@ -1371,6 +1371,9 @@ const MENU_DISHES = [{
   name: 'Albicocche in Grappa Brezzo',
   src: "images/dishes/albicocche_in_grappa_brezzo.jpg"
 }, {
+  name: 'Ciliegia in Liquore Brezzo',
+  src: "images/dishes/ciliegia_in_liquore_brezzo.jpg"
+}, {
   name: 'Distillati Of Bonollo 1908',
   src: "images/dishes/grappe_of_bonollo.jpg"
 }, {
@@ -1893,6 +1896,7 @@ const DISH_DESCRIPTIONS = {
   'Aceto Balsamico Oro Gold': 'Aceto Balsamico di Modena IGP invecchiato — Fattoria Estense, riserva Oro Gold 250ml.',
   'Confettura Extra Mistilli': "Confetture extra artigianali Mistilli, cotte a fuoco lento con sola frutta e zucchero di canna.",
   'Albicocche in Grappa Brezzo': "Frutta intera conservata in sciroppo con grappa — la linea 'Le Grappolose' di Brezzo.",
+  'Ciliegia in Liquore Brezzo': "Ciliegie intere conservate in liquore — la linea 'Le Grappolose' di Brezzo.",
   'Distillati Of Bonollo 1908': "La linea Of di Bonollo 1908: Of Dorange all'arancia, Grappa Of Amarone Barrique e Amaro Of. Da fine pasto, in bottiglie da collezione. Disponibili anche in confezione regalo.",
   'Coccole Of Bonollo': "Cioccolatini Coccole Of di Bonollo, ripieni di Grappa Of Amarone Barrique.",
   'Chocotaste Of Bonollo': "Cofanetto Chocotaste di Bonollo: bottiglia di Grappa Of Amarone Barrique e sigaro di cioccolato fondente, in elegante scatola da collezione.",
@@ -2055,6 +2059,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Aceto Balsamico Oro Gold': 'Aseo Balsàmico de Modena IGP invecià — Fattoria Estense, riserva Oro Gold 250ml.',
   'Confettura Extra Mistilli': 'Confeture extra fate a man Mistilli, còte pian co\' sol fruta e zùcaro de cana.',
   'Albicocche in Grappa Brezzo': 'Fruta intiera tegnùa in tel siropo co\' la grapa — la linea "Le Grappolose" de Brezzo.',
+  'Ciliegia in Liquore Brezzo': 'Siriese intiere tegnùe in liquore — la linea "Le Grappolose" de Brezzo.',
   'Distillati Of Bonollo 1908': 'La linea Of de Bonollo 1908: Of Dorange co\' l\'arancio, Grapa Of Amarone Barrique e Amaro Of. Da finir el disnar, in botilie da colessión. Disponìbili anca in pachéto regalo.',
   'Coccole Of Bonollo': 'Ciocolatini Coccole Of de Bonollo, co\' drento la Grapa Of Amarone Barrique.',
   'Chocotaste Of Bonollo': 'Pachéto regalo Chocotaste de Bonollo: botilia de Grapa Of Amarone Barrique e sigaro de ciocolàto fondente, in scatola elegante da colessión.',
@@ -2301,6 +2306,7 @@ const DISH_NAME_EN = {
   'Aceto Balsamico Oro Gold': 'Balsamic Vinegar — Oro Gold',
   'Confettura Extra Mistilli': 'Mixed Berry Jam',
   'Albicocche in Grappa Brezzo': 'Apricots in Grappa',
+  'Ciliegia in Liquore Brezzo': 'Cherries in Liqueur',
   'Distillati Of Bonollo 1908': 'Bonollo Of Spirits',
   'Coccole Of Bonollo': 'Bonollo Coccole Of Chocolates',
   'Cremini Baratti & Milano': 'Baratti & Milano Cremini',
@@ -2456,6 +2462,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Aceto Balsamico Oro Gold': 'Aged Balsamic Vinegar of Modena IGP — Fattoria Estense, Oro Gold reserve 250ml.',
   'Confettura Extra Mistilli': 'Artisanal extra jams by Mistilli, slow-cooked with only fruit and cane sugar.',
   'Albicocche in Grappa Brezzo': "Whole fruit preserved in syrup with grappa — Brezzo's 'Le Grappolose' line.",
+  'Ciliegia in Liquore Brezzo': "Whole cherries preserved in liqueur — Brezzo's 'Le Grappolose' line.",
   'Distillati Of Bonollo 1908': 'The Of line by Bonollo 1908: Of Dorange with orange, Grappa Of Amarone Barrique and Amaro Of. After-dinner spirits in collectible bottles. Also available as a gift box.',
   'Coccole Of Bonollo': 'Coccole Of chocolates by Bonollo, filled with Grappa Of Amarone Barrique.',
   'Chocotaste Of Bonollo': 'Chocotaste gift box by Bonollo: a bottle of Grappa Of Amarone Barrique and a dark chocolate cigar, in an elegant collectible tin.',
@@ -2597,7 +2604,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
