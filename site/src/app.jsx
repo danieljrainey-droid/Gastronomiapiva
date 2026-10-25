@@ -481,6 +481,22 @@ function getClosureForDate(date) {
 function isSameCalendarDay(a, b) {
   return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
 }
+/* ── ORARIO STRAORDINARIO (un giorno specifico) ──
+   Orario diverso dal solito per un singolo giorno — es. apertura straordinaria di
+   domenica, orario ridotto per un evento, ecc. Vale solo per il badge "oggi" in
+   home, non cambia la tabella settimanale standard in Contatti. Cancellare la
+   voce quando è passata. Formato: { date: [anno, mese(1-12), giorno], times: [...] }. */
+const ORARIO_STRAORDINARIO = [
+  { date: [2026, 10, 25], times: ['9:00 – 14:00', '16:30 – 19:30'] },
+];
+function getSpecialHoursForDate(date) {
+  const d0 = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  for (const o of ORARIO_STRAORDINARIO) {
+    const [y, m, d] = o.date;
+    if (isSameCalendarDay(d0, new Date(y, m - 1, d))) return o.times;
+  }
+  return null;
+}
 /* Restituisce il nome della festività se `date` cade in un giorno di chiusura, altrimenti null. */
 function getHolidayNameForDate(date) {
   const closure = getClosureForDate(date);
@@ -564,8 +580,10 @@ function isCarnevalePeriod(date) {
   const fatTuesday = getFatTuesday(year);
   return d0 >= jan6 && d0 <= fatTuesday;
 }
-/* Orario di oggi: tiene conto di stagione e festività. */
+/* Orario di oggi: tiene conto di stagione, festività e orario straordinario. */
 function getTodayHoursInfo(date) {
+  const specialTimes = getSpecialHoursForDate(date);
+  if (specialTimes) return { closed: false, entry: { day: DAY_NAMES_IT[date.getDay()], times: specialTimes }, seasonKey: getHoursSeasonForDate(date) };
   const holidayName = getHolidayNameForDate(date);
   if (holidayName) return { closed: true, holidayName };
   const seasonKey = getHoursSeasonForDate(date);
