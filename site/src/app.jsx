@@ -1765,6 +1765,7 @@ const MENU_SECTIONS = [
       'Crostoli',
       'Cappelletti Mostarda',
       'Ciambella alla Ricotta',
+      'Torta Formaggi',
     ],
   },
   {
@@ -1776,7 +1777,6 @@ const MENU_SECTIONS = [
     subtitleEn: 'Seasonal selections and specials',
     dishes: [
       'Selezione di Formaggi',
-      'Torta Formaggi',
       'Ricottine di Bufala',
       'Prodotti Tipici Rovigo',
       "Foglie d'Ulivo agli Spinaci",
