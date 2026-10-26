@@ -824,7 +824,7 @@ const MENU_DISHES = [
   { name: 'Crostoli', src: 'images/dishes/crostoli.jpg', season: 'carnevale' },
   { name: 'Ciambella alla Ricotta', src: 'images/dishes/ciambella_alla_ricotta.jpg' },
   { name: 'Selezione di Formaggi', src: 'images/dishes/formaggi_misti.jpg' },
-  { name: 'Torta Formaggi', src: 'images/dishes/torta_formaggi.jpg' },
+  { name: 'Torta Formaggi', src: 'images/dishes/torta_formaggi.jpg', season: 'inverno' },
   { name: 'Ricottine di Bufala', src: 'images/dishes/ricottine_di_bufala.jpg' },
   { name: 'Crema di Pistacchio', src: 'images/dishes/crema_di_pistacchio.jpg', season: 'feste' },
   { name: 'Crema Dolce al Pistacchio', src: 'images/dishes/crema_dolce_al_pistacchio.jpg', season: 'feste' },

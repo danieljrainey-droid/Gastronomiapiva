@@ -1688,7 +1688,8 @@ const MENU_DISHES = [{
   src: 'images/dishes/formaggi_misti.jpg'
 }, {
   name: 'Torta Formaggi',
-  src: 'images/dishes/torta_formaggi.jpg'
+  src: 'images/dishes/torta_formaggi.jpg',
+  season: 'inverno'
 }, {
   name: 'Ricottine di Bufala',
   src: 'images/dishes/ricottine_di_bufala.jpg'
