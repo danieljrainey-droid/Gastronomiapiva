@@ -1687,6 +1687,9 @@ const MENU_DISHES = [{
   name: 'Selezione di Formaggi',
   src: 'images/dishes/formaggi_misti.jpg'
 }, {
+  name: 'Torta Formaggi',
+  src: 'images/dishes/torta_formaggi.jpg'
+}, {
   name: 'Ricottine di Bufala',
   src: 'images/dishes/ricottine_di_bufala.jpg'
 }, {
@@ -1992,6 +1995,7 @@ const DISH_DESCRIPTIONS = {
   'Crostoli': 'Sottili sfoglie fritte e croccanti, spolverate di zucchero a velo — dolce di Carnevale.',
   'Ciambella alla Ricotta': 'Soffice ciambella da forno impastata con ricotta fresca, profumata al limone e ricoperta di granella di zucchero. Dolce da colazione semplice e genuino.',
   'Selezione di Formaggi': 'Un\'ampia selezione di formaggi disponibili al banco — freschi, stagionati e a pasta dura, per ogni gusto ed occasione. Chiedi al banco le disponibilità del giorno.',
+  'Torta Formaggi': 'Torta di formaggi a strati, guarnita con noci e ciliegine candite — ideale per antipasto o buffet.',
   'Ricottine di Bufala': 'Ricotta di latte di bufala, fresca e cremosa — in monoporzione.',
   "Foglie d'Ulivo agli Spinaci": 'Pasta di semola di grano duro agli spinaci a forma di foglia d\'ulivo, delle Specialità Salvagno. Ideale con condimenti leggeri a base di olio extravergine.',
   'Torronfetta Barbero': 'Torrone friabile D. Barbero in fette sottili, disponibile con mandorle o pistacchi. Croccante e delicato, perfetto con il caffè.',
@@ -2155,6 +2159,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Crostoli': 'Sfoje sotìe frite e crocanti, co\' su el zùcaro a vélo — dolse de Carneval.',
   'Ciambella alla Ricotta': 'Ciambèla morbida da forno co\' ricota fresca, profumàda al limon e coverta de granèla de zùcaro. Dolse da colassión sémplice e genuin.',
   'Selezione di Formaggi': 'Un bel po\' de formaji al banco — freschi, stagionài e duri, par tuti i gusti e ocasión. Domanda al banco cosa che ghe xe incuò.',
+  'Torta Formaggi': 'Torta de formaji a strati, guarnìa co\' nose e siriesete candìe — giusta par scominsiar o buffet.',
   'Ricottine di Bufala': 'Ricota de late de bùfala, fresca e cremosa — in monoporsion.',
   "Foglie d'Ulivo agli Spinaci": 'Pasta de semola de gran duro co\' spinasse a forma de foja d\'ulivo, de le Specialità Salvagno. Giusta co\' condimenti lisieri de ojo bon.',
   'Torronfetta Barbero': 'Torón friàbile D. Barbero in fete sotìe, co\' màndole o pistaci. Crocante e delicà, giusto col cafè.',
@@ -2193,6 +2198,7 @@ const DISH_NAME_VEC = {
   'Vini Assortiti': 'Vini Assortìi',
   'Prodotti Tipici Rovigo': 'Roba Nostrana de Rovigo',
   'Selezione di Formaggi': 'Sielta de Formaji',
+  'Torta Formaggi': 'Torta de Formaji',
   'Ricottine di Bufala': 'Ricotine de Bùfala',
   'Selezione Champagne e Spumanti': 'Sielta de Champagne e Spumanti',
   'Torrone Assortimento': 'Assortimento de Torón',
@@ -2402,6 +2408,7 @@ const DISH_NAME_EN = {
   'Crostoli': 'Crostoli',
   'Ciambella alla Ricotta': 'Ricotta Ring Cake',
   'Selezione di Formaggi': 'Cheese Selection',
+  'Torta Formaggi': 'Cheese Torte',
   'Ricottine di Bufala': 'Buffalo Ricotta Cups',
   "Foglie d'Ulivo agli Spinaci": 'Spinach Olive-Leaf Pasta',
   'Torronfetta Barbero': 'Barbero Nougat Slices',
@@ -2558,6 +2565,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Crostoli': 'Thin, crispy fried pastry sheets, dusted with icing sugar — a Carnival sweet.',
   'Ciambella alla Ricotta': 'Soft baked ring cake made with fresh ricotta, scented with lemon and topped with sugar crystals. A simple, genuine breakfast treat.',
   'Selezione di Formaggi': "A wide selection of cheeses available at the counter — fresh, aged and hard, for every taste and occasion. Ask us what's available today.",
+  'Torta Formaggi': 'Layered cheese torte, garnished with walnuts and candied cherries — perfect as a starter or for a buffet.',
   'Ricottine di Bufala': 'Buffalo milk ricotta, fresh and creamy — in single-serving cups.',
   "Foglie d'Ulivo agli Spinaci": 'Durum wheat semolina pasta with spinach, shaped like olive leaves, by Specialità Salvagno. Ideal with light extra-virgin olive oil dressings.',
   'Torronfetta Barbero': 'Crumbly D. Barbero nougat in thin slices, available with almonds or pistachios. Crisp and delicate, perfect with coffee.',
@@ -2625,7 +2633,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Torta Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
