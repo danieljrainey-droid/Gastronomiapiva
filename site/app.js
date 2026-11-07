@@ -1485,9 +1485,6 @@ const MENU_DISHES = [{
   name: 'Crespelle',
   src: 'images/dishes/crespelle.jpg'
 }, {
-  name: 'Cannelloni',
-  src: 'images/dishes/cannelloni.jpg'
-}, {
   name: 'Stoccafisso',
   src: 'images/dishes/stoccafisso.jpg',
   season: 'inverno'
@@ -1951,7 +1948,6 @@ const DISH_DESCRIPTIONS = {
   'Gnocchi alla Sorrentina': 'Gnocchi di patate, pomodoro, mozzarella, basilico',
   'Pasticciata': 'Pasta al forno con piselli e prosciutto cotto, besciamella e grana gratinati',
   'Crespelle': 'Crespelle di latte, farina, besciamella e grana — quattro varietà: radicchio, asparagi, zucca o funghi.',
-  'Cannelloni': 'Pasta fresca, spinaci, ricotta, grana, besciamella',
   'Stoccafisso': 'Stoccafisso, olio extravergine, aglio, prezzemolo — mantecato alla veneta',
   'Fondi di Carciofi': 'Fondi di carciofo, olio extravergine',
   'Puré di Patate': 'Patate, latte, burro, grana',
@@ -2115,7 +2111,6 @@ const DISH_DESCRIPTIONS_VEC = {
   'Gnocchi alla Sorrentina': 'Gnochi de patate, pomodoro, mozzarela, basìlico',
   'Pasticciata': 'Pasta al forno co\' bisi e prosciuto còto, besciamela e Grana gratinài',
   'Crespelle': 'Crespele de late, farina, besciamela e Grana — quatro varietà: radicio, sparasi, suca o fonghi.',
-  'Cannelloni': 'Pasta fresca, spinasse, ricota, Grana, besciamela',
   'Stoccafisso': 'Stocafisso, ojo bon, ajo, persémolo — mantecà a la veneta',
   'Fondi di Carciofi': 'Fondi de articioco, ojo bon',
   'Puré di Patate': 'Patate, late, butiro, Grana',
@@ -2195,7 +2190,6 @@ const DISH_NAME_VEC = {
   'Tonno di Carloforte': 'Ton Carloforte',
   'Pasticciata': "Pasticcio co' la carne",
   'Crespelle': 'Crespele',
-  'Cannelloni': 'Canelóni',
   'Vini Assortiti': 'Vini Assortìi',
   'Prodotti Tipici Rovigo': 'Roba Nostrana de Rovigo',
   'Selezione di Formaggi': 'Sielta de Formaji',
@@ -2364,7 +2358,6 @@ const DISH_NAME_EN = {
   'Gnocchi alla Sorrentina': 'Gnocchi alla Sorrentina',
   'Pasticciata': 'Pasticciata',
   'Crespelle': 'Crespelle',
-  'Cannelloni': 'Cannelloni',
   'Stoccafisso': 'Stockfish',
   'Fondi di Carciofi': 'Artichoke Hearts',
   'Puré di Patate': 'Mashed Potatoes',
@@ -2521,7 +2514,6 @@ const DISH_DESCRIPTIONS_EN = {
   'Gnocchi alla Sorrentina': 'Potato gnocchi, tomato, mozzarella, basil',
   'Pasticciata': 'Baked pasta with peas and cooked ham, béchamel and Grana au gratin',
   'Crespelle': 'Crêpes made with milk, flour, béchamel and Grana — four varieties: radicchio, asparagus, pumpkin or mushroom.',
-  'Cannelloni': 'Fresh pasta, spinach, ricotta, Grana, béchamel',
   'Stoccafisso': 'Stockfish, extra virgin olive oil, garlic, parsley — Venetian-style creamed',
   'Fondi di Carciofi': 'Artichoke hearts, extra virgin olive oil',
   'Puré di Patate': 'Potatoes, milk, butter, Grana',
@@ -2610,7 +2602,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Ragù di Funghi', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi Reali', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Crespelle', 'Cannelloni', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Ragù di Funghi', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi Reali', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Crespelle', 'Gnocchi di Zucca', 'Canederli con Speck']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
@@ -3620,18 +3612,6 @@ const RECIPES = [{
   steps: ['Tagliare le seppie ad anelli o striscioline.', 'Appassire la cipolla tritata in olio.', 'Aggiungere le seppie e rosolarle per qualche minuto.', 'Unire la passata di pomodoro e i piselli, coprire e cuocere a fuoco basso per 30-40 minuti.', 'Profumare con prezzemolo fresco e servire con la polenta.'],
   stepsEn: ["Cut the cuttlefish into rings or strips.", "Soften the chopped onion in oil.", "Add the cuttlefish and brown for a few minutes.", "Add the tomato passata and peas, cover and cook over low heat for 30-40 minutes.", "Finish with fresh parsley and serve with polenta."]
 }, {
-  id: 'cannelloni',
-  name: 'Cannelloni',
-  nameEn: "Cannelloni",
-  season: null,
-  img: 'images/dishes/cannelloni.jpg',
-  tagline: 'Cannelloni di pasta fresca ripieni di spinaci e ricotta, gratinati con besciamella: un classico da forno.',
-  taglineEn: "Fresh pasta cannelloni filled with spinach and ricotta, baked with béchamel: a classic gratin dish.",
-  ingredients: ['12 cannelloni di pasta fresca', '300g spinaci cotti', '250g ricotta', '300ml besciamella', 'Grana grattugiato, sale, noce moscata'],
-  ingredientsEn: ["12 fresh pasta cannelloni", "300g cooked spinach", "250g ricotta", "300ml béchamel", "Grated Grana, salt, nutmeg"],
-  steps: ['Tritare finemente gli spinaci cotti e strizzarli bene.', 'Mescolarli con la ricotta, un po\' di grana, sale e noce moscata.', 'Farcire i cannelloni con il composto.', 'Disporli in una teglia, coprirli con besciamella e grana.', 'Cuocere in forno a 200°C per 25-30 minuti, fino a doratura.'],
-  stepsEn: ["Finely chop the cooked spinach and squeeze out excess liquid.", "Mix with the ricotta, a little Grana, salt and nutmeg.", "Fill the cannelloni with the mixture.", "Arrange in a baking dish, cover with béchamel and Grana.", "Bake at 200°C (390°F) for 25-30 minutes, until golden."]
-}, {
   id: 'ragu-di-salsiccia',
   name: 'Ragù di Salsiccia',
   nameEn: "Sausage Ragù",
@@ -3753,11 +3733,6 @@ const RECIPE_VEC = {
     tagline: "Sépe stufà co\' bisi e pomodoro: un piato de pésse de la tradizion veneta, bon co\' la poénta.",
     ingredients: ['800g de sépe netàe', '300g de bisi', '1 zegola', 'Passata de pomodoro', 'Ojo bon, persémolo, sal'],
     steps: ['Tajar le sépe a anèi o strissoline.', 'Far pasir la zegola trinciàda in te l\'ojo.', 'Zontar le sépe e rosolarle par qualche minuto.', 'Zontar la passata de pomodoro e i bisi, coverzar e còsar a fógo basso par 30-40 minuti.', 'Profumar co\' persémolo fresco e servir co\' la poénta.']
-  },
-  'cannelloni': {
-    tagline: "Canelóni de pasta fresca piéni de spinasse e ricota, gratinài co\' besciamela: un clàsico da forno.",
-    ingredients: ['12 canelóni de pasta fresca', '300g de spinasse còte', '250g de ricota', '300ml de besciamela', 'Grana gratà, sal, nosmoscada'],
-    steps: ['Trinciar fin le spinasse còte e strucarle ben.', 'Mìssiarle co\' la ricota, un fià de Grana, sal e nosmoscada.', 'Impinir i canelóni co\' el composto.', 'Metarli in tuna tégia, coverzarli co\' besciamela e Grana.', 'Còsar in forno a 200°C par 25-30 minuti, fin che vien dorà.']
   },
   'ragu-di-salsiccia': {
     tagline: "Ragù de luganega fato in casa co\' pomodoro e verdure: giusto par condir pasta fresca o poénta.",
