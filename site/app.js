@@ -1485,10 +1485,6 @@ const MENU_DISHES = [{
   name: 'Crespelle',
   src: 'images/dishes/crespelle.jpg'
 }, {
-  name: 'Stoccafisso',
-  src: 'images/dishes/stoccafisso.jpg',
-  season: 'inverno'
-}, {
   name: 'Fondi di Carciofi',
   src: 'images/dishes/fondi_di_carciofi.jpg'
 }, {
@@ -1599,9 +1595,6 @@ const MENU_DISHES = [{
 }, {
   name: 'Seppie con Piselli',
   src: 'images/dishes/seppie_con_piselli.jpg'
-}, {
-  name: 'Seppioline con Bisi',
-  src: 'images/dishes/seppioline_con_bisi.jpg'
 }, {
   name: 'Branzino al Forno',
   src: 'images/dishes/branzino.jpg'
@@ -1948,7 +1941,6 @@ const DISH_DESCRIPTIONS = {
   'Gnocchi alla Sorrentina': 'Gnocchi di patate, pomodoro, mozzarella, basilico',
   'Pasticciata': 'Pasta al forno con piselli e prosciutto cotto, besciamella e grana gratinati',
   'Crespelle': 'Crespelle di latte, farina, besciamella e grana — quattro varietà: radicchio, asparagi, zucca o funghi.',
-  'Stoccafisso': 'Stoccafisso, olio extravergine, aglio, prezzemolo — mantecato alla veneta',
   'Fondi di Carciofi': 'Fondi di carciofo, olio extravergine',
   'Puré di Patate': 'Patate, latte, burro, grana',
   'Patate al Rosmarino al Forno': 'Patate, rosmarino, aglio, olio extravergine, sale',
@@ -1966,7 +1958,6 @@ const DISH_DESCRIPTIONS = {
   'Polpettone di Carni Bianche e Verdure': 'Carni bianche, carote, zucchine, grana, uova, pangrattato',
   'Merluzzo in Tempura': 'Merluzzo, pastella, olio — fritto croccante',
   'Seppie con Piselli': 'Seppie, piselli, pomodoro, cipolla, prezzemolo',
-  'Seppioline con Bisi': 'Seppioline, aglio, vino, olio, piselli, pomodoro, cipolla',
   'Branzino al Forno': 'Filetti di branzino al forno, olio extravergine, sale, pepe',
   'Cotolette di Pollo': 'Cotolette di pollo impanate e fritte, croccanti',
   'Platessa': 'Filetto di platessa impanato, croccante — da cuocere al forno o in padella',
@@ -2111,7 +2102,6 @@ const DISH_DESCRIPTIONS_VEC = {
   'Gnocchi alla Sorrentina': 'Gnochi de patate, pomodoro, mozzarela, basìlico',
   'Pasticciata': 'Pasta al forno co\' bisi e prosciuto còto, besciamela e Grana gratinài',
   'Crespelle': 'Crespele de late, farina, besciamela e Grana — quatro varietà: radicio, sparasi, suca o fonghi.',
-  'Stoccafisso': 'Stocafisso, ojo bon, ajo, persémolo — mantecà a la veneta',
   'Fondi di Carciofi': 'Fondi de articioco, ojo bon',
   'Puré di Patate': 'Patate, late, butiro, Grana',
   'Patate al Rosmarino al Forno': 'Patate, rosmarin, ajo, ojo bon, sal',
@@ -2129,7 +2119,6 @@ const DISH_DESCRIPTIONS_VEC = {
   'Polpettone di Carni Bianche e Verdure': 'Carne bianca, carote, sucine, Grana, ovi, pan gratà',
   'Merluzzo in Tempura': 'Merlusso, pastèla, ojo — frito crocante',
   'Seppie con Piselli': 'Sépe, bisi, pomodoro, zegola, persémolo',
-  'Seppioline con Bisi': 'Sepete, ajo, vin, ojo, bisi, pomodoro, zegola',
   'Branzino al Forno': 'Fileti de branzin al forno, ojo bon, sal, pévare',
   'Cotolette di Pollo': 'Cotolete de polastro impanàe e frite, crocanti',
   'Platessa': 'Fileto de platessa impanà, crocante — da còsar al forno o in tècia',
@@ -2252,7 +2241,6 @@ const DISH_NAME_VEC = {
   'Osso Buco': 'Osso Buso',
   'Merluzzo in Tempura': 'Merlusso in Tempura',
   'Seppie con Piselli': "Sépe co' i Bisi",
-  'Seppioline con Bisi': "Sepete co' i Bisi",
   'Cotolette di Pollo': 'Cotolete de Polastro',
   'Bistecca di Tonno': 'Bistéca de Ton',
   'Salmone agli Agrumi': 'Salmon co\' i Agrumi',
@@ -2265,7 +2253,6 @@ const DISH_NAME_VEC = {
   'Baccalà alla Vicentina': 'Bacalá ala Vicentina',
   'Polpettone di Carni Bianche e Verdure': 'Polpetón de Carne Bianca e Verdure',
   'Spiedi di Gamberone': 'Spiedini de Gambaron',
-  'Stoccafisso': 'Stocafisso',
   'Tiramisù della casa': 'Tiramisù de la Casa',
   'Crostata di Albicocca': 'Crostata de Armelini',
   'Crostata ai Frutti di Bosco': 'Crostata ai Fruti de Bosco',
@@ -2358,7 +2345,6 @@ const DISH_NAME_EN = {
   'Gnocchi alla Sorrentina': 'Gnocchi alla Sorrentina',
   'Pasticciata': 'Pasticciata',
   'Crespelle': 'Crespelle',
-  'Stoccafisso': 'Stockfish',
   'Fondi di Carciofi': 'Artichoke Hearts',
   'Puré di Patate': 'Mashed Potatoes',
   'Patate al Rosmarino al Forno': 'Roasted Rosemary Potatoes',
@@ -2376,7 +2362,6 @@ const DISH_NAME_EN = {
   'Polpettone di Carni Bianche e Verdure': 'White Meat & Vegetable Meatloaf',
   'Merluzzo in Tempura': 'Cod Tempura',
   'Seppie con Piselli': 'Cuttlefish with Peas',
-  'Seppioline con Bisi': 'Baby Cuttlefish with Peas',
   'Branzino al Forno': 'Baked Sea Bass',
   'Cotolette di Pollo': 'Chicken Cutlets',
   'Platessa': 'Plaice',
@@ -2514,7 +2499,6 @@ const DISH_DESCRIPTIONS_EN = {
   'Gnocchi alla Sorrentina': 'Potato gnocchi, tomato, mozzarella, basil',
   'Pasticciata': 'Baked pasta with peas and cooked ham, béchamel and Grana au gratin',
   'Crespelle': 'Crêpes made with milk, flour, béchamel and Grana — four varieties: radicchio, asparagus, pumpkin or mushroom.',
-  'Stoccafisso': 'Stockfish, extra virgin olive oil, garlic, parsley — Venetian-style creamed',
   'Fondi di Carciofi': 'Artichoke hearts, extra virgin olive oil',
   'Puré di Patate': 'Potatoes, milk, butter, Grana',
   'Patate al Rosmarino al Forno': 'Potatoes, rosemary, garlic, extra virgin olive oil, salt',
@@ -2532,7 +2516,6 @@ const DISH_DESCRIPTIONS_EN = {
   'Polpettone di Carni Bianche e Verdure': 'White meats, carrots, zucchini, Grana, eggs, breadcrumbs',
   'Merluzzo in Tempura': 'Cod, tempura batter, oil — crispy fried',
   'Seppie con Piselli': 'Cuttlefish, peas, tomato, onion, parsley',
-  'Seppioline con Bisi': 'Baby cuttlefish, garlic, wine, oil, peas, tomato, onion',
   'Branzino al Forno': 'Baked sea bass fillets, extra virgin olive oil, salt, pepper',
   'Cotolette di Pollo': 'Breaded, fried chicken cutlets, crispy',
   'Platessa': 'Breaded plaice fillet, crispy — to bake or pan-fry',
@@ -2610,7 +2593,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Secondi Piati',
   subtitle: 'Specialità di carne e pesce',
   subtitleEn: 'Meat and fish specialties',
-  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Stoccafisso', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Salsiccia alla Griglia', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Osso Buco', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Seppioline con Bisi', 'Branzino al Forno', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
+  dishes: ['Roast Beef', 'Spiedi di Gamberone', 'Involtini Valdostani', 'Spezzatino di Tacchino', 'Coniglio in Salmì', 'Faraona Arrosto', 'Polpettone di Vitello', 'Tacchino Farcito', 'Arrosto di Vitello al Forno', 'Brasato al Vino', 'Pollo con Patate', 'Salmone agli Agrumi', 'Capesante', 'Insalata di Mare', 'Sarde in Saor', 'Pollo alla Piastra', 'Salsiccia alla Griglia', 'Trippa alla Parmigiana', 'Involtini di Tacchino', 'Baccalà alla Vicentina', 'Porchetta di Nostra Produzione', 'Scaloppine di Pollo al Marsala', 'Bistecca di Tonno', 'Fegato alla Veneziana', 'Osso Buco', 'Polpettone di Carni Bianche e Verdure', 'Merluzzo in Tempura', 'Seppie con Piselli', 'Branzino al Forno', 'Ricciola', 'Gallinella con Pomodorini e Olive', 'Cotolette di Pollo', 'Platessa']
 }, {
   id: 'dolci',
   title: 'Dolci',
