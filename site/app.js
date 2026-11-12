@@ -1337,6 +1337,9 @@ const MENU_DISHES = [{
   src: 'images/dishes/canederli_con_speck.jpg',
   season: 'inverno'
 }, {
+  name: 'Passatelli',
+  src: 'images/dishes/passatelli.jpg'
+}, {
   name: 'Baccalà alla Vicentina',
   src: 'images/dishes/baccala_alla_vicentina.jpg',
   season: 'inverno'
@@ -1866,6 +1869,7 @@ const DISH_DESCRIPTIONS = {
   'Trippa alla Parmigiana': 'Trippa, sedano, carota, cipolla, aglio, pomodoro',
   'Involtini di Tacchino': 'Fettine di tacchino arrotolate e rosolate in padella, sfumate nel loro fondo di cottura per una carne tenera e succosa.',
   'Canederli con Speck': 'Grandi gnocchi di pane raffermo con speck e prezzemolo, della tradizione alpina veneta. Ottimi in brodo o con burro fuso.',
+  'Passatelli': 'Pasta fresca di pangrattato, uova, grana e scorza di limone, della tradizione romagnola. Ottimi in brodo.',
   'Baccalà alla Vicentina': 'Stoccafisso cotto lentamente con cipolla, acciughe, latte e Grana, secondo la celebre ricetta vicentina. Si serve con la polenta.',
   'Vitello Tonnato': 'Tonno, maionese, vitello, capperi',
   'Orecchiette': 'Pomodori freschi, feta greca, olive, capperi, EVO',
@@ -2027,6 +2031,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Trippa alla Parmigiana': 'Tripa, selino, carota, zegola, ajo, pomodoro',
   'Involtini di Tacchino': 'Fetine de tacchin involtisàe e rosolàe in tècia, sfumàe in tel so sughéto, tenare e sugose.',
   'Canederli con Speck': 'Gnochi grossi de pan seco co\' speck e persémolo, roba de montagna. Bòni in brodo o co\' buro fuso.',
+  'Passatelli': 'Pasta fresca de pan gratà, vovi, Grana e scorsa de limon, de la tradission romagnòla. Bòni in brodo.',
   'Baccalà alla Vicentina': 'Stocafisso còto pian co\' zegola, asciughe, late e Grana, come vol la ricéta de Visensa. Se magna co\' la polenta.',
   'Vitello Tonnato': 'Ton, maionese, vitèl, càpari',
   'Orecchiette': 'Pomodori freschi, feta greca, olive, càpari, ojo bon',
@@ -2297,6 +2302,7 @@ const DISH_NAME_EN = {
   'Trippa alla Parmigiana': 'Tripe alla Parmigiana',
   'Involtini di Tacchino': 'Turkey Rolls',
   'Canederli con Speck': 'Speck Dumplings',
+  'Passatelli': 'Passatelli',
   'Baccalà alla Vicentina': 'Baccalà alla Vicentina',
   "Sciroppo per l'inverno": 'Winter Syrup',
   'Tonno di Carloforte': 'Carloforte Tuna',
@@ -2424,6 +2430,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Trippa alla Parmigiana': 'Tripe, celery, carrot, onion, garlic, tomato',
   'Involtini di Tacchino': "Turkey slices rolled and browned in the pan, deglazed in their own juices for tender, juicy meat.",
   'Canederli con Speck': 'Large stale-bread dumplings with speck and parsley, an Alpine Venetian tradition. Great in broth or with melted butter.',
+  'Passatelli': 'Fresh pasta made from breadcrumbs, eggs, Grana and lemon zest, from Romagna tradition. Great in broth.',
   'Baccalà alla Vicentina': 'Stockfish slow-cooked with onion, anchovies, milk and Grana, following the famous Vicenza recipe. Served with polenta.',
   'Vitello Tonnato': 'Tuna, mayonnaise, veal, capers',
   'Orecchiette': 'Fresh tomatoes, Greek feta, olives, capers, EVO',
@@ -2585,7 +2592,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Primi Piati',
   subtitle: 'Paste, riso e farro',
   subtitleEn: 'Pasta, rice and farro',
-  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Ragù di Funghi', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi Reali', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Crespelle', 'Gnocchi di Zucca', 'Canederli con Speck']
+  dishes: ['Pasta Radicchio & Salsiccia', 'Fettuccine Fresche', 'Tagliolini Freschi', 'Pasta Fredda', 'Pasta Italia', 'Sugo di Pesce', 'Ragù di Anatra', 'Ragù di Salsiccia', 'Ragù di Funghi', 'Insalata di Riso', 'Insalata di Farro', 'Farro Vegano', 'Lasagne Carne', 'Lasagne con Asparagi', 'Orecchiette', 'Pasta Pomodorini Cacio e Pepe', "Pesto d'Agrumi", 'Riso Venere', 'Gnocchi alla Romana', 'Gnocchi Reali', 'Gnocchi alla Sorrentina', 'Pasticciata', 'Crespelle', 'Gnocchi di Zucca', 'Canederli con Speck', 'Passatelli']
 }, {
   id: 'secondi',
   title: 'Secondi Piatti',
