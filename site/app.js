@@ -1338,7 +1338,8 @@ const MENU_DISHES = [{
   season: 'inverno'
 }, {
   name: 'Passatelli',
-  src: 'images/dishes/passatelli.jpg'
+  src: 'images/dishes/passatelli.jpg',
+  season: 'inverno'
 }, {
   name: 'Baccalà alla Vicentina',
   src: 'images/dishes/baccala_alla_vicentina.jpg',

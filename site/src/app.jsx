@@ -711,7 +711,7 @@ const MENU_DISHES = [
   { name: 'Trippa alla Parmigiana',   src: 'images/dishes/trippa_alla_parmigiana.jpg' },
   { name: 'Involtini di Tacchino',    src: 'images/dishes/involtini_di_tacchino.jpg' },
   { name: 'Canederli con Speck',      src: 'images/dishes/canederli_con_speck.jpg', season: 'inverno' },
-  { name: 'Passatelli',               src: 'images/dishes/passatelli.jpg' },
+  { name: 'Passatelli',               src: 'images/dishes/passatelli.jpg', season: 'inverno' },
   { name: 'Baccalà alla Vicentina',   src: 'images/dishes/baccala_alla_vicentina.jpg', season: 'inverno' },
   { name: "Sciroppo per l'inverno",              src: "images/dishes/sciroppo_per_linverno.jpg" },
   { name: "Tonno di Carloforte",              src: "images/dishes/tonno_di_carloforte.jpg" },
