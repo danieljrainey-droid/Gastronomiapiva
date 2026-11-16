@@ -955,6 +955,16 @@ function getSeasonForDate(date) {
   if (d0 >= summerStart && d0 < winterStart) return 'estate';
   return 'inverno';
 }
+/* Come getSeasonForDate, ma per estate/inverno la priorità segue DISH_PRIORITY_OVERRIDE
+   (preferenza dei proprietari in base al meteo, non più legata al cambio ora legale);
+   carnevale/feste/pasqua restano invece legati al calendario, essendo eventi fissi.
+   Usata dalla fascia "in stagione" del menù e dalla ricetta della settimana, così le
+   due restano sempre coerenti tra loro. */
+function getPrioritySeasonForDate(date) {
+  const calSeason = getSeasonForDate(date);
+  if (calSeason === 'estate' || calSeason === 'inverno') return DISH_PRIORITY_OVERRIDE || calSeason;
+  return calSeason;
+}
 /* Etichetta "1 dicembre AAAA – 6 gennaio AAAA" per il periodo di Feste in corso o
    il prossimo, usata accanto al titolo "Alcuni Sapori di Feste". */
 function getUpcomingFesteRangeLabel(today, lang) {
@@ -1854,19 +1864,11 @@ function MenuSection() {
     MENU_DISHES.forEach(d => { m[d.name] = d; });
     return m;
   }, []);
-  // Per estate/inverno la priorità segue DISH_PRIORITY_OVERRIDE (preferenza dei
-  // proprietari in base al meteo, non più legata al cambio ora legale); carnevale/
-  // feste/pasqua restano invece legati al calendario, essendo eventi fissi.
-  const resolveBannerSeason = date => {
-    const calSeason = getSeasonForDate(date);
-    if (calSeason === 'estate' || calSeason === 'inverno') return DISH_PRIORITY_OVERRIDE || calSeason;
-    return calSeason;
-  };
-  const [autoSeasonKey, setAutoSeasonKey] = useState(() => resolveBannerSeason(new Date()));
+  const [autoSeasonKey, setAutoSeasonKey] = useState(() => getPrioritySeasonForDate(new Date()));
   // Ricontrolla la data periodicamente così il cambio di stagione (e il Martedì Grasso,
   // che cade in un giorno diverso ogni anno) scatta da solo senza ricaricare la pagina.
   useEffect(() => {
-    const check = () => setAutoSeasonKey(resolveBannerSeason(new Date()));
+    const check = () => setAutoSeasonKey(getPrioritySeasonForDate(new Date()));
     const id = setInterval(check, 60 * 60 * 1000); // ogni ora
     return () => clearInterval(id);
   }, []);
@@ -2621,9 +2623,9 @@ function getISOWeek(date) {
   return { week: Math.ceil(((d - yearStart) / 86400000 + 1) / 7), year: d.getUTCFullYear() };
 }
 function getRecipeOfTheWeek(date) {
-  const seasonKey = getSeasonForDate(date);
+  const seasonKey = getPrioritySeasonForDate(date);
   const pool = RECIPES.filter(r => r.season === null || r.season === seasonKey);
-  if (pool.length === 0) return RECIPES[0];
+  if (pool.length === 0) return RECIPES.find(r => r.season === null) || RECIPES[0];
   const { week, year } = getISOWeek(date);
   return pool[(year * 53 + week) % pool.length];
 }

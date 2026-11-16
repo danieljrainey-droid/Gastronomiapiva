@@ -1839,6 +1839,11 @@ function getSeasonForDate(date) {
   if (d0 >= summerStart && d0 < winterStart) return 'estate';
   return 'inverno';
 }
+function getPrioritySeasonForDate(date) {
+  const calSeason = getSeasonForDate(date);
+  if (calSeason === 'estate' || calSeason === 'inverno') return DISH_PRIORITY_OVERRIDE || calSeason;
+  return calSeason;
+}
 function getUpcomingFesteRangeLabel(today, lang) {
   const y = today.getFullYear();
   const m = today.getMonth() + 1;
@@ -2654,14 +2659,9 @@ function MenuSection() {
     });
     return m;
   }, []);
-  const resolveBannerSeason = date => {
-    const calSeason = getSeasonForDate(date);
-    if (calSeason === 'estate' || calSeason === 'inverno') return DISH_PRIORITY_OVERRIDE || calSeason;
-    return calSeason;
-  };
-  const [autoSeasonKey, setAutoSeasonKey] = useState(() => resolveBannerSeason(new Date()));
+  const [autoSeasonKey, setAutoSeasonKey] = useState(() => getPrioritySeasonForDate(new Date()));
   useEffect(() => {
-    const check = () => setAutoSeasonKey(resolveBannerSeason(new Date()));
+    const check = () => setAutoSeasonKey(getPrioritySeasonForDate(new Date()));
     const id = setInterval(check, 60 * 60 * 1000);
     return () => clearInterval(id);
   }, []);
@@ -3751,9 +3751,9 @@ function getISOWeek(date) {
   };
 }
 function getRecipeOfTheWeek(date) {
-  const seasonKey = getSeasonForDate(date);
+  const seasonKey = getPrioritySeasonForDate(date);
   const pool = RECIPES.filter(r => r.season === null || r.season === seasonKey);
-  if (pool.length === 0) return RECIPES[0];
+  if (pool.length === 0) return RECIPES.find(r => r.season === null) || RECIPES[0];
   const {
     week,
     year
