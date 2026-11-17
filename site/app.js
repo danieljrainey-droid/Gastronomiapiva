@@ -1448,6 +1448,9 @@ const MENU_DISHES = [{
   src: 'images/dishes/fagioli_in_potacin.jpg',
   season: 'inverno'
 }, {
+  name: 'French Toast',
+  src: 'images/dishes/french_toast.jpg'
+}, {
   name: "Pesto d'Agrumi",
   src: 'images/dishes/pesto_dagrumi.jpg',
   season: 'estate'
@@ -1944,6 +1947,7 @@ const DISH_DESCRIPTIONS = {
   'Faraona Arrosto': 'Faraona, aglio, rosmarino, salvia, olio',
   'Spezzatino di Tacchino': 'Tacchino, spezie fresche, olio, limone — senza glutine',
   'Fagioli in "Potacin"': 'Fagioli, aglio, olio, pomodoro, prosciutto crudo, rosmarino',
+  'French Toast': 'Pancarré, uova, latte, prosciutto cotto e formaggio — toast dorato in padella, tagliato a triangoli.',
   "Pesto d'Agrumi": "Basilico, grana, scorzette d'arancia, pomodorini",
   'Riso Venere': 'Riso venere, asparagi, gamberetti, olio',
   'Coniglio in Salmì': 'Coniglio, vino rosso, rosmarino, salvia, alloro, cipolla',
@@ -2108,6 +2112,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Faraona Arrosto': 'Faraona, ajo, rosmarin, salvia, ojo',
   'Spezzatino di Tacchino': 'Tacchin, spèsie fresche, ojo, limon — sensa glutine',
   'Fagioli in "Potacin"': 'Fasoi, ajo, ojo, pomodoro, prosciuto crudo, rosmarin',
+  'French Toast': 'Pancarré, vovi, late, prosciuto còto e formajo — toast dorà in tècia, tajà a triangolini.',
   "Pesto d'Agrumi": 'Basìlico, Grana, scorsete de naranza, pomarini',
   'Riso Venere': 'Riso venere, sparasi, gamberéti, ojo',
   'Coniglio in Salmì': 'Conéjo, vin rosso, rosmarin, salvia, alloro, zegola',
@@ -2355,6 +2360,7 @@ const DISH_NAME_EN = {
   'Faraona Arrosto': 'Roast Guinea Fowl',
   'Spezzatino di Tacchino': 'Turkey Stew',
   'Fagioli in "Potacin"': 'Beans in "Potacin" Sauce',
+  'French Toast': 'French Toast',
   "Pesto d'Agrumi": 'Citrus Pesto',
   'Riso Venere': 'Venere Black Rice',
   'Coniglio in Salmì': 'Rabbit in Salmì',
@@ -2512,6 +2518,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Faraona Arrosto': 'Guinea fowl, garlic, rosemary, sage, oil',
   'Spezzatino di Tacchino': 'Turkey, fresh spices, oil, lemon — gluten-free',
   'Fagioli in "Potacin"': 'Beans, garlic, oil, tomato, cured ham, rosemary',
+  'French Toast': 'Sandwich bread, eggs, milk, cooked ham and cheese — pan-toasted golden, cut into triangles.',
   "Pesto d'Agrumi": 'Basil, Grana, orange zest, cherry tomatoes',
   'Riso Venere': 'Venere black rice, asparagus, shrimp, oil',
   'Coniglio in Salmì': 'Rabbit, red wine, rosemary, sage, bay leaf, onion',
@@ -2605,7 +2612,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba par Scominsiar & Contorni',
   subtitle: 'Vitello tonnato, verdure e insalate',
   subtitleEn: 'Vitello tonnato, vegetables and salads',
-  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Cavolfiore', 'Lenticchie', 'Polpette di Verdure', 'Polpette di Carne', 'Spiedini di Zucchine', 'Zucca Panata con Timo', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo', 'Fondi di Carciofi']
+  dishes: ['Vitello Tonnato', 'Pomodori Ripieni', 'Insalata Russa', 'Melanzane "Pizzaiola"', 'Verdure Ripiene', 'Fagioli in "Potacin"', 'French Toast', 'Cipolle al Forno', 'Peperonata', 'Zucca al Forno', "Fagiolini con l'Occhio e Acciughine", 'Verza con Pancetta', 'Puré di Patate', 'Patate al Rosmarino al Forno', 'Piselli', 'Spinaci', 'Cavolfiore', 'Lenticchie', 'Polpette di Verdure', 'Polpette di Carne', 'Spiedini di Zucchine', 'Zucca Panata con Timo', 'Fagioli con Cipolla', 'Fagioli al Prezzemolo', 'Insalata di Orzo', 'Fondi di Carciofi']
 }, {
   id: 'primi',
   title: 'Primi Piatti',
