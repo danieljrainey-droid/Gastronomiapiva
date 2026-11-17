@@ -1537,6 +1537,9 @@ const MENU_DISHES = [{
   name: 'Confettura di Mirtilli Brezzo',
   src: 'images/dishes/confettura_mirtilli_brezzo.jpg'
 }, {
+  name: 'Confettura Chiaverini',
+  src: 'images/dishes/confettura_chiaverini.jpg'
+}, {
   name: "Miele all'Arancio Brezzo",
   src: 'images/dishes/miele_arancio_brezzo.jpg'
 }, {
@@ -1584,6 +1587,9 @@ const MENU_DISHES = [{
 }, {
   name: 'Olio Extra Vergine di Oliva Biologico Salvagno',
   src: 'images/dishes/olio_evo_biologico_salvagno.jpg'
+}, {
+  name: 'Olio Anfosso',
+  src: 'images/dishes/olio_anfosso.jpg'
 }, {
   name: 'Fegato alla Veneziana',
   src: 'images/dishes/fegato_alla_veneziana.jpg'
@@ -1999,6 +2005,7 @@ const DISH_DESCRIPTIONS = {
   'Torronfetta Barbero': 'Torrone friabile D. Barbero in fette sottili, disponibile con mandorle o pistacchi. Croccante e delicato, perfetto con il caffè.',
   'Marmellata di Limoni di Sicilia': 'Marmellata di limoni di Sicilia Fiasconaro, dal profumo intenso e agrumato. Ottima sulle fette biscottate o per farcire dolci.',
   'Confettura di Mirtilli Brezzo': 'Confettura di mirtilli Brezzo "La Sciroppata", lavorata a mano con frutta fresca. Ideale su crostate, formaggi e colazioni genuine.',
+  'Confettura Chiaverini': "Confetture extra Chiaverini di Firenze dal 1928, nei gusti More di Rovo Selvatiche, Fichi con Mandorle, Marroni e Mele Renette.",
   "Miele all'Arancio Brezzo": 'Miele italiano Brezzo aromatizzato all\'arancio, nel vasetto con cucchiaino in legno. Delicato e profumato, perfetto per tè e tisane.',
   'Atlante dei Mieli Brezzo': 'Cofanetto degustazione Brezzo con 18 mieli monoflorali italiani in vasetti da assaggio — un viaggio alla scoperta dei principali mieli italiani. Venduti in un\'unica confezione, come mostrato in foto.',
   'Miele del Favo Acacia Brezzo': 'Miele di acacia Brezzo ancora nel favo, nella cera d\'origine. Da gustare a fette o spalmato sul pane.',
@@ -2015,6 +2022,7 @@ const DISH_DESCRIPTIONS = {
   'Confetture Albicocca e Pesca Lazzaris': 'Confetture Lazzaris di albicocca e pesca, con solo zucchero d\'uva. Frutta selezionata dal gusto naturale e genuino. Disponibili singolarmente, non in un\'unica confezione.',
   'Gianduiotto Fondente Barbero': 'Gianduiotti fondenti D. Barbero di Asti, nella latta vintage da collezione. Cioccolato pregiato con nocciole del Piemonte.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Olio extravergine di oliva biologico Frantoio Salvagno, spremuto a freddo. Fruttato ed equilibrato, ideale a crudo.',
+  'Olio Anfosso': "Olio extravergine di oliva Anfosso, nelle iconiche bottiglie dipinte a mano con animali. Disponibile in diversi soggetti.",
   'Crema di Pistacchio': 'Pesto di pistacchio Peccatucci di Mamma Andrea, da Palermo: gusto salato-dolce, perfetto su bruschette, pasta o formaggi.',
   'Crema Dolce al Pistacchio': 'Crema spalmabile dolce al pistacchio Peccatucci di Mamma Andrea, da Palermo: da gustare su pane, dolci o a cucchiaiate.',
   'Torrone Assortimento': 'Assortimento di torroncini artigianali in sei gusti — mandorla, pistacchio, cioccolato fondente e frutta candita — per un regalo goloso delle feste.',
@@ -2161,6 +2169,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Torronfetta Barbero': 'Torón friàbile D. Barbero in fete sotìe, co\' màndole o pistaci. Crocante e delicà, giusto col cafè.',
   'Marmellata di Limoni di Sicilia': 'Marmelàda de limoni de Sicilia Fiasconaro, profumàda e agrumàda. Bòna su le fete biscotàe o par farsir i dolsi.',
   'Confettura di Mirtilli Brezzo': 'Confetura de mirtili Brezzo "La Sciroppata", lavoràda a man co\' fruta fresca. Giusta su crostate, formaji e colassión genuine.',
+  'Confettura Chiaverini': 'Confeture extra Chiaverini de Firense dal 1928, nei gusti More de Rovo Selvàdeghe, Fighi co\' Màndole, Maroni e Mele Renette.',
   "Miele all'Arancio Brezzo": 'Miel italian Brezzo profumà a la naranza, in tel vaséto col cuciarin de legno. Delicà, giusto par tè e tisane.',
   'Atlante dei Mieli Brezzo': 'Scàtola de assaggio Brezzo co\' 18 mieli italiani in vasetini — un viajo par scoprir i mieli pi\' boni de l\'Italia. Vendùi insieme in t\'una confezion sola, come che se vede in foto.',
   'Miele del Favo Acacia Brezzo': 'Miel de acacia Brezzo ancora in tel favo, in te la cera. Bon a fete o spalmà sul pan.',
@@ -2177,6 +2186,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Confetture Albicocca e Pesca Lazzaris': 'Confeture Lazzaris de armelin e persego, co\' sol zùcaro d\'ua. Fruta sielta dal gusto natural e genuin. Se compra sépari, no tute insieme in t\'una confezion.',
   'Gianduiotto Fondente Barbero': 'Gianduioti fondenti D. Barbero de Asti, in te la lata vintage da colessión. Ciocolàto fin co\' nosele del Piemonte.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Ojo estravèrgine biologico Frantoio Salvagno, sprémù a fredo. Fruità e equilibrà, giusto a crudo.',
+  'Olio Anfosso': 'Ojo estravèrgine de oliva Anfosso, in te le butilie iconiche depenta a man co\' animai. Disponìbile in pì sogeti.',
   'Crema di Pistacchio': 'Pesto de pistacio Peccatucci de Mamma Andrea, da Palermo: gusto salà-dolse, giusto su bruschéte, pasta o formaji.',
   'Crema Dolce al Pistacchio': 'Crema dolse da spalmar al pistacio Peccatucci de Mamma Andrea, da Palermo: da magnar su pan, dolsi o a cuciaràe.',
   'Torrone Assortimento': 'Assortimento de toroncini fati a man in sie gusti — màndola, pistacio, ciocolàto fondente e fruta candìa — par un regalo goloso de le feste.',
@@ -2186,6 +2196,7 @@ const DISH_DESCRIPTIONS_VEC = {
 const DISH_NAME_VEC = {
   "Foglie d'Ulivo agli Spinaci": 'Foie de Ulivo',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Ojo de Oliva',
+  'Olio Anfosso': 'Ojo Anfosso',
   'Crema Zabaione con Marsala': 'Crema Zabaion',
   'Tonno di Carloforte': 'Ton Carloforte',
   'Pasticciata': "Pasticcio co' la carne",
@@ -2405,6 +2416,7 @@ const DISH_NAME_EN = {
   'Torronfetta Barbero': 'Barbero Nougat Slices',
   'Marmellata di Limoni di Sicilia': 'Sicilian Lemon Marmalade',
   'Confettura di Mirtilli Brezzo': 'Brezzo Blueberry Jam',
+  'Confettura Chiaverini': 'Chiaverini Jams',
   "Miele all'Arancio Brezzo": 'Brezzo Orange Honey',
   'Confetture Albicocca e Pesca Lazzaris': 'Lazzaris Apricot & Peach Jams',
   'Atlante dei Mieli Brezzo': 'Brezzo Honey Atlas Tasting Box',
@@ -2421,6 +2433,7 @@ const DISH_NAME_EN = {
   'Salsa Dolce Brezzo': 'Brezzo Sweet Sauces (Pear & Ginger / Pepper & Mustard)',
   'Gianduiotto Fondente Barbero': 'Barbero Dark Gianduiotto',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Salvagno Organic Extra Virgin Olive Oil',
+  'Olio Anfosso': 'Anfosso Olive Oil',
   'Crema di Pistacchio': 'Pistachio Pesto',
   'Crema Dolce al Pistacchio': 'Sweet Pistachio Spread',
   'Torrone Assortimento': 'Assorted Torrone',
@@ -2560,6 +2573,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Torronfetta Barbero': 'Crumbly D. Barbero nougat in thin slices, available with almonds or pistachios. Crisp and delicate, perfect with coffee.',
   'Marmellata di Limoni di Sicilia': 'Sicilian lemon marmalade by Fiasconaro, with an intense citrus aroma. Excellent on toast or for filling cakes.',
   'Confettura di Mirtilli Brezzo': 'Brezzo "La Sciroppata" blueberry jam, handmade with fresh fruit. Ideal on tarts, cheeses and wholesome breakfasts.',
+  'Confettura Chiaverini': 'Extra jams by Chiaverini of Florence, since 1928, in Wild Blackberry, Fig with Almond, Chestnut and Renette Apple flavors.',
   "Miele all'Arancio Brezzo": 'Italian Brezzo honey flavored with orange, in a jar with a wooden dipper. Delicate and fragrant, perfect for tea and infusions.',
   'Atlante dei Mieli Brezzo': 'Tasting box with 18 single-origin Italian honeys in sample jars — Brezzo. A journey through Italy\'s finest honey varieties. Sold together in one package, as shown in the photo.',
   'Miele del Favo Acacia Brezzo': 'Brezzo acacia honey still in the honeycomb, in its original wax. Enjoy sliced or spread on bread.',
@@ -2576,6 +2590,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Confetture Albicocca e Pesca Lazzaris': 'Lazzaris apricot and peach jams, sweetened only with grape sugar. Selected fruit with a natural, genuine taste. Available individually, not sold as a single package.',
   'Gianduiotto Fondente Barbero': 'Dark gianduiotti by D. Barbero of Asti, in a collectible vintage tin. Fine chocolate with Piedmont hazelnuts.',
   'Olio Extra Vergine di Oliva Biologico Salvagno': 'Organic extra virgin olive oil by Frantoio Salvagno, cold-pressed. Fruity and balanced, ideal used raw.',
+  'Olio Anfosso': 'Anfosso extra virgin olive oil, in the brand\'s iconic hand-painted animal-themed bottles. Available in several designs.',
   'Crema di Pistacchio': 'Pistachio pesto by Peccatucci di Mamma Andrea, from Palermo: sweet-savory flavor, perfect on bruschetta, pasta or cheese.',
   'Crema Dolce al Pistacchio': 'Sweet pistachio spread by Peccatucci di Mamma Andrea, from Palermo: enjoy on bread, desserts or by the spoonful.',
   'Torrone Assortimento': 'An assortment of artisanal torroncini in six flavors — almond, pistachio, dark chocolate and candied fruit — a delicious holiday gift.',
@@ -2622,7 +2637,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Olio Anfosso', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', 'Confettura Chiaverini', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
