@@ -3486,7 +3486,7 @@ const RECIPES = [{
   id: 'insalata-di-farro',
   name: 'Insalata di Farro',
   nameEn: "Farro Salad",
-  season: null,
+  season: 'estate',
   img: 'images/dishes/insalata_di_farro.jpg',
   tagline: 'Farro, verdure croccanti e olio extravergine: un piatto fresco e completo tutto l\'anno.',
   taglineEn: "Farro, crunchy vegetables and extra virgin olive oil: a fresh, complete dish all year round.",

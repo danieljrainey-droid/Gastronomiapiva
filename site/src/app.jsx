@@ -2377,7 +2377,7 @@ const RECIPES = [
     stepsEn: ["Finely chop the cooked vegetables and squeeze out excess liquid.","Mix in eggs, Grana, parsley and a little breadcrumb.","Shape into balls by hand, coat in breadcrumbs.","Bake at 200°C (390°F) for 20 minutes, turning halfway through.","Serve hot or at room temperature."],
   },
   {
-    id: 'insalata-di-farro', name: 'Insalata di Farro', nameEn: "Farro Salad", season: null,
+    id: 'insalata-di-farro', name: 'Insalata di Farro', nameEn: "Farro Salad", season: 'estate',
     img: 'images/dishes/insalata_di_farro.jpg',
     tagline: 'Farro, verdure croccanti e olio extravergine: un piatto fresco e completo tutto l\'anno.',
     taglineEn: "Farro, crunchy vegetables and extra virgin olive oil: a fresh, complete dish all year round.",
