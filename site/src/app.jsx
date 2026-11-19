@@ -151,11 +151,11 @@ function useViewport() {
 
 /* ─────────────────── CONTATTI ───────────────────
    CONTACT_EMAIL: la casella de la botéga, mostrada in ciaro par chi vol scrìvar da so posta.
-   CONTACT_FORM_KEY: ciave de Web3Forms (web3forms.com, gratis). Finché la xe voda, el
-   modulo el verze el programa de posta del visitador; co la ciave, el manda da solo. */
+   CONTACT_FORM_KEY: ciave de Web3Forms (web3forms.com, gratis) del modulo "Piva Contatti" —
+   l'unico che esista davero in tel account. Finché la xe voda, el modulo el verze el
+   programa de posta del visitador; co la ciave, el manda da solo. */
 const CONTACT_EMAIL = 'gastronomiapiva@libero.it';
-const CONTACT_FORM_KEY = '6fb714fc-2ef5-4dba-ae06-803bb9d08586';
-const CONTACT_FORM_KEY_2 = '853c4bf3-6738-4778-804d-6cafb02db966';
+const CONTACT_FORM_KEY = '853c4bf3-6738-4778-804d-6cafb02db966';
 
 /* ─────────────────── DIALECT MARQUEE ─────────────────── */
 const DIALECT_SAYINGS = [
@@ -3130,9 +3130,8 @@ function ContactPage() {
                 }
                 setSending(true);
                 try {
-                  const send = k => fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ access_key: k, subject: 'Sito Piva — ' + (d.get('name') || 'nuovo messaggio'), from_name: d.get('name'), name: d.get('name'), email: d.get('email'), message: d.get('message') }) });
-                  const results = await Promise.all([send(CONTACT_FORM_KEY), CONTACT_FORM_KEY_2 ? send(CONTACT_FORM_KEY_2) : Promise.resolve({ ok: true })]);
-                  if (!results[0].ok) throw new Error();
+                  const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ access_key: CONTACT_FORM_KEY, subject: 'Sito Piva — ' + (d.get('name') || 'nuovo messaggio'), from_name: d.get('name'), name: d.get('name'), email: d.get('email'), message: d.get('message') }) });
+                  if (!res.ok) throw new Error();
                   setSent(true);
                 } catch (err) { setSendError(true); } finally { setSending(false); }
               }}>

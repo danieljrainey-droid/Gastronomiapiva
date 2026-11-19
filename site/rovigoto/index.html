@@ -533,9 +533,10 @@ function result(){
 }
 build();
 
-const SUGGEST_TO='gastronomiapiva@libero.it,djrdjr@live.com';
-const SUGGEST_FORM_KEY='6fb714fc-2ef5-4dba-ae06-803bb9d08586';
-const SUGGEST_FORM_KEY_2='853c4bf3-6738-4778-804d-6cafb02db966';
+const SUGGEST_TO='gastronomiapiva@libero.it';
+/* Ciave di Web3Forms del modulo "Piva Contatti" — l'unico che esiste davvero nell'account,
+   la stessa usata dal modulo dei contatti nel sito principale. */
+const SUGGEST_FORM_KEY='853c4bf3-6738-4778-804d-6cafb02db966';
 document.getElementById('sform').addEventListener('submit',async function(e){
   e.preventDefault();
   const f=new FormData(this),g=k=>(f.get(k)||'').trim();
@@ -547,10 +548,9 @@ document.getElementById('sform').addEventListener('submit',async function(e){
   }
   const btn=this.querySelector('.sbtn'),note=this.querySelector('.snote'),old=btn.textContent;
   btn.disabled=true;btn.textContent='Mando...';
-  const send=k=>fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:k,subject:'ROVIGOTO — nuova parola: '+g('parola'),from_name:g('nome')||'Anonimo',message:body})});
   try{
-    const results=await Promise.all([send(SUGGEST_FORM_KEY),SUGGEST_FORM_KEY_2?send(SUGGEST_FORM_KEY_2):Promise.resolve({ok:true})]);
-    if(!results[0].ok)throw new Error();
+    const res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:SUGGEST_FORM_KEY,subject:'ROVIGOTO — nuova parola: '+g('parola'),from_name:g('nome')||'Anonimo',name:g('nome')||'Anonimo',email:SUGGEST_TO,message:body})});
+    if(!res.ok)throw new Error();
     note.textContent='Mandata! Grazie — la controliamo e la zontemo prima possìbile.';
     this.reset();
   }catch(err){

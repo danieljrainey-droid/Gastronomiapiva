@@ -222,8 +222,7 @@ function useViewport() {
   };
 }
 const CONTACT_EMAIL = 'gastronomiapiva@libero.it';
-const CONTACT_FORM_KEY = '6fb714fc-2ef5-4dba-ae06-803bb9d08586';
-const CONTACT_FORM_KEY_2 = '853c4bf3-6738-4778-804d-6cafb02db966';
+const CONTACT_FORM_KEY = '853c4bf3-6738-4778-804d-6cafb02db966';
 const DIALECT_SAYINGS = ["El pan del dì de prima l'è un baso de bon Dio.", "A catar bota pì che el pan!", "Tuti i poenta e bocal.", "Ciapar el musso par la coa.", "Mangia che te fa belo, bevi che te fa tondo.", "El vin el fa bon sangue, ma l'aqua la fa la mufa.", "Vestite ben che i te speta, va in camisa che i te conose.", "El tempo l'è come le done: el fa quel che vol lù.", "El lupo el perde el peo, ma no el vizio.", "A verzer la boca se fa pì presto che a serarla.", "Ciapa su e porta casa.", "Esser come i osei de Padoa: tanta vose e gnente sostanza.", "Fé el passo secondo la gamba.", "Pian pianin se va lontan.", "Tuti i conti i torna, ma i zeri i pesa.", "No tor via el tempo al bon tempo.", "Se no l'è lu, l'è so fradèlo.", "Va a ciapar le senzale.", "L'è un omo da strapazo.", "O vecia o nova, la poenta la m'inova."];
 function DialectMarquee() {
   const {
@@ -4981,14 +4980,14 @@ function ContactPage() {
       }
       setSending(true);
       try {
-        const send = k => fetch('https://api.web3forms.com/submit', {
+        const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             Accept: 'application/json'
           },
           body: JSON.stringify({
-            access_key: k,
+            access_key: CONTACT_FORM_KEY,
             subject: 'Sito Piva — ' + (d.get('name') || 'nuovo messaggio'),
             from_name: d.get('name'),
             name: d.get('name'),
@@ -4996,10 +4995,7 @@ function ContactPage() {
             message: d.get('message')
           })
         });
-        const results = await Promise.all([send(CONTACT_FORM_KEY), CONTACT_FORM_KEY_2 ? send(CONTACT_FORM_KEY_2) : Promise.resolve({
-          ok: true
-        })]);
-        if (!results[0].ok) throw new Error();
+        if (!res.ok) throw new Error();
         setSent(true);
       } catch (err) {
         setSendError(true);
