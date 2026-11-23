@@ -1709,7 +1709,8 @@ const MENU_DISHES = [{
   season: 'feste'
 }, {
   name: 'Fiasconaro',
-  src: 'images/dishes/fiasconaro_logo.jpg'
+  src: 'images/dishes/fiasconaro_logo.jpg',
+  season: 'feste'
 }, {
   name: 'Colomba Classica',
   src: 'images/dishes/colomba_classica.webp',
@@ -5861,6 +5862,9 @@ function App() {
     }
     window.scrollTo(0, 0);
   }, [page]);
+  useEffect(() => {
+    if (window.location.hash === '#prodotti') navigate('menu', 'section-prodotti');
+  }, []);
   return React.createElement(LangContext.Provider, {
     value: {
       lang,

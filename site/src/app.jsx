@@ -830,7 +830,7 @@ const MENU_DISHES = [
   { name: 'Crema di Pistacchio', src: 'images/dishes/crema_di_pistacchio.jpg', season: 'feste' },
   { name: 'Crema Dolce al Pistacchio', src: 'images/dishes/crema_dolce_al_pistacchio.jpg', season: 'feste' },
   { name: 'Torrone Assortimento', src: 'images/dishes/torrone_assortimento.jpg', season: 'feste' },
-  { name: 'Fiasconaro', src: 'images/dishes/fiasconaro_logo.jpg' },
+  { name: 'Fiasconaro', src: 'images/dishes/fiasconaro_logo.jpg', season: 'feste' },
   { name: 'Colomba Classica', src: 'images/dishes/colomba_classica.webp', season: 'pasqua' },
 ];
 
@@ -3579,6 +3579,15 @@ function App() {
     }
     window.scrollTo(0, 0);
   }, [page]);
+  /* Pagine esterne (es. fiasconaro/index.html) possono tornare dritte a una
+     sezione del menù con un hash tipo "#prodotti" invece che alla home. Va
+     dichiarato dopo l'effetto di scroll qua sora, cosa che al primo giro el
+     xe sò (pendingAnchorRef vòdo) prima che 'sto effetto el ciapi la pàgina
+     giusta — senò l'effetto de scroll el ciapa el riferimento vecio prima
+     che 'l DOM del menù el sia pronto. */
+  useEffect(() => {
+    if (window.location.hash === '#prodotti') navigate('menu', 'section-prodotti');
+  }, []);
   return (
     <LangContext.Provider value={{ lang, setLang }}>
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
