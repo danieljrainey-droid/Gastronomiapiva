@@ -58,6 +58,15 @@ h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:600;margin:0}
   .card .name{font-size:15px}
   .card .desc{font-size:12.5px}
 }
+
+.langbar{background:var(--paper);border-bottom:1px solid var(--line);padding:7px 20px;display:flex;justify-content:center}
+.langbar .inner{display:flex;gap:10px}
+.lang-btn{display:flex;flex-direction:column;align-items:center;gap:2px;background:transparent;border:none;cursor:pointer;padding:0;font-family:'Lora',Georgia,serif}
+.lang-btn .circ{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;line-height:1;border:1px solid rgba(61,43,26,.20);transition:all .2s ease;overflow:hidden}
+.lang-btn.active .circ{background:var(--cream);border:2px solid var(--gold)}
+.lang-btn .circ img{width:86%;height:86%;object-fit:contain;display:block}
+.lang-btn .code{font-size:9px;font-weight:700;letter-spacing:.06em;color:#8A7A63}
+.lang-btn.active .code{color:var(--red)}
 </style>
 </head>
 <body>
@@ -65,82 +74,104 @@ h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:600;margin:0}
 <nav class="nav"><div class="wrap">
 <a class="nav-brand" href="../index.html">
 <img src="../images/brand/logo.jpg" alt="F.lli Piva">
-<span><b>F.lli Piva</b><small>Gastronomia · Rovigo</small></span>
+<span><b>F.lli Piva</b><small data-it="Gastronomia · Rovigo" data-en="Delicatessen · Rovigo" data-vec="Gastronomia · Rovigo">Gastronomia · Rovigo</small></span>
 </a>
-<a class="nav-back" href="../index.html#prodotti">Torna alla bottega</a>
+<a class="nav-back" href="../index.html#prodotti" data-it="Torna alla bottega" data-en="Back to the shop" data-vec="Torna in botega">Torna alla bottega</a>
 </div></nav>
 
+<div class="langbar notranslate" translate="no"><div class="inner">
+<button class="lang-btn active" data-lang="it" aria-label="Italiano" title="Italiano"><span class="circ">🇮🇹</span><span class="code">IT</span></button>
+<button class="lang-btn" data-lang="en" aria-label="English" title="English"><span class="circ">🇬🇧</span><span class="code">EN</span></button>
+<button class="lang-btn" data-lang="vec" aria-label="Rovigòto (dialèto)" title="Rovigòto (dialèto)"><span class="circ"><img src="../images/brand/flag_rovigo.png" alt=""></span><span class="code">Rovigoto</span></button>
+</div></div>
+
 <header class="hero"><div class="wrap">
-<div class="mark">F.lli Piva presenta</div>
+<div class="mark" data-it="F.lli Piva presenta" data-en="F.lli Piva presents" data-vec="F.lli Piva presenta">F.lli Piva presenta</div>
 <img src="../images/brand/fiasconaro/logo.png" alt="Fiasconaro">
-<h1>La collezione Fiasconaro</h1>
-<p class="lede">Dalla storica pasticceria siciliana di Castelbuono, i panettoni artigianali Fiasconaro e la loro celebre crema di pistacchio — disponibili in negozio da F.lli Piva, in base alla stagione e alla disponibilità.</p>
+<h1 data-it="La collezione Fiasconaro" data-en="The Fiasconaro Collection" data-vec="La colession Fiasconaro">La collezione Fiasconaro</h1>
+<p class="lede" data-it="Dalla storica pasticceria siciliana di Castelbuono, i panettoni artigianali Fiasconaro e la loro celebre crema di pistacchio — disponibili in negozio da F.lli Piva, in base alla stagione e alla disponibilità." data-en="From the historic Sicilian pastry house of Castelbuono, Fiasconaro's artisanal panettoni and their celebrated pistachio cream — available in store at F.lli Piva, depending on the season and availability." data-vec="Da la storica pasticeria siciliana de Castelbuono, i panetóni fati a man Fiasconaro e la só famosa crema de pistacio — i se cata in botega da F.lli Piva, segondo la stagión e cosa che ghe xe.">Dalla storica pasticceria siciliana di Castelbuono, i panettoni artigianali Fiasconaro e la loro celebre crema di pistacchio — disponibili in negozio da F.lli Piva, in base alla stagione e alla disponibilità.</p>
 </div></header>
 
 <section class="section"><div class="wrap">
-<div class="kicker">In negozio</div>
-<h2>I panettoni e le specialità Fiasconaro</h2>
+<div class="kicker" data-it="In negozio" data-en="In store" data-vec="In botega">In negozio</div>
+<h2 data-it="I panettoni e le specialità Fiasconaro" data-en="Fiasconaro panettoni &amp; specialties" data-vec="I panetóni e le specialità Fiasconaro">I panettoni e le specialità Fiasconaro</h2>
 <div class="grid">
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/tradizionale.jpg" alt="Panettone Tradizionale"></div>
-<div class="txt"><div class="name">Panettone Tradizionale</div><div class="desc">Il classico Fiasconaro, lievitato naturalmente con pasta madre.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Tradizionale" data-en="Traditional Panettone" data-vec="Panetón Tradisional">Panettone Tradizionale</div><div class="desc" data-it="Il classico Fiasconaro, lievitato naturalmente con pasta madre." data-en="The Fiasconaro classic, naturally leavened with sourdough starter." data-vec="El clàssico de Fiasconaro, lievità natural co' la pasta madre.">Il classico Fiasconaro, lievitato naturalmente con pasta madre.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/oro_verde.jpg" alt="Panettone Oro Verde"></div>
-<div class="txt"><div class="name">Panettone Oro Verde</div><div class="desc">Farcito con crema di pistacchio e glassato al cioccolato bianco.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Oro Verde" data-en="Oro Verde Panettone" data-vec="Panetón Oro Verde">Panettone Oro Verde</div><div class="desc" data-it="Farcito con crema di pistacchio e glassato al cioccolato bianco." data-en="Filled with pistachio cream and glazed with white chocolate." data-vec="Pien de crema de pistacio e glassà al ciocolato bianco.">Farcito con crema di pistacchio e glassato al cioccolato bianco.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/albicocca_cioccolato.jpg" alt="Panettone Albicocca e Cioccolato di Modica IGP"></div>
-<div class="txt"><div class="name">Panettone Albicocca e Cioccolato di Modica IGP</div><div class="desc">Canditi di albicocca e cioccolato di Modica IGP, con glassa alle nocciole.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Albicocca e Cioccolato di Modica IGP" data-en="Apricot and Modica IGP Chocolate Panettone" data-vec="Panetón Albicoca e Ciocolato de Modica IGP">Panettone Albicocca e Cioccolato di Modica IGP</div><div class="desc" data-it="Canditi di albicocca e cioccolato di Modica IGP, con glassa alle nocciole." data-en="Candied apricot and Modica IGP chocolate, with a hazelnut glaze." data-vec="Candìi de albicoca e ciocolato de Modica IGP, co' na glassa a le nosele.">Canditi di albicocca e cioccolato di Modica IGP, con glassa alle nocciole.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/frutti_di_bosco.jpg" alt="Panettone Frutti di Bosco"></div>
-<div class="txt"><div class="name">Panettone Frutti di Bosco</div><div class="desc">Farcito con frutti di bosco, glassa bianca e perle di cioccolato.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Frutti di Bosco" data-en="Mixed Berries Panettone" data-vec="Panetón Fruti de Bosco">Panettone Frutti di Bosco</div><div class="desc" data-it="Farcito con frutti di bosco, glassa bianca e perle di cioccolato." data-en="Filled with mixed berries, white glaze and chocolate pearls." data-vec="Pien de fruti de bosco, glassa bianca e pèrle de ciocolato.">Farcito con frutti di bosco, glassa bianca e perle di cioccolato.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/mandorle.jpg" alt="Panettone Mandorle"></div>
-<div class="txt"><div class="name">Panettone Mandorle</div><div class="desc">Ricoperto di glassa alle mandorle e granella di zucchero.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Mandorle" data-en="Almond Panettone" data-vec="Panetón a le Màndole">Panettone Mandorle</div><div class="desc" data-it="Ricoperto di glassa alle mandorle e granella di zucchero." data-en="Coated in almond glaze and sugar crystals." data-vec="Covèrto de glassa a le màndole e granèla de zùcaro.">Ricoperto di glassa alle mandorle e granella di zucchero.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/pandorato.jpg" alt="Panettone Pandorato"></div>
-<div class="txt"><div class="name">Panettone Pandorato</div><div class="desc">Impasto dorato, spolverato di zucchero a velo.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Pandorato" data-en="Pandorato Panettone" data-vec="Panetón Pandorà">Panettone Pandorato</div><div class="desc" data-it="Impasto dorato, spolverato di zucchero a velo." data-en="Golden-baked dough, dusted with icing sugar." data-vec="Impasto dorà, spolverà de zùcaro a vélo.">Impasto dorato, spolverato di zucchero a velo.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/cioccolato.jpg" alt="Panettone Cioccolato"></div>
-<div class="txt"><div class="name">Panettone Cioccolato</div><div class="desc">Impasto con gocce di cioccolato fondente, per chi ama il cacao.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Cioccolato" data-en="Chocolate Panettone" data-vec="Panetón al Ciocolato">Panettone Cioccolato</div><div class="desc" data-it="Impasto con gocce di cioccolato fondente, per chi ama il cacao." data-en="Made with dark chocolate chips, for cocoa lovers." data-vec="Impasto co' gòsse de ciocolato fondente, par chi ama el cacao.">Impasto con gocce di cioccolato fondente, per chi ama il cacao.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/pera_cioccolato.jpg" alt="Panettone Pera e Cioccolato"></div>
-<div class="txt"><div class="name">Panettone Pera e Cioccolato</div><div class="desc">Impasto con pere e gocce di cioccolato, glassato al cioccolato bianco.</div></div>
+<div class="txt"><div class="name" data-it="Panettone Pera e Cioccolato" data-en="Pear and Chocolate Panettone" data-vec="Panetón Pera e Ciocolato">Panettone Pera e Cioccolato</div><div class="desc" data-it="Impasto con pere e gocce di cioccolato, glassato al cioccolato bianco." data-en="Made with pears and chocolate chips, glazed with white chocolate." data-vec="Impasto co' pere e gòsse de ciocolato, glassà al ciocolato bianco.">Impasto con pere e gocce di cioccolato, glassato al cioccolato bianco.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/crema_pistacchio.jpg" alt="Crema di Pistacchio"></div>
-<div class="txt"><div class="name">Crema di Pistacchio</div><div class="desc">Morbida da spalmare — il pistacchio protagonista, anche fuori dal panettone.</div></div>
+<div class="txt"><div class="name" data-it="Crema di Pistacchio" data-en="Pistachio Cream" data-vec="Crema de Pistacio">Crema di Pistacchio</div><div class="desc" data-it="Morbida da spalmare — il pistacchio protagonista, anche fuori dal panettone." data-en="Soft and spreadable — pistachio takes center stage, even outside the panettone." data-vec="Morbida da spalmar — el pistacio protagonista, anca fora dal panetón.">Morbida da spalmare — il pistacchio protagonista, anche fuori dal panettone.</div></div>
 </div>
 
 <div class="card">
 <div class="ph"><img src="../images/brand/fiasconaro/miele_sulla.jpg" alt="Miele di Nettare di Sulla"></div>
-<div class="txt"><div class="name">Miele di Nettare di Sulla</div><div class="desc">Miele siciliano dal gusto delicato, ricavato dal nettare dei fiori di sulla.</div></div>
+<div class="txt"><div class="name" data-it="Miele di Nettare di Sulla" data-en="Sulla Nectar Honey" data-vec="Miel de Nètare de Sula">Miele di Nettare di Sulla</div><div class="desc" data-it="Miele siciliano dal gusto delicato, ricavato dal nettare dei fiori di sulla." data-en="A delicately-flavored Sicilian honey, made from the nectar of sulla flowers." data-vec="Miel siciliàn dal gusto delicà, cavà dal nètare dei fiori de sula.">Miele siciliano dal gusto delicato, ricavato dal nettare dei fiori di sulla.</div></div>
 </div>
 
 </div>
 </div></section>
 
 <footer class="foot"><div class="wrap">
-<div class="tag">in cucina per voi — dal 1952</div>
-<p>Disponibilità e gusti possono variare secondo la stagione. Passa in negozio o chiamaci per sapere cosa abbiamo oggi.</p>
-<a class="cta" href="../index.html#prodotti">Torna al menù</a>
-<p class="credit-dev"><a href="mailto:djrdjr@live.com?subject=WEBSITE">Sito a cura di Daniel John Rainey · djrdjr@live.com</a></p>
+<div class="tag" data-it="in cucina per voi — dal 1952" data-en="in the kitchen for you — since 1952" data-vec="in cusina par voaltri — dal 1952">in cucina per voi — dal 1952</div>
+<p data-it="Disponibilità e gusti possono variare secondo la stagione. Passa in negozio o chiamaci per sapere cosa abbiamo oggi." data-en="Availability and flavors may vary by season. Stop by the shop or give us a call to find out what we have today." data-vec="Cosa che ghe xe e i gusti pol cambiar secondo la stagión. Vien in botega o chìamane par saver cosa ghe xe incuò.">Disponibilità e gusti possono variare secondo la stagione. Passa in negozio o chiamaci per sapere cosa abbiamo oggi.</p>
+<a class="cta" href="../index.html#prodotti" data-it="Torna al menù" data-en="Back to the menu" data-vec="Torna al menù">Torna al menù</a>
+<p class="credit-dev"><a href="mailto:djrdjr@live.com?subject=WEBSITE"><span data-it="Sito a cura di" data-en="Site by" data-vec="Sito fato da">Sito a cura di</span> Daniel John Rainey · djrdjr@live.com</a></p>
 </div></footer>
 
+<script>
+(function(){
+  var btns = document.querySelectorAll('.lang-btn');
+  function setLang(lang){
+    document.querySelectorAll('[data-it]').forEach(function(el){
+      var txt = el.getAttribute('data-' + lang) || el.getAttribute('data-it');
+      el.textContent = txt;
+    });
+    btns.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-lang') === lang); });
+    document.documentElement.lang = lang === 'en' ? 'en' : 'it';
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); });
+  });
+})();
+</script>
 </body>
 </html>
