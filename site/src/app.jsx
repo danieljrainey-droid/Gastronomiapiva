@@ -830,7 +830,7 @@ const MENU_DISHES = [
   { name: 'Crema di Pistacchio', src: 'images/dishes/crema_di_pistacchio.jpg', season: 'feste' },
   { name: 'Crema Dolce al Pistacchio', src: 'images/dishes/crema_dolce_al_pistacchio.jpg', season: 'feste' },
   { name: 'Torrone Assortimento', src: 'images/dishes/torrone_assortimento.jpg', season: 'feste' },
-  { name: 'Panettone Tradizionale', src: 'images/dishes/panettone_tradizionale.webp', season: 'feste' },
+  { name: 'Fiasconaro', src: 'images/dishes/fiasconaro_logo.jpg' },
   { name: 'Colomba Classica', src: 'images/dishes/colomba_classica.webp', season: 'pasqua' },
 ];
 
@@ -1151,7 +1151,7 @@ const DISH_DESCRIPTIONS = {
   'Crema di Pistacchio':       'Pesto di pistacchio Peccatucci di Mamma Andrea, da Palermo: gusto salato-dolce, perfetto su bruschette, pasta o formaggi.',
   'Crema Dolce al Pistacchio': 'Crema spalmabile dolce al pistacchio Peccatucci di Mamma Andrea, da Palermo: da gustare su pane, dolci o a cucchiaiate.',
   'Torrone Assortimento':      'Assortimento di torroncini artigianali in sei gusti — mandorla, pistacchio, cioccolato fondente e frutta candita — per un regalo goloso delle feste.',
-  'Panettone Tradizionale':    'Panettone artigianale Fiasconaro, lievitato naturalmente. Disponibile in una varietà di gusti secondo la disponibilità in negozio: chiedi al banco le proposte del momento.',
+  'Fiasconaro':                'Panettoni e specialità gastronomiche della pasticceria siciliana Fiasconaro. Scopri tutta la collezione.',
   'Colomba Classica':          'Colomba artigianale Fiasconaro con canditi d\'arancia e glassa di mandorle. Disponibile in una varietà di gusti secondo la disponibilità in negozio: chiedi al banco le proposte del momento.',
 };
 
@@ -1319,7 +1319,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Crema di Pistacchio': 'Pesto de pistacio Peccatucci de Mamma Andrea, da Palermo: gusto salà-dolse, giusto su bruschéte, pasta o formaji.',
   'Crema Dolce al Pistacchio': 'Crema dolse da spalmar al pistacio Peccatucci de Mamma Andrea, da Palermo: da magnar su pan, dolsi o a cuciaràe.',
   'Torrone Assortimento': 'Assortimento de toroncini fati a man in sie gusti — màndola, pistacio, ciocolàto fondente e fruta candìa — par un regalo goloso de le feste.',
-  'Panettone Tradizionale': 'Panetón fato a man Fiasconaro, levà par natura. Ghe n\'è de vari gusti secondo cosa che ghe xe in botéga: domanda al banco cosa che gh\'è incuò.',
+  'Fiasconaro': 'Panetóni e specialità de la pasticeria siciliana Fiasconaro. Varda tuta la colession.',
   'Colomba Classica': 'Colomba fata a man Fiasconaro co\' candìi de naranza e glassa de màndole. Ghe n\'è de vari gusti secondo cosa che ghe xe in botéga: domanda al banco cosa che gh\'è incuò.',
 };
 
@@ -1338,7 +1338,6 @@ const DISH_NAME_VEC = {
   'Ricottine di Bufala': 'Ricotine de Bùfala',
   'Selezione Champagne e Spumanti': 'Sielta de Champagne e Spumanti',
   'Torrone Assortimento': 'Assortimento de Torón',
-  'Panettone Tradizionale': 'Panetón Tradissional',
   'Colomba Classica': 'Colomba Clàssica',
   'Zucca al Forno': 'Suca al Forno',
   'Verza con Pancetta': "Verza co' la Pancéta",
@@ -1473,7 +1472,7 @@ const DISH_NAME_EN = {
   'Gianduiotto Fondente Barbero': 'Barbero Dark Gianduiotto', 'Olio Extra Vergine di Oliva Biologico Salvagno': 'Salvagno Organic Extra Virgin Olive Oil', 'Olio Anfosso': 'Anfosso Olive Oil',
   'Crema di Pistacchio': 'Pistachio Pesto', 'Crema Dolce al Pistacchio': 'Sweet Pistachio Spread',
   'Torrone Assortimento': 'Assorted Torrone',
-  'Panettone Tradizionale': 'Panettone', 'Colomba Classica': 'Colomba',
+  'Fiasconaro': 'Fiasconaro', 'Colomba Classica': 'Colomba',
 };
 const DISH_DESCRIPTIONS_EN = {
 
@@ -1631,7 +1630,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Crema di Pistacchio': 'Pistachio pesto by Peccatucci di Mamma Andrea, from Palermo: sweet-savory flavor, perfect on bruschetta, pasta or cheese.',
   'Crema Dolce al Pistacchio': 'Sweet pistachio spread by Peccatucci di Mamma Andrea, from Palermo: enjoy on bread, desserts or by the spoonful.',
   'Torrone Assortimento': 'An assortment of artisanal torroncini in six flavors — almond, pistachio, dark chocolate and candied fruit — a delicious holiday gift.',
-  'Panettone Tradizionale': 'Artisanal Fiasconaro panettone, naturally leavened. Available in a variety of flavors depending on what\'s in stock — ask us about the current selection.',
+  'Fiasconaro': 'Panettone and specialty products from the Sicilian pastry house Fiasconaro. Discover the full collection.',
   'Colomba Classica': 'Artisanal Fiasconaro colomba with candied orange and almond glaze. Available in a variety of flavors depending on what\'s in stock — ask us about the current selection.',
 };
 
@@ -1847,7 +1846,7 @@ const MENU_SECTIONS = [
       'Crema di Pistacchio',
       'Crema Dolce al Pistacchio',
       'Torrone Assortimento',
-      'Panettone Tradizionale',
+      'Fiasconaro',
       'Colomba Classica',
     ],
   },
@@ -2063,8 +2062,8 @@ function MenuSection() {
                       role="button"
                       tabIndex={0}
                       aria-expanded={isSel}
-                      onClick={() => setSelected(isSel ? null : { sectionId: section.id, name: dish.name })}
-                      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSelected(isSel ? null : { sectionId: section.id, name: dish.name }); } }}
+                      onClick={() => dish.name === 'Fiasconaro' ? (window.location.href = 'fiasconaro/index.html') : setSelected(isSel ? null : { sectionId: section.id, name: dish.name })}
+                      onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); dish.name === 'Fiasconaro' ? (window.location.href = 'fiasconaro/index.html') : setSelected(isSel ? null : { sectionId: section.id, name: dish.name }); } }}
                       style={{ margin: 0, width: '100%', textAlign: 'center', cursor: 'pointer', outline: 'none' }}
                     >
                       <div style={{

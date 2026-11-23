@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fiasconaro — F.lli Piva</title>
+<meta name="description" content="La collezione Fiasconaro da F.lli Piva Gastronomia: panettoni artigianali siciliani e la crema di pistacchio, in negozio a Rovigo.">
+<meta name="theme-color" content="#1A1108">
+<link rel="icon" type="image/jpeg" href="../images/brand/logo_favicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--red:#C8251D;--cream:#F5F0E6;--gold:#D4A640;--esp:#1A1108;--paper:#FDFAF4;--ink:#3D2B1A;--line:rgba(61,43,26,0.12)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--cream);font-family:'Lora',Georgia,serif;color:var(--ink);-webkit-font-smoothing:antialiased;text-wrap:pretty}
+a{color:var(--red)}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:600;margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px;width:100%}
+.nav{background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:11px;padding-bottom:11px}
+.nav-brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;min-width:0}
+.nav-brand img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 auto}
+.nav-brand b{font-family:'Playfair Display',serif;font-size:16px;color:var(--esp);display:block;line-height:1.15;white-space:nowrap}
+.nav-brand small{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(61,43,26,.5);display:block;margin-top:2px}
+.nav-back{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--red);border:1px solid rgba(200,37,29,.35);border-radius:100px;padding:9px 16px;white-space:nowrap;flex:0 0 auto}
+.nav-back:hover{background:var(--red);color:#fff;border-color:var(--red)}
+
+.hero{background:var(--esp);color:var(--cream);border-bottom:2px solid var(--gold);padding:48px 0 44px;text-align:center}
+.hero img{width:min(320px,72vw);height:auto;display:block;margin:0 auto 22px;filter:brightness(0) invert(1)}
+.hero .mark{font-family:'Playfair Display',serif;font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-size:clamp(28px,5vw,42px);line-height:1.1;margin:10px 0 0;letter-spacing:-.01em}
+.hero .lede{font-size:clamp(14px,1.8vw,16px);line-height:1.75;color:rgba(245,240,230,.8);margin:18px auto 0;max-width:56ch}
+
+.section{padding:44px 0 60px}
+.section .kicker{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(61,43,26,.5);margin-bottom:8px}
+.section h2{font-size:clamp(22px,3.4vw,30px);margin-bottom:28px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(26,17,8,.06);display:flex;flex-direction:column}
+.card .ph{width:100%;aspect-ratio:4/3;overflow:hidden;background:#eee}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.card .txt{padding:16px 18px 20px;flex:1 1 auto;display:flex;flex-direction:column}
+.card .name{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:var(--esp);line-height:1.25}
+.card .desc{font-size:13.5px;font-style:italic;color:rgba(61,43,26,.72);margin-top:8px;line-height:1.5;flex:1 1 auto}
+
+.foot{background:var(--esp);color:rgba(245,240,230,.75);padding:36px 0 30px;text-align:center}
+.foot .tag{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:14px;margin-bottom:10px}
+.foot p{font-size:13px;line-height:1.7;max-width:50ch;margin:0 auto}
+.foot .cta{display:inline-block;margin-top:20px;background:var(--red);color:#fff;text-decoration:none;font-family:'Playfair Display',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:13px 28px;border-radius:100px}
+.foot .credit-dev{font-size:10.5px;opacity:.55;margin-top:22px}
+.foot .credit-dev a{color:inherit}
+
+@media (max-width:640px){
+  .nav-brand small{display:none}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  .card .name{font-size:15px}
+  .card .desc{font-size:12.5px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="wrap">
+<a class="nav-brand" href="../index.html">
+<img src="../images/brand/logo.jpg" alt="F.lli Piva">
+<span><b>F.lli Piva</b><small>Gastronomia · Rovigo</small></span>
+</a>
+<a class="nav-back" href="../index.html">Torna alla bottega</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="mark">F.lli Piva presenta</div>
+<img src="../images/brand/fiasconaro/logo.png" alt="Fiasconaro">
+<h1>La collezione Fiasconaro</h1>
+<p class="lede">Dalla storica pasticceria siciliana di Castelbuono, i panettoni artigianali Fiasconaro e la loro celebre crema di pistacchio — disponibili in negozio da F.lli Piva, in base alla stagione e alla disponibilità.</p>
+</div></header>
+
+<section class="section"><div class="wrap">
+<div class="kicker">In negozio</div>
+<h2>I panettoni e le specialità Fiasconaro</h2>
+<div class="grid">
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/tradizionale.jpg" alt="Panettone Tradizionale"></div>
+<div class="txt"><div class="name">Panettone Tradizionale</div><div class="desc">Il classico Fiasconaro, lievitato naturalmente con pasta madre.</div></div>
+</div>
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/oro_verde.jpg" alt="Panettone Oro Verde"></div>
+<div class="txt"><div class="name">Panettone Oro Verde</div><div class="desc">Farcito con crema di pistacchio e glassato al cioccolato bianco.</div></div>
+</div>
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/albicocca_cioccolato.jpg" alt="Panettone Albicocca e Cioccolato di Modica IGP"></div>
+<div class="txt"><div class="name">Panettone Albicocca e Cioccolato di Modica IGP</div><div class="desc">Canditi di albicocca e cioccolato di Modica IGP, con glassa alle nocciole.</div></div>
+</div>
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/frutti_di_bosco.jpg" alt="Panettone Frutti di Bosco"></div>
+<div class="txt"><div class="name">Panettone Frutti di Bosco</div><div class="desc">Farcito con frutti di bosco, glassa bianca e perle di cioccolato.</div></div>
+</div>
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/mandorle.jpg" alt="Panettone Mandorle"></div>
+<div class="txt"><div class="name">Panettone Mandorle</div><div class="desc">Ricoperto di glassa alle mandorle e granella di zucchero.</div></div>
+</div>
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/pandorato.jpg" alt="Panettone Pandorato"></div>
+<div class="txt"><div class="name">Panettone Pandorato</div><div class="desc">Impasto dorato, spolverato di zucchero a velo.</div></div>
+</div>
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/cioccolato.jpg" alt="Panettone Cioccolato"></div>
+<div class="txt"><div class="name">Panettone Cioccolato</div><div class="desc">Impasto con gocce di cioccolato fondente, per chi ama il cacao.</div></div>
+</div>
+
+<div class="card">
+<div class="ph"><img src="../images/brand/fiasconaro/crema_pistacchio.jpg" alt="Crema di Pistacchio"></div>
+<div class="txt"><div class="name">Crema di Pistacchio</div><div class="desc">Morbida da spalmare — il pistacchio protagonista, anche fuori dal panettone.</div></div>
+</div>
+
+</div>
+</div></section>
+
+<footer class="foot"><div class="wrap">
+<div class="tag">in cucina per voi — dal 1952</div>
+<p>Disponibilità e gusti possono variare secondo la stagione. Passa in negozio o chiamaci per sapere cosa abbiamo oggi.</p>
+<a class="cta" href="../index.html">Torna al menù</a>
+<p class="credit-dev"><a href="mailto:djrdjr@live.com?subject=WEBSITE">Sito a cura di Daniel John Rainey · djrdjr@live.com</a></p>
+</div></footer>
+
+</body>
+</html>

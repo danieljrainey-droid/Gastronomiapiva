@@ -1708,9 +1708,8 @@ const MENU_DISHES = [{
   src: 'images/dishes/torrone_assortimento.jpg',
   season: 'feste'
 }, {
-  name: 'Panettone Tradizionale',
-  src: 'images/dishes/panettone_tradizionale.webp',
-  season: 'feste'
+  name: 'Fiasconaro',
+  src: 'images/dishes/fiasconaro_logo.jpg'
 }, {
   name: 'Colomba Classica',
   src: 'images/dishes/colomba_classica.webp',
@@ -2029,7 +2028,7 @@ const DISH_DESCRIPTIONS = {
   'Crema di Pistacchio': 'Pesto di pistacchio Peccatucci di Mamma Andrea, da Palermo: gusto salato-dolce, perfetto su bruschette, pasta o formaggi.',
   'Crema Dolce al Pistacchio': 'Crema spalmabile dolce al pistacchio Peccatucci di Mamma Andrea, da Palermo: da gustare su pane, dolci o a cucchiaiate.',
   'Torrone Assortimento': 'Assortimento di torroncini artigianali in sei gusti — mandorla, pistacchio, cioccolato fondente e frutta candita — per un regalo goloso delle feste.',
-  'Panettone Tradizionale': 'Panettone artigianale Fiasconaro, lievitato naturalmente. Disponibile in una varietà di gusti secondo la disponibilità in negozio: chiedi al banco le proposte del momento.',
+  'Fiasconaro': 'Panettoni e specialità gastronomiche della pasticceria siciliana Fiasconaro. Scopri tutta la collezione.',
   'Colomba Classica': 'Colomba artigianale Fiasconaro con canditi d\'arancia e glassa di mandorle. Disponibile in una varietà di gusti secondo la disponibilità in negozio: chiedi al banco le proposte del momento.'
 };
 const DISH_SUBTITLE_VEC = {
@@ -2194,7 +2193,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Crema di Pistacchio': 'Pesto de pistacio Peccatucci de Mamma Andrea, da Palermo: gusto salà-dolse, giusto su bruschéte, pasta o formaji.',
   'Crema Dolce al Pistacchio': 'Crema dolse da spalmar al pistacio Peccatucci de Mamma Andrea, da Palermo: da magnar su pan, dolsi o a cuciaràe.',
   'Torrone Assortimento': 'Assortimento de toroncini fati a man in sie gusti — màndola, pistacio, ciocolàto fondente e fruta candìa — par un regalo goloso de le feste.',
-  'Panettone Tradizionale': 'Panetón fato a man Fiasconaro, levà par natura. Ghe n\'è de vari gusti secondo cosa che ghe xe in botéga: domanda al banco cosa che gh\'è incuò.',
+  'Fiasconaro': 'Panetóni e specialità de la pasticeria siciliana Fiasconaro. Varda tuta la colession.',
   'Colomba Classica': 'Colomba fata a man Fiasconaro co\' candìi de naranza e glassa de màndole. Ghe n\'è de vari gusti secondo cosa che ghe xe in botéga: domanda al banco cosa che gh\'è incuò.'
 };
 const DISH_NAME_VEC = {
@@ -2212,7 +2211,6 @@ const DISH_NAME_VEC = {
   'Ricottine di Bufala': 'Ricotine de Bùfala',
   'Selezione Champagne e Spumanti': 'Sielta de Champagne e Spumanti',
   'Torrone Assortimento': 'Assortimento de Torón',
-  'Panettone Tradizionale': 'Panetón Tradissional',
   'Colomba Classica': 'Colomba Clàssica',
   'Zucca al Forno': 'Suca al Forno',
   'Verza con Pancetta': "Verza co' la Pancéta",
@@ -2442,7 +2440,7 @@ const DISH_NAME_EN = {
   'Crema di Pistacchio': 'Pistachio Pesto',
   'Crema Dolce al Pistacchio': 'Sweet Pistachio Spread',
   'Torrone Assortimento': 'Assorted Torrone',
-  'Panettone Tradizionale': 'Panettone',
+  'Fiasconaro': 'Fiasconaro',
   'Colomba Classica': 'Colomba'
 };
 const DISH_DESCRIPTIONS_EN = {
@@ -2600,7 +2598,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Crema di Pistacchio': 'Pistachio pesto by Peccatucci di Mamma Andrea, from Palermo: sweet-savory flavor, perfect on bruschetta, pasta or cheese.',
   'Crema Dolce al Pistacchio': 'Sweet pistachio spread by Peccatucci di Mamma Andrea, from Palermo: enjoy on bread, desserts or by the spoonful.',
   'Torrone Assortimento': 'An assortment of artisanal torroncini in six flavors — almond, pistachio, dark chocolate and candied fruit — a delicious holiday gift.',
-  'Panettone Tradizionale': 'Artisanal Fiasconaro panettone, naturally leavened. Available in a variety of flavors depending on what\'s in stock — ask us about the current selection.',
+  'Fiasconaro': 'Panettone and specialty products from the Sicilian pastry house Fiasconaro. Discover the full collection.',
   'Colomba Classica': 'Artisanal Fiasconaro colomba with candied orange and almond glaze. Available in a variety of flavors depending on what\'s in stock — ask us about the current selection.'
 };
 const DISH_VARIANTS = {};
@@ -2643,7 +2641,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Olio Anfosso', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', 'Confettura Chiaverini', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Panettone Tradizionale', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Olio Anfosso', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', 'Confettura Chiaverini', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Fiasconaro', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
@@ -2994,14 +2992,14 @@ function MenuSection() {
         role: "button",
         tabIndex: 0,
         "aria-expanded": isSel,
-        onClick: () => setSelected(isSel ? null : {
+        onClick: () => dish.name === 'Fiasconaro' ? window.location.href = 'fiasconaro/index.html' : setSelected(isSel ? null : {
           sectionId: section.id,
           name: dish.name
         }),
         onKeyDown: e => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
-            setSelected(isSel ? null : {
+            dish.name === 'Fiasconaro' ? window.location.href = 'fiasconaro/index.html' : setSelected(isSel ? null : {
               sectionId: section.id,
               name: dish.name
             });
