@@ -1359,6 +1359,9 @@ const MENU_DISHES = [{
   name: "Pan Brioche Antonio Mattei",
   src: "images/dishes/pan_brioche_mattei.jpg"
 }, {
+  name: "Taglio di Salmone",
+  src: "images/dishes/taglio_di_salmone.jpg"
+}, {
   name: 'Cioccolato Origine',
   src: "images/dishes/cioccolato_origine.jpg"
 }, {
@@ -1932,6 +1935,7 @@ const DISH_DESCRIPTIONS = {
   'Babbi Dolcetorta al pistacchio': 'Wafer al pistacchio rivestito di cioccolato al latte — specialità della tradizione romagnola.',
   'Babbi Viennesi Classico': 'Wafer ripieno di crema alle nocciole, rivestito di cioccolato fondente — un classico Babbi dal 1952.',
   'Pan Brioche Antonio Mattei': 'Fette di pan brioche tostate Antonio Mattei, fabbrica pratese dal 1858 — disponibili classiche, integrali o senza zucchero.',
+  'Taglio di Salmone': 'Filetto di salmone fresco, tagliato al momento al banco — ideale da cuocere in padella, al forno o da gustare marinato.',
   'Cioccolato Origine': 'Tavolette di cioccolato senza zuccheri aggiunti — al latte, fondente, con nocciole o pistacchi.',
   'Prosciutto di Parma 24 Mesi': 'Prosciutto di Parma DOP stagionato 24 mesi — Battilani di Riazzi. Dolce, profumato, tagliato al coltello.',
   'Prosciutto di San Daniele Magnum': 'Prosciutto di San Daniele DOP Linea Extra Magnum — Carni Padane. Stagionatura lunga, dolce e delicato, tagliato al coltello.',
@@ -2102,6 +2106,7 @@ const DISH_DESCRIPTIONS_VEC = {
   'Babbi Dolcetorta al pistacchio': 'Wafer al pistacio investìo de ciocolàto al late — specialità de la Romagna.',
   'Babbi Viennesi Classico': 'Wafer pien de crema a le noséle, investìo de ciocolàto fondente — un clàssico Babbi dal 1952.',
   'Pan Brioche Antonio Mattei': 'Fete de pan brioche rostìe Antonio Mattei, fàbrica de Prato dal 1858 — ghe n\'è clàssiche, integrài o sensa zùcaro.',
+  'Taglio di Salmone': 'Fileto de salmon fresco, tajà sul momento al banco — bon da còsar in tècia, al forno o da gustar marinà.',
   'Cioccolato Origine': 'Tavolete de ciocolàto sensa zùcaro zontà — al late, fondente, co\' nosele o pistaci.',
   'Prosciutto di Parma 24 Mesi': 'Prosciuto de Parma DOP stagionà 24 mesi — Battilani de Riazzi. Dolse, profumà, tajà col cortèl.',
   'Prosciutto di San Daniele Magnum': 'Prosciuto de San Daniele DOP Linea Extra Magnum — Carni Padane. Stagionà a longo, dolse e delicà, tajà col cortèl.',
@@ -2355,6 +2360,7 @@ const DISH_NAME_EN = {
   'Babbi Dolcetorta al pistacchio': 'Pistachio Wafer Cake',
   'Babbi Viennesi Classico': 'Classic Viennese Wafer',
   'Pan Brioche Antonio Mattei': 'Toasted Brioche Slices',
+  'Taglio di Salmone': 'Salmon Fillet',
   'Cioccolato Origine': 'Origin Chocolate',
   'Prosciutto di Parma 24 Mesi': '24-Month Parma Ham',
   'Prosciutto di San Daniele Magnum': 'San Daniele Magnum Ham',
@@ -2518,6 +2524,7 @@ const DISH_DESCRIPTIONS_EN = {
   'Babbi Dolcetorta al pistacchio': 'Pistachio wafer cake coated in milk chocolate — a specialty from Romagna tradition.',
   'Babbi Viennesi Classico': 'Wafer filled with hazelnut cream, coated in dark chocolate — a Babbi classic since 1952.',
   'Pan Brioche Antonio Mattei': 'Toasted brioche slices from Antonio Mattei, a Prato bakery since 1858 — available classic, whole-grain or sugar-free.',
+  'Taglio di Salmone': 'Fresh salmon fillet, cut to order at the counter — great pan-seared, oven-baked or marinated.',
   'Cioccolato Origine': 'Chocolate bars with no added sugar — milk, dark, with hazelnuts or pistachios.',
   'Prosciutto di Parma 24 Mesi': 'Prosciutto di Parma DOP aged 24 months — Battilani di Riazzi. Sweet, fragrant, knife-cut.',
   'Prosciutto di San Daniele Magnum': 'Prosciutto di San Daniele DOP Linea Extra Magnum — Carni Padane. Long-aged, sweet and delicate, knife-cut.',
@@ -2678,7 +2685,7 @@ const MENU_SECTIONS = [{
   titleVec: 'Roba Bòna',
   subtitle: 'Selezioni di stagione e promozioni',
   subtitleEn: 'Seasonal selections and specials',
-  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Olio Anfosso', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', 'Confettura Chiaverini', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Pan Brioche Antonio Mattei', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Babbi Dolcetorta al pistacchio', 'Babbi Viennesi Classico', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Vino Novello', 'Babà al Rhum', 'Babà al Limoncello', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Fiasconaro', 'Colomba Classica']
+  dishes: ['Selezione di Formaggi', 'Ricottine di Bufala', 'Prodotti Tipici Rovigo', "Foglie d'Ulivo agli Spinaci", 'Olio Extra Vergine di Oliva Biologico Salvagno', 'Olio Anfosso', 'Torronfetta Barbero', 'Gianduiotto Fondente Barbero', 'Confettura di Mirtilli Brezzo', 'Confettura Chiaverini', "Miele all'Arancio Brezzo", 'Atlante dei Mieli Brezzo', 'Miele del Favo Acacia Brezzo', 'Miele di Acacia Biologico Brezzo', 'Crema Fondente Brezzo', 'Miele di Castagno, Acacia e Corbezzolo Brezzo', 'Assortimento Tisane Biologiche Brezzo', 'Amaretti Morbidi Brezzo', 'Le Creme Spalmabili Brezzo', 'Composta di Frutta Bio Brezzo', 'Tris di Sughi Brezzo', 'Tris di Specialità al Tartufo Brezzo', 'Salsa Dolce Brezzo', 'Albicocche in Grappa Brezzo', 'Ciliegia in Liquore Brezzo', 'Distillati Of Bonollo 1908', 'Coccole Of Bonollo', 'Chocotaste Of Bonollo', 'Bonollo Cuore 1908', 'Cremini Baratti & Milano', 'Porcini Tagliati Testa Nera', 'Marmellata di Limoni di Sicilia', 'Confetture Albicocca e Pesca Lazzaris', 'Cioccolato Laica', 'Pane di Semola Forte', 'Pan Brioche Antonio Mattei', 'Taralli Danieli', 'Confettura Extra Mistilli', 'Crema Zabaione con Marsala', 'Aceto Balsamico IGP Campari', 'Aceto Balsamico Oro Gold', "Sciroppo per l'inverno", 'Tonno di Carloforte', 'Taglio di Salmone', 'Babbi Dolcetorta al pistacchio', 'Babbi Viennesi Classico', 'Cioccolato Origine', 'Prosciutto di Parma 24 Mesi', 'Prosciutto di San Daniele Magnum', 'Frutta in Acquavite Prunotto', 'Riso Acquerello 8 Anni', 'Fusilli di Pisa Martelli', 'Ragù di Cervo Regi', 'Grissini Il Panificio', 'Prosecco Astoria & Fongaro', 'Ciambelline Bergamini', 'Vini Assortiti', 'Vino Novello', 'Babà al Rhum', 'Babà al Limoncello', 'Specialità di Grano', 'Selezione Champagne e Spumanti', 'Bellavista Alma Grande Cuvée Brut', 'Crema di Pistacchio', 'Crema Dolce al Pistacchio', 'Torrone Assortimento', 'Fiasconaro', 'Colomba Classica']
 }];
 function MenuSection() {
   const [selected, setSelected] = useState(null);
